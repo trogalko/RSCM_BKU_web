@@ -47,6 +47,7 @@ namespace RSCM_BKU_Web.Transaksi
                     Trans.DebitAmount = Convert.ToDecimal((userControl.FindControl("txtDebitAmount") as RadNumericTextBox).Value);
                     Trans.CreditAmount = Convert.ToDecimal((userControl.FindControl("txtCreditAmount") as RadNumericTextBox).Value);
                     Trans.Descript = (userControl.FindControl("txtDESC") as RadTextBox).Text.ToUpper();
+                    Trans.TransDate = (DateTime)(userControl.FindControl("dtpTransDate") as RadDatePicker).DbSelectedDate;
                     //Trans.KasId = (userControl.FindControl("cmbKasID") as RadComboBox).SelectedValue.ToUpper();                   
                     Trans.UserUpdate = "toro";
                     Trans.TglUpdate = DateTime.Now;
@@ -167,10 +168,10 @@ namespace RSCM_BKU_Web.Transaksi
                 Trans.CreditAmount = Convert.ToDecimal((userControl.FindControl("txtCreditAmount") as RadNumericTextBox).Value);
                 Trans.Descript = (userControl.FindControl("txtDESC") as RadTextBox).Text.ToUpper();
                 Trans.KasId = (userControl.FindControl("cmbKasID") as RadComboBox).SelectedValue.ToUpper();
-                Trans.TransDate = DateTime.Now;
+                Trans.TransDate =(DateTime)(userControl.FindControl("dtpTransDate") as RadDatePicker).DbSelectedDate;
                 Trans.UserInsert = "toro";
                 Trans.TglInsert = DateTime.Now;
-                Trans.PeriodId = (long)HttpContext.Current.Session["_periodeId"];
+                Trans.PeriodId = (Int32)HttpContext.Current.Session["_periodeId"];
                 Trans.Isverified = false;
                 Trans.IsClosed = false;
                 Trans.Save();

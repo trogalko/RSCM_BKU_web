@@ -23,14 +23,14 @@
     }
     .style7
     {
-        width: 1px;
+        width: 5px;
     }
 </style>
 <telerik:RadFormDecorator ID="RadFormDecorator1" runat="server" 
     Skin="Office2007" />
 <table style="width:100%;">
     <tr>
-        <td class="style1">
+        <td class="style1" bgcolor="#CCCCCC">
             Trans. ID</td>
         <td class="style2">
             :</td>
@@ -39,7 +39,7 @@
                 Text='<%# DataBinder.Eval( Container, "DataItem.BKU_ID") %>' ReadOnly="True">
             </telerik:RadTextBox>
         </td>
-        <td class="style3">
+        <td class="style3" bgcolor="#CCCCCC">
             Debit Amount</td>
         <td class="style7">
             :</td>
@@ -57,7 +57,7 @@
         </td>
     </tr>
     <tr>
-        <td class="style1">
+        <td class="style1" bgcolor="#CCCCCC">
             Trans. Number</td>
         <td class="style2">
             :</td>
@@ -68,7 +68,7 @@
                 ReadOnly="True">
             </telerik:RadTextBox>
         </td>
-        <td class="style3">
+        <td class="style3" bgcolor="#CCCCCC">
             Credit
             Amount</td>
         <td class="style7">
@@ -87,7 +87,7 @@
         </td>
     </tr>
     <tr>
-        <td class="style1">
+        <td class="style1" bgcolor="#CCCCCC">
             Trans. Code</td>
         <td class="style2">
             :</td>
@@ -117,18 +117,36 @@
         
         </td>
         <td class="style3">
-            Description</td>
+            &nbsp;</td>
         <td class="style7">
-            :</td>
+            &nbsp;</td>
         <td>
-            <telerik:RadTextBox ID="txtDESC" Runat="server" Skin="Office2007" 
-                Width="280px"
-                Text='<%# DataBinder.Eval( Container, "DataItem.DESCRIPT") %>' >
-            </telerik:RadTextBox>
-        </td>
+            &nbsp;</td>
     </tr>
     <tr>
-        <td class="style1">
+        <td bgcolor="#CCCCCC">Trans. Date</td>
+        <td>:</td>
+        <td>
+            <telerik:RadDatePicker ID="dtpTransDate" 
+                Runat="server" 
+                Culture="id-ID" 
+                Skin="Office2007" 
+                Width="300px"
+                DbSelectedDate='<%# DataBinder.Eval( Container, "DataItem.TRANS_DATE") %>'>
+<Calendar UseRowHeadersAsSelectors="False" UseColumnHeadersAsSelectors="False" 
+                    ViewSelectorText="x" Skin="Office2007"></Calendar>
+
+<DateInput DisplayDateFormat="dd/MM/yyyy" DateFormat="dd/MM/yyyy"></DateInput>
+
+<DatePopupButton ImageUrl="" HoverImageUrl=""></DatePopupButton>
+            </telerik:RadDatePicker>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td class="style1" bgcolor="#CCCCCC">
             Kas Id</td>
         <td class="style2">
             :</td>
@@ -148,22 +166,54 @@
             </telerik:RadTextBox>
         </td>
         <td class="style3">
-            No. Cek/BG</td>
+            &nbsp;</td>
         <td class="style7">
-            :</td>
+            &nbsp;</td>
         <td>
             <%-- 
             <telerik:RadComboBox ID="cmbKasID" Runat="server" Width="232px" 
                 Skin="Office2007" SelectedText='<%# FormatCheckBox( Container, "DataItem.KAS_ID") %>'>
             </telerik:RadComboBox>
         --%>
+        </td>
+    </tr>
+    <tr>
+        <td bgcolor="#CCCCCC">Description</td>
+        <td>:</td>
+        <td>
+            <telerik:RadTextBox ID="txtDESC" Runat="server" Skin="Office2007" 
+                Width="400px"
+                Text='<%# DataBinder.Eval( Container, "DataItem.DESCRIPT") %>' >
+            </telerik:RadTextBox>
+        </td>
+        <td></td>
+        <td></td>
+        <td class="style7"></td>
+    </tr>
+    <tr>
+        <td bgcolor="#CCCCCC">No. Cek/BG</td>
+        <td>:</td>
+        <td>
+            
             <telerik:RadTextBox ID="txtCek" 
                 Runat="server" 
                 Skin="Office2007" 
                 Width="250px"
                 Text='<%# DataBinder.Eval( Container, "DataItem.CEK_BG_NUMBER") %>'>
             </telerik:RadTextBox>
+            
         </td>
+        <td></td>
+        <td></td>
+        <td class="style7"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
     </tr>
 </table>
 
@@ -180,7 +230,10 @@
     </tr>
     <tr>
         <td class="style6">
-            &nbsp;</td>
+            <telerik:RadDateInput ID="RadDateInput1" Runat="server" 
+                SelectedDate="03/25/2011 16:52:52">
+            </telerik:RadDateInput>
+        </td>
         <td class="style2">
             &nbsp;</td>
         <td>

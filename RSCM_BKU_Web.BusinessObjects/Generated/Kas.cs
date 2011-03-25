@@ -300,7 +300,7 @@ namespace RSCM_BKU_Web.BusinessObjects
 			}
 		}
 		
-		[CLSCompliant(false)]
+        //[CLSCompliant(false)]
 		internal protected PeriodeAnggaran _UpToPeriodeAnggaranByPeriodeId;
 		#endregion	
 
