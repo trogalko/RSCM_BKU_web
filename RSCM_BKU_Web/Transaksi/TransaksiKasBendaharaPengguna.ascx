@@ -35,8 +35,11 @@
         <td class="style2">
             :</td>
         <td class="style5">
-            <telerik:RadTextBox ID="txtTransID" Runat="server" Skin="Office2007" 
-                Text='<%# DataBinder.Eval( Container, "DataItem.BKU_ID") %>' ReadOnly="True">
+            <telerik:RadTextBox ID="txtTransID" 
+                Runat="server" Skin="Office2007" 
+                onkeypress="return CkKeyPress(event);"
+                Text='<%# DataBinder.Eval( Container, "DataItem.BKU_ID") %>' 
+                ReadOnly="True">
             </telerik:RadTextBox>
         </td>
         <td class="style3" bgcolor="#CCCCCC">
@@ -50,7 +53,10 @@
                 Skin="Office2007" 
                 Type="Currency" 
                 Width="250px"
-                Text='<%# ((bool)DataBinder.Eval(Container, "OwnerTableView.IsItemInserted")) ? 0 : DataBinder.Eval( Container, "DataItem.DEBIT_AMOUNT") %>'>                
+                onkeypress="return CkKeyPress(event);"
+                
+                Text='<%# ((bool)DataBinder.Eval(Container, "OwnerTableView.IsItemInserted")) ? 0 : DataBinder.Eval( Container, "DataItem.DEBIT_AMOUNT") %>' 
+                TabIndex="9">                
                 <NumberFormat AllowRounding="False" DecimalDigits="2" NegativePattern="(n)" 
                     PositivePattern="n" />
             </telerik:RadNumericTextBox>
@@ -63,9 +69,10 @@
             :</td>
         <td class="style5">
             <telerik:RadTextBox ID="txtTransNUMBER" 
-                Runat="server" Skin="Office2007"                 
+                Runat="server" Skin="Office2007"      
+                onkeypress="return CkKeyPress(event);"           
                 Text='<%# DataBinder.Eval( Container, "DataItem.TRANS_NUMBER") %>' 
-                ReadOnly="True">
+                ReadOnly="True" TabIndex="1">
             </telerik:RadTextBox>
         </td>
         <td class="style3" bgcolor="#CCCCCC">
@@ -80,7 +87,10 @@
                 Skin="Office2007" 
                 Type="Currency" 
                 Width="250px"
-                Text='<%# ((bool)DataBinder.Eval(Container, "OwnerTableView.IsItemInserted")) ? 0 : DataBinder.Eval( Container, "DataItem.CREDIT_AMOUNT") %>'>
+                onkeypress="return CkKeyPress(event);"
+                
+                Text='<%# ((bool)DataBinder.Eval(Container, "OwnerTableView.IsItemInserted")) ? 0 : DataBinder.Eval( Container, "DataItem.CREDIT_AMOUNT") %>' 
+                TabIndex="10">
                 <NumberFormat AllowRounding="False" DecimalDigits="2" NegativePattern="(Rp n)" 
                     PositivePattern="Rp n" />
             </telerik:RadNumericTextBox>
@@ -103,7 +113,9 @@
             <telerik:RadComboBox ID="cmbTransCODE" 
                 Runat="server"
                 Skin="Office2007" 
-                Width="230px" ondatabound="cmbTransCODE_DataBound" Filter="Contains">
+                Width="230px" ondatabound="cmbTransCODE_DataBound" Filter="Contains" 
+                TabIndex="2"
+                onkeypress="return CkKeyPress(event);">
                 <ExpandAnimation Type="InQuint" />
             </telerik:RadComboBox>
         
@@ -113,7 +125,8 @@
                 Visible="False" 
                 Width="230px"
                 Text='<%# DataBinder.Eval( Container, "DataItem.KA_NAME") %>' 
-                ontextchanged="txtTransCode_TextChanged">
+                ontextchanged="txtTransCode_TextChanged" TabIndex="3"
+                onkeypress="return CkKeyPress(event);">
             </telerik:RadTextBox>
         
         </td>
@@ -133,13 +146,15 @@
                 Culture="id-ID" 
                 Skin="Office2007" 
                 Width="300px"
-                DbSelectedDate='<%# DataBinder.Eval( Container, "DataItem.TRANS_DATE") %>'>
+                onkeypress="return CkKeyPress(event);"
+                DbSelectedDate='<%# DataBinder.Eval( Container, "DataItem.TRANS_DATE") %>' 
+                TabIndex="4">
 <Calendar UseRowHeadersAsSelectors="False" UseColumnHeadersAsSelectors="False" 
                     ViewSelectorText="x" Skin="Office2007"></Calendar>
 
-<DateInput DisplayDateFormat="dd/MM/yyyy" DateFormat="dd/MM/yyyy"></DateInput>
+<DateInput DisplayDateFormat="dd/MM/yyyy" DateFormat="dd/MM/yyyy" TabIndex="4"></DateInput>
 
-<DatePopupButton ImageUrl="" HoverImageUrl=""></DatePopupButton>
+<DatePopupButton ImageUrl="" HoverImageUrl="" TabIndex="4"></DatePopupButton>
             </telerik:RadDatePicker>
         </td>
         <td></td>
@@ -155,7 +170,8 @@
             <telerik:RadComboBox ID="cmbKasID" 
                 Runat="server" 
                 Width="232px" 
-                Skin="Office2007" ondatabound="cmbKasID_DataBound"> 
+                Skin="Office2007" ondatabound="cmbKasID_DataBound" TabIndex="5"
+                onkeypress="return CkKeyPress(event);"> 
                 <ExpandAnimation Type="InQuint" />
             </telerik:RadComboBox>
             <telerik:RadTextBox ID="txtKasId" 
@@ -163,7 +179,9 @@
                 Skin="Office2007" 
                 Visible="False" 
                 Width="230px"
-                Text='<%# DataBinder.Eval( Container, "DataItem.KAS_NAME") %>'>
+                onkeypress="return CkKeyPress(event);"
+                Text='<%# DataBinder.Eval( Container, "DataItem.KAS_NAME") %>' 
+                TabIndex="6">
             </telerik:RadTextBox>
         </td>
         <td class="style3">
@@ -184,7 +202,9 @@
         <td>
             <telerik:RadTextBox ID="txtDESC" Runat="server" Skin="Office2007" 
                 Width="400px"
-                Text='<%# DataBinder.Eval( Container, "DataItem.DESCRIPT") %>' >
+                onkeypress="return CkKeyPress(event);"
+                Text='<%# DataBinder.Eval( Container, "DataItem.DESCRIPT") %>' 
+                TabIndex="7" >
             </telerik:RadTextBox>
         </td>
         <td></td>
@@ -200,7 +220,9 @@
                 Runat="server" 
                 Skin="Office2007" 
                 Width="250px"
-                Text='<%# DataBinder.Eval( Container, "DataItem.CEK_BG_NUMBER") %>'>
+                onkeypress="return CkKeyPress(event);"
+                Text='<%# DataBinder.Eval( Container, "DataItem.CEK_BG_NUMBER") %>' 
+                TabIndex="8">
             </telerik:RadTextBox>
             
         </td>
@@ -221,11 +243,15 @@
 <table style="width:100%;">
     <tr>
         <td align="right" class="style6" style="width:50%;">
-            <asp:Button ID="btnSAVE" runat="server" Height="26px" Text='<%# ((bool)DataBinder.Eval(Container, "OwnerTableView.IsItemInserted")) ? "Insert" : "Update" %>' CommandName='<%# ((bool)DataBinder.Eval(Container, "OwnerTableView.IsItemInserted")) ? "PerformInsert" : "Update" %>' />
+            <asp:Button ID="btnSAVE" runat="server" Height="26px" 
+                Text='<%# ((bool)DataBinder.Eval(Container, "OwnerTableView.IsItemInserted")) ? "Insert" : "Update" %>' 
+                CommandName='<%# ((bool)DataBinder.Eval(Container, "OwnerTableView.IsItemInserted")) ? "PerformInsert" : "Update" %>' 
+                TabIndex="11" />
         </td>
         
         <td align="left" style="width:50%;">
-            <asp:Button ID="btnCANCEL" runat="server" Text="Cancel" causesvalidation="False" commandname="Cancel" />
+            <asp:Button ID="btnCANCEL" runat="server" Text="Cancel" 
+                causesvalidation="False" commandname="Cancel" TabIndex="12" />
         </td>
     </tr>
     <tr>

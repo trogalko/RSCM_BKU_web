@@ -24,7 +24,7 @@ namespace RSCM_BKU_Web.Transaksi
     {
         readonly RscmBkuDataContext rscm = new RscmBkuDataContext();
         protected void Page_Load(object sender, EventArgs e)
-        {
+        {     
             if ((bool)HttpContext.Current.Session["_isEdit"] == false) // ADD
             {
                 txtTransCode.Visible = false;
