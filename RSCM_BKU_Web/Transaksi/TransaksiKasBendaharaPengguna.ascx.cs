@@ -15,6 +15,8 @@ using EntitySpaces.Interfaces;
 using EntitySpaces.SqlClientProvider;
 
 using RSCM_BKU_Web.Linq;
+using System.Globalization;
+using System.Threading;
 
 namespace RSCM_BKU_Web.Transaksi
 {
@@ -95,6 +97,11 @@ namespace RSCM_BKU_Web.Transaksi
         {
             var combo = (RadComboBox)sender;
             combo.Items.Insert(0, new RadComboBoxItem(string.Empty, string.Empty));
+        }
+
+        protected void txtTransCode_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

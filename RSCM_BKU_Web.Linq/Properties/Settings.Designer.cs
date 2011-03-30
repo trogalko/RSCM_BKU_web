@@ -28,9 +28,9 @@ namespace RSCM_BKU_Web.Linq.Properties {
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=10.4.4.23;Initial Catalog=RSCM_BKU;Persist Security Info=True;User ID" +
             "=sa;Password=ASD123qwe;MultipleActiveResultSets=True")]
-        public string RSCM_BKUConnectionString {
+        public string RSCM_BKUConnectionStringBackup {
             get {
-                return ((string)(this["RSCM_BKUConnectionString"]));
+                return ((string)(this["RSCM_BKUConnectionStringBackup"]));
             }
         }
         
@@ -39,9 +39,9 @@ namespace RSCM_BKU_Web.Linq.Properties {
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=localhost;Initial Catalog=RSCM_BKU;Persist Security Info=True;User ID" +
             "=sa;Password=muhammad;MultipleActiveResultSets=True")]
-        public string RSCM_BKUConnectionStringBackup {
+        public string RSCM_BKUConnectionString {
             get {
-                return ((string)(this["RSCM_BKUConnectionStringBackup"]));
+                return ((string)(this["RSCM_BKUConnectionString"]));
             }
         }
     }

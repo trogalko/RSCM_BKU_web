@@ -15,6 +15,8 @@ using EntitySpaces.Interfaces;
 using EntitySpaces.SqlClientProvider;
 
 using RSCM_BKU_Web.Linq;
+using System.Globalization;
+using System.Threading;
 
 namespace RSCM_BKU_Web.Transaksi
 {
@@ -23,6 +25,12 @@ namespace RSCM_BKU_Web.Transaksi
         private RscmBkuDataContext rscm = new RscmBkuDataContext();
         protected void Page_Load(object sender, EventArgs e)
         {
+            CultureInfo ci = new CultureInfo("id-ID");
+            Thread.CurrentThread.CurrentUICulture = ci;
+            ci.NumberFormat.CurrencySymbol = "";
+            Thread.CurrentThread.CurrentCulture = ci;
+            ci = null;
+            this.InitializeCulture();
             var per = from p in rscm.PeriodeAnggarans
                       where p.Is_Closed == false
                       select p;

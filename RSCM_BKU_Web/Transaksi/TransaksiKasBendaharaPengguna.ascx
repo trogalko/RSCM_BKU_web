@@ -51,8 +51,8 @@
                 Type="Currency" 
                 Width="250px"
                 Text='<%# ((bool)DataBinder.Eval(Container, "OwnerTableView.IsItemInserted")) ? 0 : DataBinder.Eval( Container, "DataItem.DEBIT_AMOUNT") %>'>                
-                <NumberFormat AllowRounding="False" DecimalDigits="2" NegativePattern="(Rp n)" 
-                    PositivePattern="Rp n" />
+                <NumberFormat AllowRounding="False" DecimalDigits="2" NegativePattern="(n)" 
+                    PositivePattern="n" />
             </telerik:RadNumericTextBox>
         </td>
     </tr>
@@ -103,7 +103,7 @@
             <telerik:RadComboBox ID="cmbTransCODE" 
                 Runat="server"
                 Skin="Office2007" 
-                Width="230px" ondatabound="cmbTransCODE_DataBound">
+                Width="230px" ondatabound="cmbTransCODE_DataBound" Filter="Contains">
                 <ExpandAnimation Type="InQuint" />
             </telerik:RadComboBox>
         
@@ -112,7 +112,8 @@
                 Skin="Office2007" 
                 Visible="False" 
                 Width="230px"
-                Text='<%# DataBinder.Eval( Container, "DataItem.KA_NAME") %>'>
+                Text='<%# DataBinder.Eval( Container, "DataItem.KA_NAME") %>' 
+                ontextchanged="txtTransCode_TextChanged">
             </telerik:RadTextBox>
         
         </td>
@@ -219,31 +220,24 @@
 
 <table style="width:100%;">
     <tr>
-        <td align="right" class="style6">
+        <td align="right" class="style6" style="width:50%;">
             <asp:Button ID="btnSAVE" runat="server" Height="26px" Text='<%# ((bool)DataBinder.Eval(Container, "OwnerTableView.IsItemInserted")) ? "Insert" : "Update" %>' CommandName='<%# ((bool)DataBinder.Eval(Container, "OwnerTableView.IsItemInserted")) ? "PerformInsert" : "Update" %>' />
         </td>
-        <td class="style2">
-            &nbsp;</td>
-        <td align="left">
+        
+        <td align="left" style="width:50%;">
             <asp:Button ID="btnCANCEL" runat="server" Text="Cancel" causesvalidation="False" commandname="Cancel" />
         </td>
     </tr>
     <tr>
-        <td class="style6">
-            <telerik:RadDateInput ID="RadDateInput1" Runat="server" 
-                SelectedDate="03/25/2011 16:52:52">
-            </telerik:RadDateInput>
-        </td>
-        <td class="style2">
+        <td class="style6" style="width:50%;">
             &nbsp;</td>
-        <td>
+        
+        <td style="width:50%;">
             &nbsp;</td>
     </tr>
     <tr>
-        <td class="style6">
-            &nbsp;</td>
-        <td class="style2">
-            &nbsp;</td>
+        <td class="style6" style="width:50%;">
+            &nbsp;</td>        
         <td>
             &nbsp;</td>
     </tr>
