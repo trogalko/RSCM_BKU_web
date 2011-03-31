@@ -13,6 +13,7 @@
     <RootNamespace>RSCM_BKU_Web</RootNamespace>
     <AssemblyName>RSCM_BKU_Web</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -129,8 +130,13 @@
     <Reference Include="Telerik.WinControls.GridView, Version=2010.2.10.914, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="background.jpg" />
+    <Content Include="bg-bar00.jpg" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="gradient.gif" />
+    <Content Include="gradientreverse.gif" />
+    <Content Include="Login\Login.aspx" />
     <Content Include="Master\masterGroupMA.ascx" />
     <Content Include="Master\masterGroupMA.aspx" />
     <Content Include="Master\MasterKas.ascx" />
@@ -156,6 +162,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AEScipher.cs" />
     <Compile Include="Default.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>Default.aspx</DependentUpon>
@@ -165,6 +172,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Master\masterGroupMA.ascx.cs">
       <DependentUpon>masterGroupMA.ascx</DependentUpon>
@@ -310,5 +324,5 @@
   </Target>
   <Target Name="AfterBuild">
   </Target>
-  -->  
+  -->
 </Project>
