@@ -25,19 +25,26 @@ namespace RSCM_BKU_Web.Transaksi
         private RscmBkuDataContext rscm = new RscmBkuDataContext();
         protected void Page_Load(object sender, EventArgs e)
         {
+            string userLoggedIn = (string)HttpContext.Current.Session["UserId"];
+            if (!string.IsNullOrEmpty(userLoggedIn))
+            {
+                var per = from p in rscm.PeriodeAnggarans
+                          where p.Is_Closed == false
+                          select p;
+                foreach (RSCM_BKU_Web.Linq.PeriodeAnggaran pp in per)
+                {
+                    HttpContext.Current.Session["_periodeId"] = (Int32)pp.id;
+                }
+            }
+            else
+                Response.Redirect("~/Login/Login.aspx");
+
             CultureInfo ci = new CultureInfo("id-ID");
             Thread.CurrentThread.CurrentUICulture = ci;
             ci.NumberFormat.CurrencySymbol = "";
             Thread.CurrentThread.CurrentCulture = ci;
             ci = null;
-            this.InitializeCulture();
-            var per = from p in rscm.PeriodeAnggarans
-                      where p.Is_Closed == false
-                      select p;
-            foreach (RSCM_BKU_Web.Linq.PeriodeAnggaran pp in per)
-            {
-                HttpContext.Current.Session["_periodeId"] = (Int32)pp.id;
-            }
+            this.InitializeCulture();            
         }
 
         protected void RadGrid1_UpdateCommand(object source, Telerik.Web.UI.GridCommandEventArgs e)

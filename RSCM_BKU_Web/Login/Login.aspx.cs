@@ -33,21 +33,20 @@ namespace RSCM_BKU_Web.Login
                     HttpContext.Current.Session["UserName"] = AppUser.UserName;
 
                     AuditTrail AuditTrail = new AuditTrail();
-                    AuditTrail.ItemAction = "Login per Tanggal : " + DateTime.Now.ToShortDateString() + " , untuk UserID : " + AppUser.UserID;
+                    string itemAction = "Login per Tanggal : " + DateTime.Now.ToShortDateString() + " , untuk UserID : " + AppUser.UserID;
+                    if (itemAction.Length > 200)
+                        itemAction = itemAction.Substring(0, 200);                    
+                    AuditTrail.ItemAction = itemAction;
                     AuditTrail.Aksi = "LOGIN";
                     AuditTrail.DateAction = DateTime.Now;
                     AuditTrail.Save();
+                    Response.Redirect("~/Default.aspx");
                 }
+                else
+                    return;
             }
-            //else
-            //{
-            //    AppUser.UserID = "toro";
-            //    AppUser.UserName = "Tri Noviantoro";
-            //    AppUser.Password = AEScipher.Encrypt(txtUserId.Text,txtPassword.Text);
-            //    AppUser.Save();
-            //}
-            //string ciphertext = AEScipher.Encrypt(txtUserId.Text, txtPassword.Text);
-            //this.Title = ciphertext + " - " + AEScipher.Decrypt(ciphertext,txtPassword.Text);
+            else
+                return;            
         }
     }
 }

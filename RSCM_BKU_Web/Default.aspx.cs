@@ -16,6 +16,7 @@ using EntitySpaces.Interfaces;
 using EntitySpaces.SqlClientProvider;
 
 using RSCM_BKU_Web.Linq;
+using System.IO;
 
 namespace RSCM_BKU_Web
 {
@@ -24,17 +25,20 @@ namespace RSCM_BKU_Web
         private RscmBkuDataContext rscm = new RscmBkuDataContext();
         protected void Page_Load(object sender, EventArgs e)
         {
-            var per = from p in rscm.PeriodeAnggarans
-                      where p.Is_Closed == false
-                      select p;
-            foreach ( RSCM_BKU_Web.Linq.PeriodeAnggaran pp in per)
+            this.Title = Path.GetFileName(Request.PhysicalPath);
+            string userLoggedIn = (string)HttpContext.Current.Session["UserId"];
+            if (!string.IsNullOrEmpty(userLoggedIn))
             {
-                HttpContext.Current.Session["_periodeId"] = (Int32)pp.id;
-            }            
-            //RSCM_BKU_Service.RSCM_BKUSoapClient service = new RSCM_BKU_Service.RSCM_BKUSoapClient();
-            //TransCollection transColl = new TransCollection();
-            //service.GetAllTransactionCompleted += new EventHandler<RSCM_BKU_Service.GetAllTransactionCompletedEventArgs>(service_GetAllTransactionCompleted);
-            //service.GetAllTransactionAsync();
+                var per = from p in rscm.PeriodeAnggarans
+                          where p.Is_Closed == false
+                          select p;
+                foreach (RSCM_BKU_Web.Linq.PeriodeAnggaran pp in per)
+                {
+                    HttpContext.Current.Session["_periodeId"] = (Int32)pp.id;
+                }
+            }
+            else
+                Response.Redirect("~/Login/Login.aspx");            
         }
     }
 }

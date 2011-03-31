@@ -21,6 +21,7 @@ using Telerik.Reporting;
 using Telerik.ReportViewer;
 using RSCM_BKU_web.Report;
 
+
 namespace RSCM_BKU_Web.Report.LaporanBku
 {
     public partial class LaporanBkuViewer : System.Web.UI.Page
@@ -29,7 +30,7 @@ namespace RSCM_BKU_Web.Report.LaporanBku
         decimal SaldoAwal = 0;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         protected void btnPreview_Click(object sender, EventArgs e)

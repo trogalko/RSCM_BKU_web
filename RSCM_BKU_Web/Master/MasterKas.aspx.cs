@@ -23,13 +23,19 @@ namespace RSCM_BKU_Web.Master
         private RscmBkuDataContext rscm = new RscmBkuDataContext();
         protected void Page_Load(object sender, EventArgs e)
         {
-            var per = from p in rscm.PeriodeAnggarans
-                      where p.Is_Closed == false
-                      select p;
-            foreach (RSCM_BKU_Web.Linq.PeriodeAnggaran pp in per)
+            string userLoggedIn = (string)HttpContext.Current.Session["UserId"];
+            if (!string.IsNullOrEmpty(userLoggedIn))
             {
-                HttpContext.Current.Session["_periodeId"] = (Int32)pp.id;
+                var per = from p in rscm.PeriodeAnggarans
+                          where p.Is_Closed == false
+                          select p;
+                foreach (RSCM_BKU_Web.Linq.PeriodeAnggaran pp in per)
+                {
+                    HttpContext.Current.Session["_periodeId"] = (Int32)pp.id;
+                }
             }
+            else
+                Response.Redirect("~/Login/Login.aspx");
         }
 
         protected void RadGrid1_InsertCommand(object source, Telerik.Web.UI.GridCommandEventArgs e)
