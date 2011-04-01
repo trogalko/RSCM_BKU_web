@@ -1,11 +1,6 @@
-﻿<%@ Page Title="" Language="C#" AutoEventWireup="true" CodeBehind="TransaksiKasBendaharaPengguna.aspx.cs" Inherits="RSCM_BKU_Web.Transaksi.TransaksiKasBendaharaPengguna" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Header.Master" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="RSCM_BKU_Web.WebForm1" %>
 <%@ Register assembly="Telerik.Web.UI" namespace="Telerik.Web.UI" tagprefix="telerik" %>
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head id="Head1" runat="server">
-    <title></title>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <script type="text/javascript">
 
         function CkKeyPress(e) {
@@ -21,13 +16,12 @@
         }
 
     </script>
-</head>
-<body>
-    <form id="form1" runat="server">
-    <telerik:RadScriptManager ID="RadScriptManager1" Runat="server">
-    </telerik:RadScriptManager>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <telerik:radscriptmanager ID="RadScriptManager1" Runat="server">
+    </telerik:radscriptmanager>
     <div>
-        <telerik:RadMenu ID="RadMenu1" Runat="server" Skin="Office2007" Width="100%">
+        <telerik:radmenu ID="RadMenu1" Runat="server" Skin="Office2007" Width="100%">
             <Items>
                 <telerik:RadMenuItem runat="server" Text="MASTER">
                     <Items>
@@ -69,9 +63,9 @@
                     </Items>
                 </telerik:RadMenuItem>
             </Items>
-        </telerik:RadMenu>
+        </telerik:radmenu>
 
-        <telerik:RadGrid ID="RadGrid1" 
+        <telerik:radgrid ID="RadGrid1" 
             runat="server" 
             AllowPaging="True" 
             AllowSorting="True" GridLines="None" 
@@ -180,9 +174,7 @@
                 <PagerStyle />
             </MasterTableView>        
             <PagerStyle AlwaysVisible="True"/>
-        </telerik:RadGrid>
+        </telerik:radgrid>
 
     </div>
-    </form>
-</body>
-</html>
+</asp:Content>
