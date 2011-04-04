@@ -1,10 +1,19 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Header.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="RSCM_BKU_Web.Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Depault.aspx.cs" Inherits="RSCM_BKU_Web._Default" %>
+
 <%@ Register assembly="Telerik.Web.UI" namespace="Telerik.Web.UI" tagprefix="telerik" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <telerik:RadMenu ID="RadMenu1" Runat="server" Skin="Office2007" Width="100%">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>    
+        <telerik:RadScriptManager ID="RadScriptManager1" Runat="server">
+        </telerik:RadScriptManager>
+        <telerik:RadMenu ID="RadMenu1" Runat="server" Skin="Office2007" Width="100%">
             <Items>
                 <telerik:RadMenuItem runat="server" Text="MASTER">
                     <Items>
@@ -47,4 +56,8 @@
                 </telerik:RadMenuItem>
             </Items>
         </telerik:RadMenu>
-</asp:Content>
+    
+    </div>
+    </form>
+</body>
+</html>

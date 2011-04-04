@@ -20,7 +20,7 @@ using System.IO;
 
 namespace RSCM_BKU_Web
 {
-    public partial class Default : System.Web.UI.Page
+    public partial class _Default : System.Web.UI.Page
     {
         private RscmBkuDataContext rscm = new RscmBkuDataContext();
         protected void Page_Load(object sender, EventArgs e)
@@ -38,7 +38,7 @@ namespace RSCM_BKU_Web
                 }
             }
             else
-                Response.Redirect("~/Login/Login.aspx");
+                Response.Redirect("~/Login/Login.aspx");            
         }
     }
 }

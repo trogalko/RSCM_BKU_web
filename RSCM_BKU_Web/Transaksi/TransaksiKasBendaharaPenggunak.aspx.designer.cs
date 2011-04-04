@@ -10,7 +10,7 @@
 namespace RSCM_BKU_Web.Transaksi {
     
     
-    public partial class TransaksiKas {
+    public partial class TransaksiKasBendaharaPengguna {
         
         /// <summary>
         /// RadMenu1 control.

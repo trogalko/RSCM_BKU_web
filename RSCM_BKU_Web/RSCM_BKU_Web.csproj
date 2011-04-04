@@ -133,13 +133,15 @@
     <Content Include="background.jpg" />
     <Content Include="bg-bar00.jpg" />
     <Content Include="Default.aspx" />
+    <Content Include="Depault.aspx" />
     <Content Include="Global.asax" />
     <Content Include="gradient.gif" />
     <Content Include="gradientreverse.gif" />
     <Content Include="Header.ascx" />
     <Content Include="Login\Login.aspx" />
     <Content Include="Master\masterGroupMA.ascx" />
-    <Content Include="Master\masterGroupMA.aspx" />
+    <Content Include="Master\masterGroupMAbak.aspx" />
+    <Content Include="Master\MasterGroupMA.aspx" />
     <Content Include="Master\MasterKas.ascx" />
     <Content Include="Master\MasterKas.aspx" />
     <Content Include="Master\MasterKelompokAnggaran.ascx" />
@@ -152,8 +154,9 @@
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
-    <Content Include="Transaksi\TransaksiKasBendaharaPengguna.ascx" />
     <Content Include="Transaksi\TransaksiKasBendaharaPengguna.aspx" />
+    <Content Include="Transaksi\TransaksiKasBendaharaPengguna.ascx" />
+    <Content Include="Transaksi\TransaksiKasBendaharaPenggunak.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -161,16 +164,22 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AEScipher.cs" />
     <Compile Include="Default.aspx.cs">
-      <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Depault.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Depault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Depault.aspx.designer.cs">
+      <DependentUpon>Depault.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -203,12 +212,19 @@
     <Compile Include="Master\masterGroupMA.ascx.designer.cs">
       <DependentUpon>masterGroupMA.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Master\masterGroupMA.aspx.cs">
-      <DependentUpon>masterGroupMA.aspx</DependentUpon>
+    <Compile Include="Master\masterGroupMAbak.aspx.cs">
+      <DependentUpon>masterGroupMAbak.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Master\masterGroupMA.aspx.designer.cs">
-      <DependentUpon>masterGroupMA.aspx</DependentUpon>
+    <Compile Include="Master\masterGroupMAbak.aspx.designer.cs">
+      <DependentUpon>masterGroupMAbak.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\MasterGroupMA.aspx.cs">
+      <DependentUpon>MasterGroupMA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\MasterGroupMA.aspx.designer.cs">
+      <DependentUpon>MasterGroupMA.aspx</DependentUpon>
     </Compile>
     <Compile Include="Master\MasterKas.ascx.cs">
       <DependentUpon>MasterKas.ascx</DependentUpon>
@@ -274,13 +290,6 @@
     <Compile Include="Report\LaporanKasBank\ReportBookKasBank.aspx.designer.cs">
       <DependentUpon>ReportBookKasBank.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Transaksi\TransaksiKasBendaharaPengguna.ascx.cs">
-      <DependentUpon>TransaksiKasBendaharaPengguna.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Transaksi\TransaksiKasBendaharaPengguna.ascx.designer.cs">
-      <DependentUpon>TransaksiKasBendaharaPengguna.ascx</DependentUpon>
-    </Compile>
     <Compile Include="Transaksi\TransaksiKasBendaharaPengguna.aspx.cs">
       <DependentUpon>TransaksiKasBendaharaPengguna.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -288,12 +297,19 @@
     <Compile Include="Transaksi\TransaksiKasBendaharaPengguna.aspx.designer.cs">
       <DependentUpon>TransaksiKasBendaharaPengguna.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="Transaksi\TransaksiKasBendaharaPengguna.ascx.cs">
+      <DependentUpon>TransaksiKasBendaharaPengguna.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="Transaksi\TransaksiKasBendaharaPengguna.ascx.designer.cs">
+      <DependentUpon>TransaksiKasBendaharaPengguna.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaksi\TransaksiKasBendaharaPenggunak.aspx.cs">
+      <DependentUpon>TransaksiKasBendaharaPenggunak.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaksi\TransaksiKasBendaharaPenggunak.aspx.designer.cs">
+      <DependentUpon>TransaksiKasBendaharaPenggunak.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

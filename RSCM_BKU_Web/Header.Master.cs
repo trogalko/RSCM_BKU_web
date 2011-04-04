@@ -11,7 +11,8 @@ namespace RSCM_BKU_Web
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(HttpContext.Current.Session["UserId"].ToString()))
+            string userId = HttpContext.Current.Session["UserId"].ToString();
+            if (!string.IsNullOrEmpty(userId))
             {
                 lblUserName.Text = HttpContext.Current.Session["UserName"].ToString();
                 lnkLogin.Text = "Logout";
@@ -19,6 +20,8 @@ namespace RSCM_BKU_Web
             else
                 Response.Redirect("~/Login/Login.aspx");
         }
+
+        
 
         protected void lnkLogin_Click(object sender, EventArgs e)
         {

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Header.Master" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="RSCM_BKU_Web.WebForm1" %>
+﻿<%@ Page Title="" MasterPageFile="~/Header.Master" Language="C#" AutoEventWireup="true" CodeBehind="TransaksiKasBendaharaPenggunak.aspx.cs" Inherits="RSCM_BKU_Web.Transaksi.TransaksiKasBendaharaPengguna" %>
 <%@ Register assembly="Telerik.Web.UI" namespace="Telerik.Web.UI" tagprefix="telerik" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <script type="text/javascript">
@@ -16,12 +16,8 @@
         }
 
     </script>
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <telerik:radscriptmanager ID="RadScriptManager1" Runat="server">
-    </telerik:radscriptmanager>
-    <div>
-        <telerik:radmenu ID="RadMenu1" Runat="server" Skin="Office2007" Width="100%">
+    
+        <telerik:RadMenu ID="RadMenu1" Runat="server" Skin="Office2007" Width="100%">
             <Items>
                 <telerik:RadMenuItem runat="server" Text="MASTER">
                     <Items>
@@ -63,9 +59,9 @@
                     </Items>
                 </telerik:RadMenuItem>
             </Items>
-        </telerik:radmenu>
+        </telerik:RadMenu>
 
-        <telerik:radgrid ID="RadGrid1" 
+        <telerik:RadGrid ID="RadGrid1" 
             runat="server" 
             AllowPaging="True" 
             AllowSorting="True" GridLines="None" 
@@ -174,7 +170,5 @@
                 <PagerStyle />
             </MasterTableView>        
             <PagerStyle AlwaysVisible="True"/>
-        </telerik:radgrid>
-
-    </div>
+        </telerik:RadGrid>        
 </asp:Content>

@@ -1,14 +1,24 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
+using System.Web.UI.WebControls;
+
 using Telerik.Web.UI;
+using Telerik.Web.Design;
+using Telerik.Web.Dialogs;
 using RSCM_BKU_Web.BusinessObjects;
+using EntitySpaces.DynamicQuery;
+using EntitySpaces.Core;
+using EntitySpaces.Interfaces;
+using EntitySpaces.SqlClientProvider;
+
 using RSCM_BKU_Web.Linq;
 
 namespace RSCM_BKU_Web.Master
 {
-    public partial class MasterGroupMAs : System.Web.UI.Page
+    public partial class masterGroupMA : System.Web.UI.Page
     {
         private RscmBkuDataContext rscm = new RscmBkuDataContext();
         protected void Page_Load(object sender, EventArgs e)
@@ -27,7 +37,7 @@ namespace RSCM_BKU_Web.Master
             else
                 Response.Redirect("~/Login/Login.aspx");
         }
-
+        
         protected void RadGrid1_NeedDataSource(object source, Telerik.Web.UI.GridNeedDataSourceEventArgs e)
         {
             var groupMAQuery = new GroupMAQuery();
@@ -41,7 +51,7 @@ namespace RSCM_BKU_Web.Master
         {
             GridEditableItem editedItem = e.Item as GridEditableItem;
             UserControl userControl = (UserControl)e.Item.FindControl(GridEditFormItem.EditFormUserControlID);
-            long GroupMAId = Convert.ToInt32((userControl.FindControl("txtGroupMAId") as RadTextBox).Text.Trim());
+            long GroupMAId = Convert.ToInt32( (userControl.FindControl("txtGroupMAId") as RadTextBox).Text.Trim());
             GroupMA gma = new GroupMA();
             if (gma.LoadByPrimaryKey(GroupMAId))
             {
@@ -110,7 +120,7 @@ namespace RSCM_BKU_Web.Master
             finally
             {
                 RadGrid1.Rebind();
-            }
+            }            
         }
     }
 }
