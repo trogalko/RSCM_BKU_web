@@ -11,7 +11,21 @@ namespace RSCM_BKU_Web
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!string.IsNullOrEmpty(HttpContext.Current.Session["UserId"].ToString()))
+            {
+                lblUserName.Text = HttpContext.Current.Session["UserName"].ToString();
+                lnkLogin.Text = "Logout";
+            }
+            else
+                Response.Redirect("~/Login/Login.aspx");
+        }
 
+        protected void lnkLogin_Click(object sender, EventArgs e)
+        {
+            Session.Abandon();
+            Session.RemoveAll();
+            Session.Clear();
+            Response.Redirect("~/Login/Login.aspx");            
         }
     }
 }

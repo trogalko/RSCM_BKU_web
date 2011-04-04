@@ -63,7 +63,7 @@
                     <telerik:RadTextBox ID="txtUserId" 
                         Runat="server" 
                         Width="200px"
-                        onkeypress="return CkKeyPress(event);">
+                        onkeypress="return CkKeyPress(event);" Skin="Office2007">
                     </telerik:RadTextBox>
                 </td>
                 <td class="style3" 
@@ -81,7 +81,8 @@
                     :
                 </td>
                 <td style="width: 24%">                    
-                    <telerik:RadTextBox ID="txtPassword" Runat="server" Width="200px">
+                    <telerik:RadTextBox ID="txtPassword" Runat="server" Width="200px" 
+                        Skin="Office2007" TextMode="Password">
                     </telerik:RadTextBox>
                 </td>
                 <td class="style3" style="width: 30%">
@@ -91,18 +92,10 @@
         </table>
         <table style="width: 100%;">
             <tr>
-                <td style="width: 50%" align="right">
-                    &nbsp;
+                <td align="center">                    
                     <asp:Button ID="Button1" runat="server" Text="Login" onclick="Button1_Click" />
                 </td>
-                </td>
-                <td style="width: 1%">
-                    &nbsp;
-                </td>  
-                <td style="width: 49%">
-                    &nbsp;
-                    <asp:Button ID="Button2" runat="server" Text="Cancel" onclick="Button2_Click" />
-                </td>                
+                                
             </tr>            
         </table>
     </div>
