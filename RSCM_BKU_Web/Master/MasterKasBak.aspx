@@ -1,9 +1,20 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Header.Master" AutoEventWireup="true" CodeBehind="MasterRencanaAnggaranBelanja.aspx.cs" Inherits="RSCM_BKU_Web.Master.MasterRencanaAnggaranBelanja2" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="MasterKasBak.aspx.cs" Inherits="RSCM_BKU_Web.Master.MasterKas" %>
+
 <%@ Register assembly="Telerik.Web.UI" namespace="Telerik.Web.UI" tagprefix="telerik" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <telerik:RadMenu ID="RadMenu1" Runat="server" Skin="Office2007" Width="100%">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <telerik:RadScriptManager ID="RadScriptManager1" Runat="server">
+    </telerik:RadScriptManager>
+    <div>
+    
+        <telerik:RadMenu ID="RadMenu1" Runat="server" Skin="Office2007" Width="100%">
             <Items>
                 <telerik:RadMenuItem runat="server" Text="MASTER">
                     <Items>
@@ -16,7 +27,7 @@
                         </telerik:RadMenuItem>
                         <telerik:RadMenuItem runat="server" 
                             NavigateUrl="~/Master/MasterKas.aspx" 
-                            Text="Master Kas">
+                            Text="Master Kas & Bank">
                         </telerik:RadMenuItem>
                         <telerik:RadMenuItem runat="server" 
                             NavigateUrl="~/Master/MasterRencanaAnggaranBelanja.aspx" 
@@ -29,18 +40,6 @@
                         <telerik:RadMenuItem runat="server" 
                             NavigateUrl="~/Transaksi/TransaksiKasBendaharaPengguna.aspx" 
                             Text="Transaksi Kas Bendahara Pengguna">
-                        </telerik:RadMenuItem>
-                    </Items>
-                </telerik:RadMenuItem>
-                <telerik:RadMenuItem runat="server" Text="REPORTS">
-                    <Items>
-                        <telerik:RadMenuItem runat="server" 
-                            NavigateUrl="~/Report/LaporanKasBank/LaporanKasBankViewer.aspx" 
-                            Text="Laporan Kas dan Bank">
-                        </telerik:RadMenuItem>
-                        <telerik:RadMenuItem runat="server" 
-                            NavigateUrl="~/Report/LaporanBku/LaporanBkuViewer.aspx" 
-                            Text="Laporan BKU">
                         </telerik:RadMenuItem>
                     </Items>
                 </telerik:RadMenuItem>
@@ -75,9 +74,9 @@
                 <ExpandCollapseColumn>
                     <HeaderStyle Width="20px"></HeaderStyle>
                 </ExpandCollapseColumn>
-                <CommandItemSettings AddNewRecordText="ADD NEW RAB" />
+                <CommandItemSettings AddNewRecordText="ADD NEW KAS" />
 
-<CommandItemSettings AddNewRecordText="ADD NEW RAB"></CommandItemSettings>
+<CommandItemSettings AddNewRecordText="ADD NEW KAS"></CommandItemSettings>
 
                 <Columns>
                     <telerik:GridEditCommandColumn>
@@ -103,19 +102,19 @@
                         UniqueName="KA_NAME">
                     </telerik:GridBoundColumn>
 
-                    <telerik:GridNumericColumn DataField="RAB1"
-                        HeaderText="RENCANA ANGGARAN BELANJA" 
+                    <telerik:GridNumericColumn DataField="SALDO_AWAL"
+                        HeaderText="SALDO" 
                         ReadOnly="True" 
-                        SortExpression="RAB1" 
-                        UniqueName="RAB1" NumericType="Currency">
+                        SortExpression="SALDO_AWAL" 
+                        UniqueName="SALDO_AWAL" NumericType="Currency">
                         <ItemStyle HorizontalAlign="Right" />
                     </telerik:GridNumericColumn>
 
-                    <telerik:GridBoundColumn DataField="PERIOD_ID" 
+                    <telerik:GridBoundColumn DataField="PERIODE_ID" 
                         HeaderText="PERIODE ANGGARAN ID" 
                         ReadOnly="True" 
-                        SortExpression="PERIOD_ID" 
-                        UniqueName="PERIOD_ID">
+                        SortExpression="PERIODE_ID" 
+                        UniqueName="PERIODE_ID">
                     </telerik:GridBoundColumn>
                     
                     <telerik:GridDateTimeColumn DataField="Start_Period" 
@@ -133,7 +132,7 @@
                     </telerik:GridDateTimeColumn>
 
                     <telerik:GridCheckBoxColumn DataField="Is_Closed" 
-                        HeaderText="IS CLOSED?" 
+                        HeaderText="Is Closed?" 
                         ReadOnly="True" 
                         SortExpression="Is_Closed" 
                         UniqueName="Is_Closed">
@@ -142,11 +141,14 @@
                 </Columns>
 
                 <EditFormSettings EditFormType="WebUserControl" 
-                    UserControlName="MasterRencanaAnggaranBelanja.ascx">
+                    UserControlName="MasterKas.ascx">
                     <EditColumn UniqueName="EditCommandColumn1"></EditColumn>
                 </EditFormSettings>
                 <PagerStyle />
             </MasterTableView>            
             <PagerStyle AlwaysVisible="True" />
         </telerik:RadGrid>
-</asp:Content>
+    </div>
+    </form>
+</body>
+</html>

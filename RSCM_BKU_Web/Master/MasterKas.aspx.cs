@@ -18,7 +18,7 @@ using RSCM_BKU_Web.Linq;
 
 namespace RSCM_BKU_Web.Master
 {
-    public partial class MasterKas : System.Web.UI.Page
+    public partial class MasterKasBak : System.Web.UI.Page
     {
         private RscmBkuDataContext rscm = new RscmBkuDataContext();
         protected void Page_Load(object sender, EventArgs e)
@@ -58,20 +58,20 @@ namespace RSCM_BKU_Web.Master
             Kas kas = new Kas();
             KasId = Convert.ToInt32((userControl.FindControl("txtBkuId") as RadTextBox).Text.Trim());
             if (kas.LoadByPrimaryKey(KasId))
-            {                
+            {
                 kas.KaName = (userControl.FindControl("txtKaName") as RadTextBox).Text.Trim().ToUpper();
-                kas.SaldoAwal = Convert.ToDecimal((userControl.FindControl("txtSaldo") as RadTextBox).Text.Trim());                
+                kas.SaldoAwal = Convert.ToDecimal((userControl.FindControl("txtSaldo") as RadTextBox).Text.Trim());
                 kas.Save();
             }
         }
 
         protected void RadGrid1_NeedDataSource(object source, Telerik.Web.UI.GridNeedDataSourceEventArgs e)
-        {            
+        {
             var mKas = from mK in rscm.KAs
                        join P in rscm.PeriodeAnggarans on mK.PERIODE_ID equals P.id
                        select new { mK.id, mK.KA_CODE, mK.KA_NAME, mK.SALDO_AWAL, mK.PERIODE_ID, P.Start_Period, P.End_Period, P.Is_Closed };
             RadGrid1.DataSource = mKas;
-        }        
+        }
 
         protected void RadGrid1_PreRender(object sender, EventArgs e)
         {

@@ -1,9 +1,19 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Header.Master" AutoEventWireup="true" CodeBehind="MasterRencanaAnggaranBelanja.aspx.cs" Inherits="RSCM_BKU_Web.Master.MasterRencanaAnggaranBelanja2" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="MasterKelompokAnggaranBak.aspx.cs" Inherits="RSCM_BKU_Web.Master.MasterKelompokAnggaran" %>
+
 <%@ Register assembly="Telerik.Web.UI" namespace="Telerik.Web.UI" tagprefix="telerik" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <telerik:RadMenu ID="RadMenu1" Runat="server" Skin="Office2007" Width="100%">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <telerik:RadScriptManager ID="RadScriptManager1" Runat="server">
+    </telerik:RadScriptManager>
+    <div>
+        <telerik:RadMenu ID="RadMenu1" Runat="server" Skin="Office2007" Width="100%">
             <Items>
                 <telerik:RadMenuItem runat="server" Text="MASTER">
                     <Items>
@@ -56,18 +66,17 @@
             onneeddatasource="RadGrid1_NeedDataSource" 
             onprerender="RadGrid1_PreRender" 
             Skin="Office2007" 
-            AutoGenerateColumns="False"             
-            ShowStatusBar="True" onitemcommand="RadGrid1_ItemCommand">
+            AutoGenerateColumns="False"              
+            ShowStatusBar="True" onitemcommand="RadGrid1_ItemCommand" PageSize="100">
 
             <ClientSettings>
                 <Selecting AllowRowSelect="True" />
-<Selecting AllowRowSelect="True"></Selecting>
             </ClientSettings>
 
             <MasterTableView 
-                CommandItemDisplay="Top"                 
-                GridLines="None"                 
-                DataKeyNames="id" >
+                CommandItemDisplay="Top" 
+                GridLines="None"
+                 DataKeyNames="KaId" >
                 <RowIndicatorColumn>
                     <HeaderStyle Width="20px"></HeaderStyle>
                 </RowIndicatorColumn>
@@ -75,78 +84,74 @@
                 <ExpandCollapseColumn>
                     <HeaderStyle Width="20px"></HeaderStyle>
                 </ExpandCollapseColumn>
-                <CommandItemSettings AddNewRecordText="ADD NEW RAB" />
-
-<CommandItemSettings AddNewRecordText="ADD NEW RAB"></CommandItemSettings>
+                <CommandItemSettings AddNewRecordText="Add New Kelompok Anggaran" />
 
                 <Columns>
                     <telerik:GridEditCommandColumn>
                     </telerik:GridEditCommandColumn>
-                    <telerik:GridBoundColumn DataField="id" 
-                        HeaderText="Nomor Urut" 
+                    <telerik:GridBoundColumn DataField="KaId" 
+                        HeaderText="Kel. Anggaran ID" 
                         ReadOnly="True" 
-                        SortExpression="id" 
-                        UniqueName="id">
+                        SortExpression="KaId" 
+                        UniqueName="KaId">
                     </telerik:GridBoundColumn>
 
-                    <telerik:GridBoundColumn DataField="KA_CODE" 
-                        HeaderText="KAS CODE" 
-                        ReadOnly="True" 
-                        SortExpression="KA_CODE" 
-                        UniqueName="KA_CODE">
+                    <telerik:GridBoundColumn DataField="KaCode" 
+                        HeaderText="Kel. Anggaran Code" ReadOnly="True" SortExpression="KaCode" 
+                        UniqueName="KaCode">
                     </telerik:GridBoundColumn>
 
-                    <telerik:GridBoundColumn DataField="KA_NAME" 
-                        HeaderText="KAS NAME" 
-                        ReadOnly="True" 
-                        SortExpression="KA_NAME" 
-                        UniqueName="KA_NAME">
+                    <telerik:GridBoundColumn DataField="KaName" 
+                        HeaderText="Kel. Anggaran" ReadOnly="True" SortExpression="KaName" 
+                        UniqueName="KaName">
                     </telerik:GridBoundColumn>
 
-                    <telerik:GridNumericColumn DataField="RAB1"
-                        HeaderText="RENCANA ANGGARAN BELANJA" 
-                        ReadOnly="True" 
-                        SortExpression="RAB1" 
-                        UniqueName="RAB1" NumericType="Currency">
-                        <ItemStyle HorizontalAlign="Right" />
-                    </telerik:GridNumericColumn>
-
-                    <telerik:GridBoundColumn DataField="PERIOD_ID" 
-                        HeaderText="PERIODE ANGGARAN ID" 
-                        ReadOnly="True" 
-                        SortExpression="PERIOD_ID" 
-                        UniqueName="PERIOD_ID">
+                    <telerik:GridBoundColumn DataField="Parent" 
+                        HeaderText="Parent" ReadOnly="True" SortExpression="Parent" 
+                        UniqueName="Parent">
                     </telerik:GridBoundColumn>
-                    
-                    <telerik:GridDateTimeColumn DataField="Start_Period" 
-                        HeaderText="START PERIODE ANGGARAN" 
-                        ReadOnly="True" 
-                        SortExpression="Start_Period" 
-                        UniqueName="Start_Period">
-                    </telerik:GridDateTimeColumn>
 
-                    <telerik:GridDateTimeColumn DataField="End_Period" 
-                        HeaderText="END PERIODE ANGGARAN" 
-                        ReadOnly="True" 
-                        SortExpression="End_Period" 
-                        UniqueName="End_Period">
-                    </telerik:GridDateTimeColumn>
+                    <telerik:GridBoundColumn DataField="GtCode" 
+                        HeaderText="Group MA" ReadOnly="True" SortExpression="GtCode" 
+                        UniqueName="GtCode">
+                    </telerik:GridBoundColumn>
 
-                    <telerik:GridCheckBoxColumn DataField="Is_Closed" 
-                        HeaderText="IS CLOSED?" 
-                        ReadOnly="True" 
-                        SortExpression="Is_Closed" 
-                        UniqueName="Is_Closed">
+                    <telerik:GridBoundColumn DataField="Prefix" 
+                        HeaderText="Prefix" ReadOnly="True" SortExpression="Prefix" 
+                        UniqueName="Prefix">
+                    </telerik:GridBoundColumn>
+
+                    <telerik:GridBoundColumn DataField="KaLevel" 
+                        HeaderText="Level MA" ReadOnly="True" SortExpression="KaLevel" 
+                        UniqueName="KaLevel">
+                    </telerik:GridBoundColumn>
+
+                    <telerik:GridBoundColumn DataField="Type" 
+                        HeaderText="Type MA" ReadOnly="True" SortExpression="Type" 
+                        UniqueName="Type">
+                    </telerik:GridBoundColumn>
+
+                    <telerik:GridCheckBoxColumn DataField="IsDetail" 
+                        HeaderText="Is Detail?" ReadOnly="True" SortExpression="IsDetail" 
+                        UniqueName="IsDetail">
                     </telerik:GridCheckBoxColumn>
 
+                    <telerik:GridCheckBoxColumn DataField="IsActive" 
+                        HeaderText="Is Active?" ReadOnly="True" SortExpression="IsActive" 
+                        UniqueName="IsActive">
+                    </telerik:GridCheckBoxColumn>
+                    
                 </Columns>
 
                 <EditFormSettings EditFormType="WebUserControl" 
-                    UserControlName="MasterRencanaAnggaranBelanja.ascx">
+                    UserControlName="MasterKelompokAnggaran.ascx">
                     <EditColumn UniqueName="EditCommandColumn1"></EditColumn>
                 </EditFormSettings>
                 <PagerStyle />
-            </MasterTableView>            
+            </MasterTableView>
             <PagerStyle AlwaysVisible="True" />
         </telerik:RadGrid>
-</asp:Content>
+    </div>
+    </form>
+</body>
+</html>

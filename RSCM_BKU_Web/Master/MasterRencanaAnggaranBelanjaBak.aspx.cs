@@ -18,7 +18,7 @@ using RSCM_BKU_Web.Linq;
 
 namespace RSCM_BKU_Web.Master
 {
-    public partial class MasterRencanaAnggaranBelanja2 : System.Web.UI.Page
+    public partial class MasterRencanaAnggaranBelanja : System.Web.UI.Page
     {
         private RscmBkuDataContext rscm = new RscmBkuDataContext();
         protected void Page_Load(object sender, EventArgs e)
@@ -43,7 +43,7 @@ namespace RSCM_BKU_Web.Master
             var mRAB = from r in rscm.RABs
                        join P in rscm.PeriodeAnggarans on r.PERIOD_ID equals P.id
                        join k in rscm.Kel_anggarans on r.KA_CODE equals k.KA_CODE
-                       select new { r.id, r.KA_CODE, k.KA_NAME, r.RAB1, r.PERIOD_ID, P.Start_Period, P.End_Period, P.Is_Closed };
+                       select new { r.id,r.KA_CODE,k.KA_NAME,r.RAB1,r.PERIOD_ID,P.Start_Period,P.End_Period,P.Is_Closed };
             RadGrid1.DataSource = mRAB;
         }
 

@@ -21,7 +21,7 @@ using Telerik.WinControls.UI;
 
 namespace RSCM_BKU_Web.Master
 {
-    public partial class MasterKelompokAnggaran2 : System.Web.UI.Page
+    public partial class MasterKelompokAnggaran : System.Web.UI.Page
     {
         private RscmBkuDataContext rscm = new RscmBkuDataContext();
         protected void Page_Load(object sender, EventArgs e)
@@ -47,17 +47,17 @@ namespace RSCM_BKU_Web.Master
             var kelAg = from k in rscmdc.Kel_anggarans
                         join p in rscmdc.ParentId_DataSource_ComboBoxes on k.PARENT_CODE equals p.KA_CODE
                         where (k.IS_KAS == false)
-                        select new { KaId = k.KA_ID, KaCode = k.KA_CODE, KaName = k.KA_NAME, Parent = p.KA_NAME, GtCode = k.GT_CODE, Prefix = k.PREFIX, KaLevel = k.KA_LEVEL, Type = k.TYPE, IsDetail = k.IS_DETAIL, IsActive = k.IS_ACTIVE, IsKas = k.IS_KAS };
+                        select new { KaId = k.KA_ID, KaCode = k.KA_CODE, KaName = k.KA_NAME, Parent = p.KA_NAME, GtCode = k.GT_CODE, Prefix = k.PREFIX, KaLevel=k.KA_LEVEL, Type=k.TYPE, IsDetail=k.IS_DETAIL, IsActive=k.IS_ACTIVE, IsKas=k.IS_KAS };
 
 
             KelAnggaranCollection kaColl = new KelAnggaranCollection();
             ParentIdDataSourceComboBoxQuery parentQ = new ParentIdDataSourceComboBoxQuery("a");
             KelAnggaranQuery kaQ = new KelAnggaranQuery("b");
-            kaQ.Select(kaQ.KaId.As("KaId"), kaQ.KaCode.As("KaCode"), kaQ.KaName.As("KaName"), parentQ.KaName.As("Parent"), kaQ.GtCode.As("GtCode"), kaQ.Prefix.As("Prefix"), kaQ.KaLevel.As("KaLevel"), kaQ.Type.As("Type"), kaQ.IsDetail.As("IsDetail"), kaQ.IsActive.As("IsActive"), kaQ.IsKas.As("IsKas"));
+            kaQ.Select(kaQ.KaId.As("KaId"), kaQ.KaCode.As("KaCode"), kaQ.KaName.As("KaName"), parentQ.KaName.As("Parent"), kaQ.GtCode.As("GtCode"), kaQ.Prefix.As("Prefix"), kaQ.KaLevel.As("KaLevel"), kaQ.Type.As("Type"), kaQ.IsDetail.As("IsDetail"), kaQ.IsActive.As("IsActive"), kaQ.IsKas.As("IsKas"));            
             kaQ.InnerJoin(parentQ).On(kaQ.ParentCode == parentQ.KaCode);
             kaColl.Load(kaQ);
             DataTable dtKA = kaQ.LoadDataTable();
-
+            
             foreach (DataRow dr in dtKA.Rows)
             {
                 for (int i = 0; i <= Convert.ToInt32(dr["KaLevel"]); i++)
@@ -80,7 +80,7 @@ namespace RSCM_BKU_Web.Master
 
             KelAnggaran ka = new KelAnggaran();
             try
-            {
+            {                
                 ka.KaCode = (userControl.FindControl("txtMACODE") as RadTextBox).Text.ToUpper();
                 ka.KaName = (userControl.FindControl("txtMANAME") as RadTextBox).Text.ToUpper();
                 ka.GtCode = (userControl.FindControl("cmbGROUP") as RadComboBox).Text.ToUpper();

@@ -143,11 +143,14 @@
     <Content Include="Master\masterGroupMAbak.aspx" />
     <Content Include="Master\MasterGroupMA.aspx" />
     <Content Include="Master\MasterKas.ascx" />
+    <Content Include="Master\MasterKasBak.aspx" />
     <Content Include="Master\MasterKas.aspx" />
     <Content Include="Master\MasterKelompokAnggaran.ascx" />
     <Content Include="Master\MasterKelompokAnggaran.aspx" />
+    <Content Include="Master\MasterKelompokAnggaranBak.aspx" />
     <Content Include="Master\MasterRencanaAnggaranBelanja.ascx" />
     <Content Include="Master\MasterRencanaAnggaranBelanja.aspx" />
+    <Content Include="Master\MasterRencanaAnggaranBelanjaBak.aspx" />
     <Content Include="Report\LaporanBku\LaporanBkuViewer.aspx" />
     <Content Include="Report\LaporanKasBank\LaporanKasBankViewer.aspx" />
     <Content Include="Report\LaporanKasBank\ReportBookKasBank.aspx" />
@@ -233,6 +236,13 @@
     <Compile Include="Master\MasterKas.ascx.designer.cs">
       <DependentUpon>MasterKas.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Master\MasterKasBak.aspx.cs">
+      <DependentUpon>MasterKasBak.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\MasterKasBak.aspx.designer.cs">
+      <DependentUpon>MasterKasBak.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Master\MasterKas.aspx.cs">
       <DependentUpon>MasterKas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -254,6 +264,13 @@
     <Compile Include="Master\MasterKelompokAnggaran.aspx.designer.cs">
       <DependentUpon>MasterKelompokAnggaran.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Master\MasterKelompokAnggaranBak.aspx.cs">
+      <DependentUpon>MasterKelompokAnggaranBak.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\MasterKelompokAnggaranBak.aspx.designer.cs">
+      <DependentUpon>MasterKelompokAnggaranBak.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Master\MasterRencanaAnggaranBelanja.ascx.cs">
       <DependentUpon>MasterRencanaAnggaranBelanja.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -267,6 +284,13 @@
     </Compile>
     <Compile Include="Master\MasterRencanaAnggaranBelanja.aspx.designer.cs">
       <DependentUpon>MasterRencanaAnggaranBelanja.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\MasterRencanaAnggaranBelanjaBak.aspx.cs">
+      <DependentUpon>MasterRencanaAnggaranBelanjaBak.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\MasterRencanaAnggaranBelanjaBak.aspx.designer.cs">
+      <DependentUpon>MasterRencanaAnggaranBelanjaBak.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Report\LaporanBku\LaporanBkuViewer.aspx.cs">

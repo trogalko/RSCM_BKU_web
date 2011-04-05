@@ -18,7 +18,7 @@ using RSCM_BKU_Web.Linq;
 
 namespace RSCM_BKU_Web.Master
 {
-    public partial class MasterRencanaAnggaranBelanja2 : System.Web.UI.Page
+    public partial class MasterKas : System.Web.UI.Page
     {
         private RscmBkuDataContext rscm = new RscmBkuDataContext();
         protected void Page_Load(object sender, EventArgs e)
@@ -38,14 +38,40 @@ namespace RSCM_BKU_Web.Master
                 Response.Redirect("~/Login/Login.aspx");
         }
 
-        protected void RadGrid1_NeedDataSource(object source, Telerik.Web.UI.GridNeedDataSourceEventArgs e)
+        protected void RadGrid1_InsertCommand(object source, Telerik.Web.UI.GridCommandEventArgs e)
         {
-            var mRAB = from r in rscm.RABs
-                       join P in rscm.PeriodeAnggarans on r.PERIOD_ID equals P.id
-                       join k in rscm.Kel_anggarans on r.KA_CODE equals k.KA_CODE
-                       select new { r.id, r.KA_CODE, k.KA_NAME, r.RAB1, r.PERIOD_ID, P.Start_Period, P.End_Period, P.Is_Closed };
-            RadGrid1.DataSource = mRAB;
+            GridEditableItem editedItem = e.Item as GridEditableItem;
+            UserControl userControl = (UserControl)e.Item.FindControl(GridEditFormItem.EditFormUserControlID);
+            Kas kas = new Kas();
+            kas.KaCode = (userControl.FindControl("txtKasCode") as RadTextBox).Text.Trim().ToUpper();
+            kas.KaName = (userControl.FindControl("txtKaName") as RadTextBox).Text.Trim().ToUpper();
+            kas.SaldoAwal = Convert.ToDecimal((userControl.FindControl("txtSaldo") as RadTextBox).Text.Trim());
+            kas.PeriodeId = Convert.ToInt32(HttpContext.Current.Session["_periodeId"]);
+            kas.Save();
         }
+
+        protected void RadGrid1_UpdateCommand(object source, Telerik.Web.UI.GridCommandEventArgs e)
+        {
+            Int32 KasId = 0;
+            GridEditableItem editedItem = e.Item as GridEditableItem;
+            UserControl userControl = (UserControl)e.Item.FindControl(GridEditFormItem.EditFormUserControlID);
+            Kas kas = new Kas();
+            KasId = Convert.ToInt32((userControl.FindControl("txtBkuId") as RadTextBox).Text.Trim());
+            if (kas.LoadByPrimaryKey(KasId))
+            {                
+                kas.KaName = (userControl.FindControl("txtKaName") as RadTextBox).Text.Trim().ToUpper();
+                kas.SaldoAwal = Convert.ToDecimal((userControl.FindControl("txtSaldo") as RadTextBox).Text.Trim());                
+                kas.Save();
+            }
+        }
+
+        protected void RadGrid1_NeedDataSource(object source, Telerik.Web.UI.GridNeedDataSourceEventArgs e)
+        {            
+            var mKas = from mK in rscm.KAs
+                       join P in rscm.PeriodeAnggarans on mK.PERIODE_ID equals P.id
+                       select new { mK.id, mK.KA_CODE, mK.KA_NAME, mK.SALDO_AWAL, mK.PERIODE_ID, P.Start_Period, P.End_Period, P.Is_Closed };
+            RadGrid1.DataSource = mKas;
+        }        
 
         protected void RadGrid1_PreRender(object sender, EventArgs e)
         {
@@ -72,32 +98,7 @@ namespace RSCM_BKU_Web.Master
             }
         }
 
-        protected void RadGrid1_InsertCommand(object source, Telerik.Web.UI.GridCommandEventArgs e)
-        {
-            GridEditableItem editedItem = e.Item as GridEditableItem;
-            UserControl userControl = (UserControl)e.Item.FindControl(GridEditFormItem.EditFormUserControlID);
-            Rab rab = new Rab();
-            rab.KaCode = (userControl.FindControl("cmbKaCode") as RadComboBox).SelectedValue.Trim();
-            rab.Rab = Convert.ToDecimal((userControl.FindControl("txtRab") as RadNumericTextBox).Value);
-            rab.PeriodId = Convert.ToInt32(HttpContext.Current.Session["_periodeId"]);
-            rab.Save();
-        }
-
-        protected void RadGrid1_UpdateCommand(object source, Telerik.Web.UI.GridCommandEventArgs e)
-        {
-            int id = 0;
-            GridEditableItem editedItem = e.Item as GridEditableItem;
-            UserControl userControl = (UserControl)e.Item.FindControl(GridEditFormItem.EditFormUserControlID);
-            id = Convert.ToInt32((userControl.FindControl("txtId") as RadTextBox).Text.Trim());
-            Rab rab = new Rab();
-            if (rab.LoadByPrimaryKey(id))
-            {
-                rab.Rab = Convert.ToDecimal((userControl.FindControl("txtRab") as RadNumericTextBox).Value);
-                rab.Save();
-            }
-        }
-
-        protected void RadGrid1_ItemCommand(object source, Telerik.Web.UI.GridCommandEventArgs e)
+        protected void RadGrid1_ItemCommand(object source, GridCommandEventArgs e)
         {
             if (e.CommandName == RadGrid.EditCommandName)
             {
