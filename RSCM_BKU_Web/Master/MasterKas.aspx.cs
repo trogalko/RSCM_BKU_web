@@ -44,7 +44,7 @@ namespace RSCM_BKU_Web.Master
             UserControl userControl = (UserControl)e.Item.FindControl(GridEditFormItem.EditFormUserControlID);
             Kas kas = new Kas();
             kas.KaCode = (userControl.FindControl("txtKasCode") as RadTextBox).Text.Trim().ToUpper();
-            kas.KaName = (userControl.FindControl("txtKaName") as RadTextBox).Text.Trim().ToUpper();
+            kas.KaName = (userControl.FindControl("txtKaName") as RadTextBox).Text.Trim();
             kas.SaldoAwal = Convert.ToDecimal((userControl.FindControl("txtSaldo") as RadTextBox).Text.Trim());
             kas.PeriodeId = Convert.ToInt32(HttpContext.Current.Session["_periodeId"]);
             kas.Save();
@@ -59,9 +59,20 @@ namespace RSCM_BKU_Web.Master
             KasId = Convert.ToInt32((userControl.FindControl("txtBkuId") as RadTextBox).Text.Trim());
             if (kas.LoadByPrimaryKey(KasId))
             {
-                kas.KaName = (userControl.FindControl("txtKaName") as RadTextBox).Text.Trim().ToUpper();
+                kas.KaName = (userControl.FindControl("txtKaName") as RadTextBox).Text.Trim();
                 kas.SaldoAwal = Convert.ToDecimal((userControl.FindControl("txtSaldo") as RadTextBox).Text.Trim());
                 kas.Save();
+            }
+
+            MutasiKasQuery mkQ = new MutasiKasQuery();
+            mkQ.SelectAll();
+            mkQ.Where(mkQ.Code == "SALDO", mkQ.PeriodId == (Int32)HttpContext.Current.Session["_periodeId"]);
+            MutasiKasCollection mkC = new MutasiKasCollection();
+            mkC.Load(mkQ);
+            if (mkC.Count > 0)
+            {
+                KasQuery kasQ = new KasQuery();
+                kasQ.Select(kasQ.SaldoAwal.Sum()); 
             }
         }
 

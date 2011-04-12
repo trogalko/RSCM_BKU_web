@@ -19,7 +19,8 @@
     }
 </style>
 
-<telerik:RadFormDecorator ID="RadFormDecorator1" runat="server" Skin="Sunset" />
+<telerik:RadFormDecorator ID="RadFormDecorator1" runat="server" 
+    Skin="Office2007" />
 
 <table style="width: 52%;">
     <tr>
@@ -28,8 +29,7 @@
         <td class="style2">
             :</td>
         <td>
-            <telerik:RadTextBox ID="txtGroupMACode" Runat="server" 
-                EmptyMessage="Kode Mata Anggaran" Width="230px" Skin="Sunset"
+            <telerik:RadTextBox ID="txtGroupMACode" Runat="server" Width="230px" Skin="Office2007"
                 Text='<%# DataBinder.Eval( Container, "DataItem.GtCode") %>'>
             </telerik:RadTextBox>
         </td>
@@ -50,7 +50,9 @@
 <table style="width: 52%;">
     <tr>
         <td class="style3" align="right">
-            <asp:Button ID="cmdSave" runat="server" Text='<%# ((bool)DataBinder.Eval(Container, "OwnerTableView.IsItemInserted")) ? "Insert" : "Update" %>' CommandName='<%# ((bool)DataBinder.Eval(Container, "OwnerTableView.IsItemInserted")) ? "PerformInsert" : "Update" %>' />
+            <asp:Button ID="cmdSave" runat="server" 
+                Text='<%# ((bool)DataBinder.Eval(Container, "OwnerTableView.IsItemInserted")) ? "Insert" : "Update" %>' 
+                CommandName='<%# ((bool)DataBinder.Eval(Container, "OwnerTableView.IsItemInserted")) ? "PerformInsert" : "Update" %>' />
         </td>
         <td class="style4">
             &nbsp;</td>

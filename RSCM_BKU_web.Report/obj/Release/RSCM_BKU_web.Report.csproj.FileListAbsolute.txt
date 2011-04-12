@@ -15,3 +15,4 @@ D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Re
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Release\Stimulsoft.Base.xml
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Release\Stimulsoft.Report.xml
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Release\Stimulsoft.Report.WebFx.xml
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Release\RSCM_BKU_web.Report.LaporanBkuKasUmumPerKelompokAnggaran.resources

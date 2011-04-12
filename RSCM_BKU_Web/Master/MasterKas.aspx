@@ -3,37 +3,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <telerik:RadMenu ID="RadMenu1" Runat="server" Skin="Office2007" Width="100%">
-            <Items>
-                <telerik:RadMenuItem runat="server" Text="MASTER">
-                    <Items>
-                        <telerik:RadMenuItem runat="server" NavigateUrl="~/Master/masterGroupMA.aspx" 
-                            Text="Master Group Anggaran">
-                        </telerik:RadMenuItem>
-                        <telerik:RadMenuItem runat="server" 
-                            NavigateUrl="~/Master/MasterKelompokAnggaran.aspx" 
-                            Text="Master Kelompok Anggaran">
-                        </telerik:RadMenuItem>
-                        <telerik:RadMenuItem runat="server" 
-                            NavigateUrl="~/Master/MasterKas.aspx" 
-                            Text="Master Kas & Bank">
-                        </telerik:RadMenuItem>
-                        <telerik:RadMenuItem runat="server" 
-                            NavigateUrl="~/Master/MasterRencanaAnggaranBelanja.aspx" 
-                            Text="Master Rencana Anggaran Belanja">
-                        </telerik:RadMenuItem>
-                    </Items>
-                </telerik:RadMenuItem>
-                <telerik:RadMenuItem runat="server" Text="TRANSACTION">
-                    <Items>
-                        <telerik:RadMenuItem runat="server" 
-                            NavigateUrl="~/Transaksi/TransaksiKasBendaharaPengguna.aspx" 
-                            Text="Transaksi Kas Bendahara Pengguna">
-                        </telerik:RadMenuItem>
-                    </Items>
-                </telerik:RadMenuItem>
-            </Items>
-        </telerik:RadMenu>
 
         <telerik:RadGrid ID="RadGrid1" 
             runat="server" 
@@ -95,7 +64,7 @@
                         HeaderText="SALDO" 
                         ReadOnly="True" 
                         SortExpression="SALDO_AWAL" 
-                        UniqueName="SALDO_AWAL" NumericType="Currency">
+                        UniqueName="SALDO_AWAL">
                         <ItemStyle HorizontalAlign="Right" />
                     </telerik:GridNumericColumn>
 

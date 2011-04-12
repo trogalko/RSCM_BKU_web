@@ -1,5 +1,13 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="TransaksiKasBendaharaPengguna.ascx.cs" Inherits="RSCM_BKU_Web.Transaksi.TransaksiKasBendaharaPengguna1" %>
 <%@ Register assembly="Telerik.Web.UI" namespace="Telerik.Web.UI" tagprefix="telerik" %>
+
+<script type="text/javascript">
+    function OnClientSelectedIndexChanged(sender, eventArgs) {
+        var hidden = $find("<%= HiddenField1.ClientID%>");
+        var combo = $find("<%= cmbTransCODE.ClientID%>");
+        document.getElementById("<%= HiddenField1.ClientID%>").value = combo.get_value();
+    }
+</script>
 <style type="text/css">
     .style1
     {
@@ -28,7 +36,7 @@
 </style>
 <telerik:RadFormDecorator ID="RadFormDecorator1" runat="server" 
     Skin="Office2007" />
-<table style="width:100%;">
+<table>
     <tr>
         <td class="style1" bgcolor="#CCCCCC">
             Trans. ID</td>
@@ -91,8 +99,8 @@
                 
                 Text='<%# ((bool)DataBinder.Eval(Container, "OwnerTableView.IsItemInserted")) ? 0 : DataBinder.Eval( Container, "DataItem.CREDIT_AMOUNT") %>' 
                 TabIndex="10">
-                <NumberFormat AllowRounding="False" DecimalDigits="2" NegativePattern="(Rp n)" 
-                    PositivePattern="Rp n" />
+                <NumberFormat AllowRounding="False" DecimalDigits="2" NegativePattern="(n)" 
+                    PositivePattern="n" />
             </telerik:RadNumericTextBox>
         </td>
     </tr>
@@ -101,21 +109,15 @@
             Trans. Code</td>
         <td class="style2">
             :</td>
-        <td class="style5">
-            <%-- 
-            <telerik:RadComboBox ID="cmbTransCODE" Runat="server"
-                Skin="Office2007" Width="200px"                
-                onselectedindexchanged="cmbTransCODE_SelectedIndexChanged" 
-                AutoPostBack="True" Filter="Contains">
-                <ExpandAnimation Type="InQuint" />
-            </telerik:RadComboBox>
-        --%>
+        <td class="style5">            
             <telerik:RadComboBox ID="cmbTransCODE" 
                 Runat="server"
                 Skin="Office2007" 
                 Width="230px" ondatabound="cmbTransCODE_DataBound" Filter="Contains" 
                 TabIndex="2"
-                onkeypress="return CkKeyPress(event);">
+                SelectedValue='<%# DataBinder.Eval( Container, "DataItem.KA_CODE") %>' 
+                onkeypress="return CkKeyPress(event);" 
+                onclientselectedindexchanged="OnClientSelectedIndexChanged">
                 <ExpandAnimation Type="InQuint" />
             </telerik:RadComboBox>
         
@@ -189,11 +191,7 @@
         <td class="style7">
             &nbsp;</td>
         <td>
-            <%-- 
-            <telerik:RadComboBox ID="cmbKasID" Runat="server" Width="232px" 
-                Skin="Office2007" SelectedText='<%# FormatCheckBox( Container, "DataItem.KAS_ID") %>'>
-            </telerik:RadComboBox>
-        --%>
+            
         </td>
     </tr>
     <tr>
@@ -240,7 +238,7 @@
     </tr>
 </table>
 
-<table style="width:100%;">
+<table>
     <tr>
         <td align="right" class="style6" style="width:50%;">
             <asp:Button ID="btnSAVE" runat="server" Height="26px" 
@@ -263,7 +261,8 @@
     </tr>
     <tr>
         <td class="style6" style="width:50%;">
-            &nbsp;</td>        
+            <asp:HiddenField ID="HiddenField1" runat="server" />
+        </td>        
         <td>
             &nbsp;</td>
     </tr>

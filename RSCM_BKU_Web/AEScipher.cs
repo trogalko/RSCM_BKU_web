@@ -4,7 +4,7 @@ using System.IO;
 
 namespace RSCM_BKU_Web
 {
-    public class AEScipher
+    public class AEScipher  
     {
         public static string Encrypt(string clearText, string Password)
         {
@@ -53,8 +53,9 @@ namespace RSCM_BKU_Web
             alg.IV = IV;
             CryptoStream cs = new CryptoStream(ms, alg.CreateDecryptor(), CryptoStreamMode.Write);
             cs.Write(cipherData, 0, cipherData.Length);
-            cs.Close();
+            cs.Close();            
             byte[] decryptedData = ms.ToArray();
+            
             return decryptedData;
         }
 

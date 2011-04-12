@@ -17,6 +17,7 @@ using EntitySpaces.SqlClientProvider;
 using RSCM_BKU_Web.Linq;
 using System.Globalization;
 using System.Threading;
+using System.Collections;
 
 namespace RSCM_BKU_Web.Transaksi
 {
@@ -29,6 +30,7 @@ namespace RSCM_BKU_Web.Transaksi
             {
                 txtTransCode.Visible = false;
                 cmbTransCODE.Visible = true;
+                cmbTransCODE.Enabled = true;
                 txtKasId.Visible = false;
                 cmbKasID.Visible = true;
 
@@ -41,17 +43,26 @@ namespace RSCM_BKU_Web.Transaksi
                 //KelAnggaranCollection kAColl = new KelAnggaranCollection()               
                 //kAColl.Load(transCodeQ);               
 
-                var kQ = from k in rscm.Kel_anggarans
-                         where k.IS_DETAIL == true &&
-                         k.IS_KAS == false
-                         select new { k.KA_CODE, KaName = k.KA_NAME, complete = (k.KA_CODE + " - " +k.KA_NAME)};
+                //var kQ = from k in rscm.Kel_anggarans
+                //         where k.IS_DETAIL == true &&
+                //         k.IS_KAS == false
+                //         select new { k.KA_CODE, KaName = k.KA_NAME, complete = (k.KA_CODE + " - " +k.KA_NAME)};
 
-                //cmbTransCODE.Items.Clear();
-                cmbTransCODE.DataSource = kQ;
-                cmbTransCODE.DataTextField = "complete";
-                cmbTransCODE.DataValueField = "KA_CODE";
+                //ViewKelAnggaranCodeCombineName vkkk = new ViewKelAnggaranCodeCombineName();
+                //vkkk.KaCode
+                ViewKelAnggaranCodeCombineNameCollection vKA = new ViewKelAnggaranCodeCombineNameCollection();
+                vKA.LoadAll();
+
+                cmbTransCODE.Items.Clear();
+                //cmbTransCODE.DataSource = kQ;
+                //cmbTransCODE.DataTextField = "complete";
+                //cmbTransCODE.DataValueField = "KA_CODE";
+                cmbTransCODE.DataSource = vKA;
+                cmbTransCODE.DataTextField = "KaCodeName";
+                cmbTransCODE.DataValueField = "KaCode";
                 cmbTransCODE.AllowCustomText = true;
                 cmbTransCODE.MarkFirstMatch = true;
+                //cmbTransCODE.DataBind();
 
                 //Kas Code
                 var kasCode = from kas in rscm.KAs
@@ -64,9 +75,26 @@ namespace RSCM_BKU_Web.Transaksi
             }
             else //EDIT
             {
-                txtTransCode.Visible = true;
+                //txtTransCode.Visible = true;
+                txtTransCode.Visible = false;
                 txtTransCode.ReadOnly = true;
-                cmbTransCODE.Visible = false;
+                cmbTransCODE.Visible = true;
+                cmbTransCODE.Enabled = true;
+                var KelAngQ = from k in rscm.viewKelAnggaranCodeCombineNames
+                              select k;
+
+                cmbTransCODE.Items.Clear();
+                //cmbTransCODE.DataSource = kQ;
+                //cmbTransCODE.DataTextField = "complete";
+                //cmbTransCODE.DataValueField = "KA_CODE";
+
+                cmbTransCODE.DataSource = KelAngQ;
+                cmbTransCODE.DataTextField = "KaCodeName";
+                cmbTransCODE.DataValueField = "KA_CODE";
+                cmbTransCODE.AllowCustomText = true;
+                cmbTransCODE.MarkFirstMatch = true;
+
+                cmbTransCODE.Visible = true;
                 txtKasId.Visible = true;
                 txtKasId.ReadOnly = true;
                 cmbKasID.Visible = false;

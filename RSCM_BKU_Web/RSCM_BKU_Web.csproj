@@ -49,7 +49,7 @@
         </ObjectGroup>
       </Objects>
     </PublishDatabaseSettings>
-    <PublishDatabases>true</PublishDatabases>
+    <PublishDatabases>false</PublishDatabases>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntitySpaces.Core">
@@ -132,6 +132,10 @@
   <ItemGroup>
     <Content Include="background.jpg" />
     <Content Include="bg-bar00.jpg" />
+    <Content Include="ControlPanel\ChangePassword.aspx" />
+    <Content Include="ControlPanel\MasterProgram.aspx" />
+    <Content Include="ControlPanel\UserAccess.aspx" />
+    <Content Include="ControlPanel\UserAccessAddEdit.ascx" />
     <Content Include="Default.aspx" />
     <Content Include="Depault.aspx" />
     <Content Include="Global.asax" />
@@ -139,6 +143,8 @@
     <Content Include="gradientreverse.gif" />
     <Content Include="Header.ascx" />
     <Content Include="Login\Login.aspx" />
+    <Content Include="LOGO_RSCM.JPG" />
+    <Content Include="Logo_RSCM.png" />
     <Content Include="Master\masterGroupMA.ascx" />
     <Content Include="Master\masterGroupMAbak.aspx" />
     <Content Include="Master\MasterGroupMA.aspx" />
@@ -152,14 +158,16 @@
     <Content Include="Master\MasterRencanaAnggaranBelanja.aspx" />
     <Content Include="Master\MasterRencanaAnggaranBelanjaBak.aspx" />
     <Content Include="Report\LaporanBku\LaporanBkuViewer.aspx" />
+    <Content Include="Report\LaporanBku\LaporanBkuViewerBak.aspx" />
     <Content Include="Report\LaporanKasBank\LaporanKasBankViewer.aspx" />
+    <Content Include="Report\LaporanKasBank\LaporanKasBankViewerBak.aspx" />
     <Content Include="Report\LaporanKasBank\ReportBookKasBank.aspx" />
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
     <Content Include="Transaksi\TransaksiKasBendaharaPengguna.aspx" />
     <Content Include="Transaksi\TransaksiKasBendaharaPengguna.ascx" />
-    <Content Include="Transaksi\TransaksiKasBendaharaPenggunak.aspx" />
+    <Content Include="Transaksi\TransaksiKasBendaharaPenggunaBak.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -170,6 +178,34 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AEScipher.cs" />
+    <Compile Include="ControlPanel\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\MasterProgram.aspx.cs">
+      <DependentUpon>MasterProgram.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\MasterProgram.aspx.designer.cs">
+      <DependentUpon>MasterProgram.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\UserAccess.aspx.cs">
+      <DependentUpon>UserAccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\UserAccess.aspx.designer.cs">
+      <DependentUpon>UserAccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\UserAccessAddEdit.ascx.cs">
+      <DependentUpon>UserAccessAddEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\UserAccessAddEdit.ascx.designer.cs">
+      <DependentUpon>UserAccessAddEdit.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -300,12 +336,26 @@
     <Compile Include="Report\LaporanBku\LaporanBkuViewer.aspx.designer.cs">
       <DependentUpon>LaporanBkuViewer.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Report\LaporanBku\LaporanBkuViewerBak.aspx.cs">
+      <DependentUpon>LaporanBkuViewerBak.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\LaporanBku\LaporanBkuViewerBak.aspx.designer.cs">
+      <DependentUpon>LaporanBkuViewerBak.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Report\LaporanKasBank\LaporanKasBankViewer.aspx.cs">
       <DependentUpon>LaporanKasBankViewer.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Report\LaporanKasBank\LaporanKasBankViewer.aspx.designer.cs">
       <DependentUpon>LaporanKasBankViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\LaporanKasBank\LaporanKasBankViewerBak.aspx.cs">
+      <DependentUpon>LaporanKasBankViewerBak.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\LaporanKasBank\LaporanKasBankViewerBak.aspx.designer.cs">
+      <DependentUpon>LaporanKasBankViewerBak.aspx</DependentUpon>
     </Compile>
     <Compile Include="Report\LaporanKasBank\ReportBookKasBank.aspx.cs">
       <DependentUpon>ReportBookKasBank.aspx</DependentUpon>
@@ -328,12 +378,12 @@
     <Compile Include="Transaksi\TransaksiKasBendaharaPengguna.ascx.designer.cs">
       <DependentUpon>TransaksiKasBendaharaPengguna.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Transaksi\TransaksiKasBendaharaPenggunak.aspx.cs">
-      <DependentUpon>TransaksiKasBendaharaPenggunak.aspx</DependentUpon>
+    <Compile Include="Transaksi\TransaksiKasBendaharaPenggunaBak.aspx.cs">
+      <DependentUpon>TransaksiKasBendaharaPenggunaBak.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Transaksi\TransaksiKasBendaharaPenggunak.aspx.designer.cs">
-      <DependentUpon>TransaksiKasBendaharaPenggunak.aspx</DependentUpon>
+    <Compile Include="Transaksi\TransaksiKasBendaharaPenggunaBak.aspx.designer.cs">
+      <DependentUpon>TransaksiKasBendaharaPenggunaBak.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

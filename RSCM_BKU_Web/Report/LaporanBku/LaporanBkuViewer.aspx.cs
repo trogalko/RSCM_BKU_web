@@ -21,16 +21,15 @@ using Telerik.Reporting;
 using Telerik.ReportViewer;
 using RSCM_BKU_web.Report;
 
-
 namespace RSCM_BKU_Web.Report.LaporanBku
 {
-    public partial class LaporanBkuViewer : System.Web.UI.Page
+    public partial class LaporanBkuViewer1 : System.Web.UI.Page
     {
         DataTable dt = new DataTable();
         decimal SaldoAwal = 0;
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         protected void btnPreview_Click(object sender, EventArgs e)
@@ -41,17 +40,17 @@ namespace RSCM_BKU_Web.Report.LaporanBku
                 return;
             if (dtpStartDate.SelectedDate.ToString().Trim() == string.Empty || dtpEndDate.SelectedDate.ToString().Trim() == string.Empty)
                 return;
-            
+
             TransaksiBKUQuery transBkuQ = new TransaksiBKUQuery();
             SaldoAwalCollection saCol = new SaldoAwalCollection();
             saCol.LoadAll();
 
-            transBkuQ.SelectAll();           
+            transBkuQ.SelectAll();
             transBkuQ.Where(transBkuQ.TransDate >= dtpStartDate.SelectedDate, transBkuQ.TransDate <= dtpEndDate.SelectedDate);
 
             TransaksiBKUCollection transBkuCol = new TransaksiBKUCollection();
             transBkuCol.Load(transBkuQ);
-            
+
             if (transBkuCol.Count > 0)
             {
                 dt = transBkuQ.LoadDataTable();
@@ -71,13 +70,13 @@ namespace RSCM_BKU_Web.Report.LaporanBku
                 }
                 foreach (DataRow dr in dt.Rows)
                 {
-                    
+
                     SaldoAwal = SaldoAwal + (Convert.ToDecimal(dr["DEBIT_AMOUNT"]) - Convert.ToDecimal(dr["CREDIT_AMOUNT"]));
                     dr["Saldo"] = SaldoAwal;
                     dt.AcceptChanges();
-                    dtCopy.Rows.Add(dr["TRANS_NUMBER"],dr["TRANS_DATE"],dr["DESCRIPT"],dr["KA_CODE"],dr["KA_NAME"],dr["GT_CODE"],dr["DEBIT_AMOUNT"],dr["CREDIT_AMOUNT"],dr["IS_CLOSED"],dr["ISVERIFIED"],dr["IS_ACTIVE"],dr["Saldo"]);
+                    dtCopy.Rows.Add(dr["TRANS_NUMBER"], dr["TRANS_DATE"], dr["DESCRIPT"], dr["KA_CODE"], dr["KA_NAME"], dr["GT_CODE"], dr["DEBIT_AMOUNT"], dr["CREDIT_AMOUNT"], dr["IS_CLOSED"], dr["ISVERIFIED"], dr["IS_ACTIVE"], dr["Saldo"]);
                 }
-                
+
                 RSCM_BKU_web.Report.LaporanBKU report1 = new LaporanBKU();
                 report1.ReportParameters[0].Value = dtpStartDate.SelectedDate;
                 report1.ReportParameters[1].Value = dtpEndDate.SelectedDate;

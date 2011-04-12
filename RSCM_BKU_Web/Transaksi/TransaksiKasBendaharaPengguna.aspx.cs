@@ -58,6 +58,7 @@ namespace RSCM_BKU_Web.Transaksi
                 try
                 {
                     //Trans.Amount = Convert.ToDecimal((userControl.FindControl("txtAMOUNT") as RadTextBox).Text.ToUpper());
+                    Trans.KaCode = (userControl.FindControl("HiddenField1") as HiddenField).Value;
                     Trans.CekBgNumber = (userControl.FindControl("txtCek") as RadTextBox).Text.ToUpper();
                     Trans.DebitAmount = Convert.ToDecimal((userControl.FindControl("txtDebitAmount") as RadNumericTextBox).Value);
                     Trans.CreditAmount = Convert.ToDecimal((userControl.FindControl("txtCreditAmount") as RadNumericTextBox).Value);
@@ -141,11 +142,11 @@ namespace RSCM_BKU_Web.Transaksi
             KelAnggaranCollection kaColl = new KelAnggaranCollection();
 
             kaColl.Load(kaQ);
-            if (kaColl.Count > 0)
-                foreach (KelAnggaran kkk in kaColl)
-                    autonumber = kkk.Prefix.Trim();
-            else
-                return;
+            //if (kaColl.Count > 0)
+            //    foreach (KelAnggaran kkk in kaColl)
+            //        autonumber = kkk.Prefix.Trim();
+            //else
+            //    return;
 
             if (anColl.Count == 0)
             {
@@ -175,7 +176,8 @@ namespace RSCM_BKU_Web.Transaksi
 
             try
             {
-                Trans.KaCode = (userControl.FindControl("cmbTransCODE") as RadComboBox).SelectedValue.ToUpper();
+                //Trans.KaCode = (userControl.FindControl("cmbTransCODE") as RadComboBox).SelectedItem.Value;
+                Trans.KaCode = (userControl.FindControl("HiddenField1") as HiddenField).Value;
                 Trans.TransNumber = autonumber.ToUpper();
                 Trans.CekBgNumber = (userControl.FindControl("txtCek") as RadTextBox).Text.ToUpper();
                 //Trans.Amount = Convert.ToDecimal((userControl.FindControl("txtDebitAmount") as RadNumericTextBox).Value - (userControl.FindControl("txtCreditAmount") as RadNumericTextBox).Value);

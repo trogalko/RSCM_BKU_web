@@ -10,7 +10,9 @@ namespace RSCM_BKU_Web
     public partial class Header1 : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
-        {
+        {            
+            if (HttpContext.Current.Session["UserId"] == null)
+                Response.Redirect("~/Login/Login.aspx");
             string userId = HttpContext.Current.Session["UserId"].ToString();
             if (!string.IsNullOrEmpty(userId))
             {

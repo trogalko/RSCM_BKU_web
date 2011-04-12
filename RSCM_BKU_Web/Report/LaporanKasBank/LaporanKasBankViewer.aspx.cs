@@ -2,11 +2,9 @@
 
 using RSCM_BKU_Web.BusinessObjects;
 
-
-
 namespace RSCM_BKU_Web.Report.LaporanKasBank
 {
-    public partial class LaporanKasBankViewer : System.Web.UI.Page
+    public partial class LaporanKasBankViewer1 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

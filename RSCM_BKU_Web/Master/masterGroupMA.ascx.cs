@@ -13,5 +13,10 @@ namespace RSCM_BKU_Web.Master
         {
 
         }
+
+        protected void cmdSave_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

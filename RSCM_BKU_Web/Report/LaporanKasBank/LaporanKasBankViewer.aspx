@@ -1,15 +1,8 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LaporanKasBankViewer.aspx.cs" Inherits="RSCM_BKU_Web.Report.LaporanKasBank.LaporanKasBankViewer" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Header.Master" AutoEventWireup="true" CodeBehind="LaporanKasBankViewer.aspx.cs" Inherits="RSCM_BKU_Web.Report.LaporanKasBank.LaporanKasBankViewer1" %>
 <%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
-
 <%@ Register Assembly="Telerik.ReportViewer.WebForms, Version=4.1.10.921, Culture=neutral, PublicKeyToken=a9d7983dfcc261be"
     Namespace="Telerik.ReportViewer.WebForms" TagPrefix="telerik" %>
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .style1
         {
@@ -20,13 +13,9 @@
             width: 11px;
         }
     </style>
-</head>
-<body>
-    <form id="form1" runat="server">
-    <div>
-        <telerik:RadScriptManager ID="RadScriptManager1" runat="server">
-        </telerik:RadScriptManager>
-        <telerik:RadAjaxManager ID="RadAjaxManager1" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <telerik:RadAjaxManager ID="RadAjaxManager1" runat="server">
             <AjaxSettings>
                 <telerik:AjaxSetting AjaxControlID="btnPreview">
                     <UpdatedControls>
@@ -38,6 +27,7 @@
         </telerik:RadAjaxManager>
         <telerik:RadFormDecorator ID="RadFormDecorator1" runat="server" 
             Skin="Office2007" />
+        <!--
         <telerik:RadMenu ID="RadMenu1" Runat="server" Skin="Office2007" Width="100%">
             <Items>
                 <telerik:RadMenuItem runat="server" Text="MASTER">
@@ -81,8 +71,7 @@
                 </telerik:RadMenuItem>
             </Items>
         </telerik:RadMenu>
-    </div>
-    <div>
+        -->
         <table style="width: 100%;">
             <tr>
                 <td class="style1">
@@ -154,11 +143,8 @@
                 </td>                
             </tr>            
         </table>
-    </div>
-    <div>
-        <telerik:reportviewer runat="server" ID="LaporanKasBankWebViewer" 
-            Width="100%" Skin="Office2007"></telerik:reportviewer>    
-    </div>
-    </form>
-</body>
-</html>
+        <table style="width: 100%;">
+            <telerik:reportviewer runat="server" ID="LaporanKasBankWebViewer" 
+            Width="100%" Skin="Office2007"></telerik:reportviewer>
+        </table>
+</asp:Content>
