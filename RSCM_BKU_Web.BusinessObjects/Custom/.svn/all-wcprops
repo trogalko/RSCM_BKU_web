@@ -1,0 +1,293 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom
+END
+LevelMAQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/LevelMAQuery.cs
+END
+PeriodeAnggaranQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/PeriodeAnggaranQuery.cs
+END
+Kas.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/Kas.cs
+END
+AutoNumbering.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/AutoNumbering.cs
+END
+DebitKreditQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/DebitKreditQuery.cs
+END
+AppUserUserGroupQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/AppUserUserGroupQuery.cs
+END
+AppUserGroupQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/AppUserGroupQuery.cs
+END
+AppProgramCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/AppProgramCollection.cs
+END
+LevelMA.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/LevelMA.cs
+END
+GroupMACollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/GroupMACollection.cs
+END
+KelAnggaranCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/KelAnggaranCollection.cs
+END
+MonthlyBalanceQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/MonthlyBalanceQuery.cs
+END
+AuditTrailQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/AuditTrailQuery.cs
+END
+RabQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/RabQuery.cs
+END
+AppUserCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/AppUserCollection.cs
+END
+AppUserUserGroup.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/AppUserUserGroup.cs
+END
+AppUserGroupProgramCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/AppUserGroupProgramCollection.cs
+END
+PeriodeAnggaranCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/PeriodeAnggaranCollection.cs
+END
+TransCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/TransCollection.cs
+END
+KasQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/KasQuery.cs
+END
+AppUserQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/AppUserQuery.cs
+END
+DebitKreditCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/DebitKreditCollection.cs
+END
+AppProgram.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/AppProgram.cs
+END
+AppUserGroupCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/AppUserGroupCollection.cs
+END
+KelAnggaran.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/KelAnggaran.cs
+END
+GroupMA.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/GroupMA.cs
+END
+MonthlyBalanceCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/MonthlyBalanceCollection.cs
+END
+TransQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/TransQuery.cs
+END
+AuditTrailCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/AuditTrailCollection.cs
+END
+AppUser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/AppUser.cs
+END
+RabCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/RabCollection.cs
+END
+AppUserGroupProgram.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/AppUserGroupProgram.cs
+END
+PeriodeAnggaran.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/PeriodeAnggaran.cs
+END
+Trans.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/Trans.cs
+END
+KasCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/KasCollection.cs
+END
+DebitKredit.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/DebitKredit.cs
+END
+AutoNumberingCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/AutoNumberingCollection.cs
+END
+AppUserGroup.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/AppUserGroup.cs
+END
+AppProgramQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/AppProgramQuery.cs
+END
+GroupMAQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/GroupMAQuery.cs
+END
+KelAnggaranQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/KelAnggaranQuery.cs
+END
+MonthlyBalance.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/MonthlyBalance.cs
+END
+LevelMACollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/LevelMACollection.cs
+END
+AuditTrail.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/AuditTrail.cs
+END
+Rab.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/Rab.cs
+END
+AutoNumberingQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/AutoNumberingQuery.cs
+END
+AppUserUserGroupCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/AppUserUserGroupCollection.cs
+END
+AppUserGroupProgramQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/RSCM_BKU/!svn/ver/3/trunk/RSCM_BKU_Web.BusinessObjects/Custom/AppUserGroupProgramQuery.cs
+END

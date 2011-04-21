@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/RSCM_BKU/!svn/ver/2/trunk
+END
+.hgignore
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/RSCM_BKU/!svn/ver/6/trunk/.hgignore
+END
+RSCM_BKU_Web.suo
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/RSCM_BKU/!svn/ver/7/trunk/RSCM_BKU_Web.suo
+END
+RSCM_BKU_Web.sln
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/RSCM_BKU/!svn/ver/6/trunk/RSCM_BKU_Web.sln
+END

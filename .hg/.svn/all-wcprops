@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/RSCM_BKU/!svn/ver/6/trunk/.hg
+END
+dirstate
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/RSCM_BKU/!svn/ver/6/trunk/.hg/dirstate
+END
+requires
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/RSCM_BKU/!svn/ver/6/trunk/.hg/requires
+END
+hgrc
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/RSCM_BKU/!svn/ver/6/trunk/.hg/hgrc
+END
+thgstatus
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/RSCM_BKU/!svn/ver/6/trunk/.hg/thgstatus
+END
+00changelog.i
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/RSCM_BKU/!svn/ver/6/trunk/.hg/00changelog.i
+END
