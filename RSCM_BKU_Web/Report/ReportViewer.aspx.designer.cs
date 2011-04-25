@@ -13,6 +13,15 @@ namespace RSCM_BKU_Web.Report {
     public partial class ReportViewer {
         
         /// <summary>
+        /// ResourceManager1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.ResourceManager ResourceManager1;
+        
+        /// <summary>
         /// Panel1 control.
         /// </summary>
         /// <remarks>
@@ -22,22 +31,58 @@ namespace RSCM_BKU_Web.Report {
         protected global::Ext.Net.Panel Panel1;
         
         /// <summary>
-        /// BorderLayout1 control.
+        /// CompositeField1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Ext.Net.BorderLayout BorderLayout1;
+        protected global::Ext.Net.CompositeField CompositeField1;
         
         /// <summary>
-        /// pnlParameter control.
+        /// dtfStartDate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Ext.Net.FormPanel pnlParameter;
+        protected global::Ext.Net.DateField dtfStartDate;
+        
+        /// <summary>
+        /// CompositeField2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.CompositeField CompositeField2;
+        
+        /// <summary>
+        /// dtfEndDate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.DateField dtfEndDate;
+        
+        /// <summary>
+        /// btnPreview control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Button btnPreview;
+        
+        /// <summary>
+        /// Panel2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Panel Panel2;
         
         /// <summary>
         /// ReportViewer1 control.
