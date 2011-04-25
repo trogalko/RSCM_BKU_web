@@ -36,5 +36,34 @@ namespace RSCM_BKU_Web.Transaksi
                 }
             }
         }
+
+        protected void AddKas(object sender, DirectEventArgs e)
+        {
+            RowSelectionModel sm = this.GridPanel1.SelectionModel.Primary as RowSelectionModel;
+            if (sm.SelectedRows.Count > 0)
+            {
+                foreach (SelectedRow sr in sm.SelectedRows)
+                {
+
+                }
+            }
+        }
+
+        protected void AddTransaksiKas(object sender, DirectEventArgs e)
+        {
+
+        }
+
+        protected void GetSelected(object sender, DirectEventArgs e)
+        {
+            RowSelectionModel sm = this.GridPanel1.SelectionModel.Primary as RowSelectionModel;
+            if (sm.SelectedRows.Count > 0)
+            {
+                foreach (SelectedRow sr in sm.SelectedRows)
+                {
+                    this.Response.Redirect("~/Transaksi/TransaksiKasAdd.aspx?KasID=" + sr.RecordID);
+                }
+            }
+        }
     }
 }
