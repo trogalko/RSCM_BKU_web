@@ -619,40 +619,6 @@ trogalko
 
 96
 
-Default.aspx
-file
-
-
-
-
-2011-04-20T03:44:46.153690Z
-e66a3ceb4ca7b9c69507ac2d21b540bd
-2011-04-20T03:06:34.233209Z
-2
-trogalko
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2845
-
 background.jpg
 file
 
@@ -687,11 +653,79 @@ has-props
 
 10424
 
+Default.aspx
+file
+
+
+
+
+2011-04-20T03:44:46.153690Z
+e66a3ceb4ca7b9c69507ac2d21b540bd
+2011-04-20T03:06:34.233209Z
+2
+trogalko
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2845
+
 Transaksi
 dir
 
 ControlPanel
 dir
+
+RSCM_BKU_Web.csproj
+file
+8
+
+
+
+2011-04-25T04:02:18.593519Z
+6008e52c07e853e2b5ddbda7fbfe1a67
+2011-04-26T04:42:21.406750Z
+8
+trogalko
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+24329
 
 gradient.gif
 file
@@ -727,39 +761,8 @@ has-props
 
 1277
 
-RSCM_BKU_Web.csproj
-file
-
-
-
-
-2011-04-20T03:44:46.603079Z
-749a83195e3b299b3114d6c62f5b4682
-2011-04-20T03:06:34.233209Z
-2
-trogalko
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-23977
+Service References
+dir
 
 Default.aspx.cs
 file
@@ -794,9 +797,6 @@ trogalko
 
 
 1368
-
-Service References
-dir
 
 LOGO_RSCM.JPG
 file

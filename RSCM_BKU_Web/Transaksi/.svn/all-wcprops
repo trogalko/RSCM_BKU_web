@@ -7,7 +7,7 @@ TransaksiKasAdd.aspx
 K 25
 svn:wc:ra_dav:version-url
 V 74
-/svn/RSCM_BKU/!svn/ver/2/trunk/RSCM_BKU_Web/Transaksi/TransaksiKasAdd.aspx
+/svn/RSCM_BKU/!svn/ver/8/trunk/RSCM_BKU_Web/Transaksi/TransaksiKasAdd.aspx
 END
 TransaksiKasBendaharaPengguna.aspx
 K 25
@@ -25,7 +25,7 @@ TransaksiKasAdd.aspx.cs
 K 25
 svn:wc:ra_dav:version-url
 V 77
-/svn/RSCM_BKU/!svn/ver/2/trunk/RSCM_BKU_Web/Transaksi/TransaksiKasAdd.aspx.cs
+/svn/RSCM_BKU/!svn/ver/8/trunk/RSCM_BKU_Web/Transaksi/TransaksiKasAdd.aspx.cs
 END
 TransaksiKasBendaharaPengguna.aspx.designer.cs
 K 25
@@ -67,7 +67,7 @@ TransaksiKas.aspx
 K 25
 svn:wc:ra_dav:version-url
 V 71
-/svn/RSCM_BKU/!svn/ver/7/trunk/RSCM_BKU_Web/Transaksi/TransaksiKas.aspx
+/svn/RSCM_BKU/!svn/ver/8/trunk/RSCM_BKU_Web/Transaksi/TransaksiKas.aspx
 END
 TransaksiKasBendaharaPengguna.ascx.designer.cs
 K 25
@@ -91,5 +91,5 @@ TransaksiKas.aspx.cs
 K 25
 svn:wc:ra_dav:version-url
 V 74
-/svn/RSCM_BKU/!svn/ver/7/trunk/RSCM_BKU_Web/Transaksi/TransaksiKas.aspx.cs
+/svn/RSCM_BKU/!svn/ver/8/trunk/RSCM_BKU_Web/Transaksi/TransaksiKas.aspx.cs
 END

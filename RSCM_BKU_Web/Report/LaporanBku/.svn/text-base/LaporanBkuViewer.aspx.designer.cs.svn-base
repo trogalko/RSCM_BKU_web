@@ -13,15 +13,6 @@ namespace RSCM_BKU_Web.Report.LaporanBku {
     public partial class LaporanBkuViewer1 {
         
         /// <summary>
-        /// RadAjaxManager1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Telerik.Web.UI.RadAjaxManager RadAjaxManager1;
-        
-        /// <summary>
         /// RadFormDecorator1 control.
         /// </summary>
         /// <remarks>
@@ -29,15 +20,6 @@ namespace RSCM_BKU_Web.Report.LaporanBku {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::Telerik.Web.UI.RadFormDecorator RadFormDecorator1;
-        
-        /// <summary>
-        /// RadMenu1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Telerik.Web.UI.RadMenu RadMenu1;
         
         /// <summary>
         /// dtpStartDate control.

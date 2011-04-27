@@ -3,38 +3,6 @@
 <%@ Register assembly="Telerik.Web.UI" namespace="Telerik.Web.UI" tagprefix="telerik" %>
 <%@ Register assembly="DevExpress.Web.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web.ASPxPopupControl" tagprefix="dx" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <script runat="server">
-        
-        protected void AddKas(object sender, DirectEventArgs e)
-        {
-            RowSelectionModel sm = this.GridPanel1.SelectionModel.Primary as RowSelectionModel;
-            if (sm.SelectedRows.Count > 0)
-            {
-                foreach (SelectedRow sr in sm.SelectedRows)
-                {
-                    
-                }
-            }
-        }
-
-        protected void AddTransaksiKas(object sender, DirectEventArgs e)
-        {
-             
-        }
-
-        protected void GetSelected(object sender, DirectEventArgs e)
-        {
-            RowSelectionModel sm = this.GridPanel1.SelectionModel.Primary as RowSelectionModel;
-            if (sm.SelectedRows.Count > 0)
-            {
-                foreach (SelectedRow sr in sm.SelectedRows)
-                {
-                    this.Response.Redirect("~/Transaksi/TransaksiKasAdd.aspx?KasID=" + sr.RecordID);
-                }
-            }
-        }
-   
-</script>
 
 <script type="text/javascript">
     function OpenPositionedWindow(oButton, url, windowName) {
@@ -46,8 +14,8 @@
     }
           
 </script>
-
 </asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <ext:ResourceManager ID="ResourceManager1" runat="server" Theme="Slate" />
     <telerik:RadWindowManager ID="RadWindowManager1" runat="server" 

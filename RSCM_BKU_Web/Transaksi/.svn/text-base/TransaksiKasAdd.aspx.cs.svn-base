@@ -33,10 +33,10 @@ namespace RSCM_BKU_Web.Transaksi
         protected void Save(object sender, DirectEventArgs e)
         {
             this.formAdd.Title = this.cmbKelompokAnggaran.SelectedItem.Text;
-            Trans trans = new Trans();
-            ASPxPopupControl app = new ASPxPopupControl();
-            app = (this.Parent.FindControl("ASPxPopupControl1") as ASPxPopupControl);
-            app.Dispose();
+            AuditTrail at = new AuditTrail();
+            at.Aksi = txtTransNumber.Text;
+            at.DateAction = DateTime.Now;
+            at.Save();
         }
     }
 }

@@ -1,0 +1,293 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom
+END
+_periode_anggaran.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_periode_anggaran.cs.i
+END
+_trans.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_trans.cs.i
+END
+_app_user_user_group.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_app_user_user_group.cs.i
+END
+_debit_kredit.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_debit_kredit.cs.i
+END
+_rab_query.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_rab_query.cs.i
+END
+_app_program_query.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_app_program_query.cs.i
+END
+_group_m_a_query.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_group_m_a_query.cs.i
+END
+_kas_query.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_kas_query.cs.i
+END
+_auto_numbering_query.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_auto_numbering_query.cs.i
+END
+_app_user_query.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_app_user_query.cs.i
+END
+_app_user_user_group_collection.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_app_user_user_group_collection.cs.i
+END
+_rab.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_rab.cs.i
+END
+_app_program.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_app_program.cs.i
+END
+_group_m_a.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_group_m_a.cs.i
+END
+_monthly_balance_collection.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_monthly_balance_collection.cs.i
+END
+_audit_trail_collection.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_audit_trail_collection.cs.i
+END
+_kas.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_kas.cs.i
+END
+_auto_numbering.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_auto_numbering.cs.i
+END
+_app_user.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_app_user.cs.i
+END
+_app_user_group_query.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_app_user_group_query.cs.i
+END
+_rab_collection.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_rab_collection.cs.i
+END
+_group_m_a_collection.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_group_m_a_collection.cs.i
+END
+_kel_anggaran_collection.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_kel_anggaran_collection.cs.i
+END
+_monthly_balance_query.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_monthly_balance_query.cs.i
+END
+_audit_trail_query.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_audit_trail_query.cs.i
+END
+_kas_collection.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_kas_collection.cs.i
+END
+_auto_numbering_collection.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_auto_numbering_collection.cs.i
+END
+_app_user_collection.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_app_user_collection.cs.i
+END
+_app_user_group.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_app_user_group.cs.i
+END
+_app_user_group_program_collection.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_app_user_group_program_collection.cs.i
+END
+_kel_anggaran_query.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_kel_anggaran_query.cs.i
+END
+_level_m_a_collection.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_level_m_a_collection.cs.i
+END
+_monthly_balance.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_monthly_balance.cs.i
+END
+_periode_anggaran_collection.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_periode_anggaran_collection.cs.i
+END
+_audit_trail.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_audit_trail.cs.i
+END
+_trans_collection.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_trans_collection.cs.i
+END
+_debit_kredit_collection.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_debit_kredit_collection.cs.i
+END
+_app_user_group_collection.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_app_user_group_collection.cs.i
+END
+_app_user_group_program_query.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_app_user_group_program_query.cs.i
+END
+_level_m_a_query.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_level_m_a_query.cs.i
+END
+_kel_anggaran.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_kel_anggaran.cs.i
+END
+_periode_anggaran_query.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_periode_anggaran_query.cs.i
+END
+_trans_query.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_trans_query.cs.i
+END
+_app_user_user_group_query.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_app_user_user_group_query.cs.i
+END
+_debit_kredit_query.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_debit_kredit_query.cs.i
+END
+_app_user_group_program.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_app_user_group_program.cs.i
+END
+_app_program_collection.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_app_program_collection.cs.i
+END
+_level_m_a.cs.i
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/data/_r_s_c_m___b_k_u___web._business_objects/_custom/_level_m_a.cs.i
+END

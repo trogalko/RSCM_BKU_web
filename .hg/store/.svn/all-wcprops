@@ -3,3 +3,27 @@ svn:wc:ra_dav:version-url
 V 40
 /svn/RSCM_BKU/!svn/ver/6/trunk/.hg/store
 END
+undo
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/undo
+END
+fncache
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/fncache
+END
+00manifest.i
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/00manifest.i
+END
+00changelog.i
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/RSCM_BKU/!svn/ver/8/trunk/.hg/store/00changelog.i
+END

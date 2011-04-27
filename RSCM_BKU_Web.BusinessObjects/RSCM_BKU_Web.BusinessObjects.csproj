@@ -129,6 +129,7 @@
     <Compile Include="Generated\LevelMA.cs" />
     <Compile Include="Generated\MonthlyBalance.cs" />
     <Compile Include="Generated\MutasiKas.cs" />
+    <Compile Include="Generated\Officer.cs" />
     <Compile Include="Generated\ParentIdDataSourceComboBox.cs" />
     <Compile Include="Generated\PeriodeAnggaran.cs" />
     <Compile Include="Generated\Rab.cs" />

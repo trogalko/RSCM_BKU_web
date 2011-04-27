@@ -175,7 +175,7 @@
     <Content Include="Report\LaporanKasBank\LaporanKasBankViewer.aspx" />
     <Content Include="Report\LaporanKasBank\LaporanKasBankViewerBak.aspx" />
     <Content Include="Report\LaporanKasBank\ReportBookKasBank.aspx" />
-    <Content Include="Report\ReportViewer.aspx" />
+    <Content Include="Report\ReportViewerBKU.aspx" />
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
@@ -380,12 +380,12 @@
     <Compile Include="Report\LaporanKasBank\ReportBookKasBank.aspx.designer.cs">
       <DependentUpon>ReportBookKasBank.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Report\ReportViewer.aspx.cs">
-      <DependentUpon>ReportViewer.aspx</DependentUpon>
+    <Compile Include="Report\ReportViewerBKU.aspx.cs">
+      <DependentUpon>ReportViewerBKU.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Report\ReportViewer.aspx.designer.cs">
-      <DependentUpon>ReportViewer.aspx</DependentUpon>
+    <Compile Include="Report\ReportViewerBKU.aspx.designer.cs">
+      <DependentUpon>ReportViewerBKU.aspx</DependentUpon>
     </Compile>
     <Compile Include="Transaksi\TransaksiKas.aspx.cs">
       <DependentUpon>TransaksiKas.aspx</DependentUpon>

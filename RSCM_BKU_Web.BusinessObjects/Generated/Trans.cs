@@ -7,7 +7,7 @@
 ===============================================================================
 EntitySpaces Version : 2009.2.1214.0
 EntitySpaces Driver  : SQL
-Date Generated       : 15/03/2011 11:27:34
+Date Generated       : 27/04/2011 11:41:43
 ===============================================================================
 */
 
@@ -526,9 +526,9 @@ namespace RSCM_BKU_Web.BusinessObjects
 			}
 		}
 		
-        //[CLSCompliant(false)]
+		[CLSCompliant(false)]
 		internal protected KelAnggaran _UpToKelAnggaranByKaCode;
-        //[CLSCompliant(false)]
+		[CLSCompliant(false)]
 		internal protected PeriodeAnggaran _UpToPeriodeAnggaranByPeriodId;
 		#endregion	
 

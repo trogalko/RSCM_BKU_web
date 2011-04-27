@@ -100,7 +100,7 @@
                             Text="Laporan Kas dan Bank">
                         </telerik:RadMenuItem>
                         <telerik:RadMenuItem runat="server" 
-                            NavigateUrl="~/Report/LaporanBku/LaporanBkuViewer.aspx" 
+                            NavigateUrl="~/Report/ReportViewerBKU.aspx" 
                             Text="Laporan BKU">
                         </telerik:RadMenuItem>
                     </Items>
