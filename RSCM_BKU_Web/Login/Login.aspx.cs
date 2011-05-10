@@ -50,6 +50,20 @@ namespace RSCM_BKU_Web.Login
                     HttpContext.Current.Session["UserId"] = AppUser.UserID;
                     HttpContext.Current.Session["UserName"] = AppUser.UserName;
 
+                    System.Web.HttpContext context = System.Web.HttpContext.Current;
+                    string IPAddress = "";
+                    
+                    if (string.IsNullOrEmpty(context.Request.ServerVariables["HTTP_X_FORWARDED_FOR"].ToString()))
+                    {
+                        IPAddress = context.Request.ServerVariables["REMOTE_ADDR"].ToString();
+                    }
+                    else
+                    {
+                        IPAddress = context.Request.ServerVariables["HTTP_X_FORWARDED_FOR"].ToString();
+                    }
+
+                    HttpContext.Current.Session["IPAddress"] = IPAddress;
+
                     AuditTrail AuditTrail = new AuditTrail();
                     string itemAction = "Login per Tanggal : " + DateTime.Now.ToShortDateString() + " , untuk UserID : " + AppUser.UserID;
                     if (itemAction.Length > 200)

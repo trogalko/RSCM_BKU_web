@@ -114,7 +114,7 @@
             <see cref="T:Telerik.Reporting.Drawing.Shapes.ShapeBase" /> with 
             the specified angle of rotation in degrees.
             </summary>
-      <param name="angle">
+      <param name="startAngle">
             A <I>double</I> value specifying the angle of rotation of the 
             shape in degrees.
             </param>
@@ -534,6 +534,13 @@
             Represents a line shape.
             </summary>
     </member>
+    <member name="M:Telerik.Reporting.Drawing.Shapes.LineShape.#ctor">
+      <summary>
+            Initializes a new instance of the 
+            <see cref="T:Telerik.Reporting.Drawing.Shapes.LineShape" />
+            with EW line direction.
+            </summary>
+    </member>
     <member name="M:Telerik.Reporting.Drawing.Shapes.LineShape.#ctor(Telerik.Reporting.Drawing.Shapes.LineDirection)">
       <summary>
             Initializes a new instance of the 
@@ -666,6 +673,13 @@
             Represents a polygon shape.
             </summary>
     </member>
+    <member name="M:Telerik.Reporting.Drawing.Shapes.PolygonShape.#ctor">
+      <summary>
+            Initializes a new instance of the 
+            <see cref="T:Telerik.Reporting.Drawing.Shapes.PolygonShape" /> with 
+            3 vertexes and zero angle of rotation.
+            </summary>
+    </member>
     <member name="M:Telerik.Reporting.Drawing.Shapes.PolygonShape.#ctor(System.Int32)">
       <summary>
             Initializes a new instance of the 
@@ -766,6 +780,13 @@
     <member name="T:Telerik.Reporting.Drawing.Shapes.StarShape">
       <summary>
             Represents a star shape.
+            </summary>
+    </member>
+    <member name="M:Telerik.Reporting.Drawing.Shapes.StarShape.#ctor">
+      <summary>
+            Initializes a new instance of the 
+            <see cref="T:Telerik.Reporting.Drawing.Shapes.StarShape" /> with 
+            3 vertexes, 50% concavity, and zero angle of rotation.
             </summary>
     </member>
     <member name="M:Telerik.Reporting.Drawing.Shapes.StarShape.#ctor(System.Int32)">
@@ -1721,12 +1742,6 @@
             The <B>PageSettings</B> class is used to specify settings that modify 
             the way a page will be printed.
             </remarks>
-    </member>
-    <member name="M:Telerik.Reporting.Drawing.PageSettings.#ctor">
-      <summary>
-            Initializes a new instance of the <B>PageSettings</B> 
-            class with the default settings.
-            </summary>
     </member>
     <member name="M:Telerik.Reporting.Drawing.PageSettings.#ctor(System.Drawing.Printing.PageSettings,System.Drawing.Printing.PrinterSettings)">
       <summary>
@@ -3631,7 +3646,7 @@
             specified <I>pixels</I>. The <B>Unit</B>'s type is 
             <see cref="P:Telerik.Reporting.Drawing.Unit.DefaultType" /></summary>
       <param name="pixels">
-            A <I>double</I> value specifying the magnitued of the 
+            A <I>double</I> value specifying the magnitude of the 
             <see cref="T:Telerik.Reporting.Drawing.Unit" /> in pixels.
             </param>
     </member>
@@ -3909,7 +3924,7 @@
       <remarks>
         <para>
             If <I>unit1</I> is empty the method returns <I>unit2</I>. If 
-            <I>unit2</I> is empty the method returns <I>unit1</I>. Othwerwise,
+            <I>unit2</I> is empty the method returns <I>unit1</I>. Otherwise,
             the method returns the sum of the two units in <I>unit1</I>'s type.
             </para>
       </remarks>
@@ -3934,7 +3949,7 @@
       <remarks>
         <para>
             If <I>unit2</I> is empty the method returns <I>unit1</I>.
-            Othwerwise, the method returns the difference of the two units 
+            Otherwise, the method returns the difference of the two units 
             in <I>unit1</I>'s type.
             </para>
       </remarks>
@@ -4142,17 +4157,17 @@
     </member>
     <member name="M:Telerik.Reporting.Drawing.Unit.ToString">
       <summary>
-            Returns a human-readable representation ot this 
+            Returns a human-readable representation of this 
             <see cref="T:Telerik.Reporting.Drawing.Unit" />.
             </summary>
       <returns>
-            A human-readable representation ot this 
+            A human-readable representation of this 
             <see cref="T:Telerik.Reporting.Drawing.Unit" />.
             </returns>
     </member>
     <member name="M:Telerik.Reporting.Drawing.Unit.ToString(System.Globalization.CultureInfo)">
       <summary>
-            Returns a human-readable representation ot this 
+            Returns a human-readable representation of this 
             <see cref="T:Telerik.Reporting.Drawing.Unit" />.
             </summary>
       <param name="culture">
@@ -4160,7 +4175,7 @@
             culture to use.
             </param>
       <returns>
-            A human-readable representation ot this 
+            A human-readable representation of this 
             <see cref="T:Telerik.Reporting.Drawing.Unit" />.
             </returns>
     </member>
@@ -4409,6 +4424,23 @@
             fully serialized, i.e. all of its properties should be serialized
             no matter whether they are inline, parent or global.
             </summary>
+    </member>
+    <member name="T:Telerik.Reporting.IToggleVisibilityTarget">
+      <summary>
+            Represents a report object which may be used as target of a <see cref="T:Telerik.Reporting.ToggleVisibilityAction" />.
+            </summary>
+    </member>
+    <member name="P:Telerik.Reporting.IToggleVisibilityTarget.Name">
+      <summary>
+            Gets the name of the report object used as toggle visibility target. 
+            </summary>
+      <value>
+            The name of the report object. 
+            </value>
+      <remarks>
+            The <B>Name</B> of the toggle visibility target should be unique in the report scope so 
+            that triggering the toggle visibility action does not interfere with other report objects.
+            </remarks>
     </member>
     <member name="T:Telerik.Reporting.ReportItemBase">
       <summary>
@@ -5531,7 +5563,7 @@
             after the data is retrieved from the data source.
             </remarks>
     </member>
-    <member name="P:Telerik.Reporting.Chart.Sorting">
+    <member name="P:Telerik.Reporting.Chart.Sortings">
       <summary>
             Gets a 
             <see cref="T:Telerik.Reporting.Data.SortingCollection" /> 
@@ -5546,6 +5578,11 @@
             Sort expressions sort the data that is displayed to the user 
             after the data is retrieved from the data source.
             </remarks>
+    </member>
+    <member name="P:Telerik.Reporting.Chart.CustomPalettes">
+      <summary>
+            Specifies the custom palettes for chart.
+            </summary>
     </member>
     <member name="P:Telerik.Reporting.Chart.ChartTitle">
       <summary>
@@ -5579,17 +5616,32 @@
     </member>
     <member name="P:Telerik.Reporting.Chart.DataGroupColumn">
       <summary>
-            Define a data source column name for grouping data
+            Defines a data source column name for grouping data
             </summary>
     </member>
     <member name="P:Telerik.Reporting.Chart.Series">
       <summary>
-            Gets or sets the RadChart's chart series collection object.
+            Gets or sets the chart's series collection object.
             </summary>
     </member>
     <member name="P:Telerik.Reporting.Chart.SeriesPalette">
       <summary>
-            Specifies the series palette        
+            Specifies the series palette
+            </summary>
+    </member>
+    <member name="P:Telerik.Reporting.Chart.ImageFormat">
+      <summary>
+            Specifies the image format in which the image is streamed.
+            </summary>
+    </member>
+    <member name="P:Telerik.Reporting.Chart.SeriesOrientation">
+      <summary>
+            Specifies the orientation of the chart series on the plot area.
+            </summary>
+    </member>
+    <member name="P:Telerik.Reporting.Chart.BitmapResolution">
+      <summary>
+            Specifies the resolution of the chart image when rendered as Bitmap.
             </summary>
     </member>
     <member name="P:Telerik.Reporting.Chart.AutoLayout">
@@ -5603,7 +5655,9 @@
             </summary>
     </member>
     <member name="P:Telerik.Reporting.Chart.IntelligentLabelsEnabled">
-      <summary>Toggles the use of the IntelligentLabels feature.</summary>
+      <summary>
+            Toggles the use of the IntelligentLabels feature.
+            </summary>
     </member>
     <member name="E:Telerik.Reporting.Chart.NeedDataSource">
       <summary>
@@ -5791,18 +5845,427 @@
             Gets the calculated fields collection.
             </summary>
     </member>
+    <member name="T:Telerik.Reporting.CubeDataSource">
+      <summary>
+            Represents an OLAP cube to data items.
+            </summary>
+    </member>
+    <member name="M:Telerik.Reporting.CubeDataSource.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Reporting.CubeDataSource" /> class.
+            </summary>
+    </member>
+    <member name="M:Telerik.Reporting.CubeDataSource.#ctor(System.String,System.String)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Reporting.CubeDataSource" /> class.
+            </summary>
+      <param name="connectionString">
+            Specifies the connection string used to connect to the OLAP database.
+            </param>
+      <param name="selectCommand">
+            Specifies the MDX select statement to execute against the OLAP cube.
+            </param>
+    </member>
+    <member name="P:Telerik.Reporting.CubeDataSource.ConnectionString">
+      <summary>
+            Gets or sets the connection string used to connect to the OLAP database.
+            </summary>
+      <remarks>
+            The <B>ConnectionString</B> property contains a valid connection string or a name of 
+            a <see cref="!:ConnectionStringSettings" /> in the application's configuration file.
+            </remarks>
+    </member>
+    <member name="P:Telerik.Reporting.CubeDataSource.SelectCommand">
+      <summary>
+            Gets or sets the MDX select statement to execute against the OLAP cube.
+            </summary>
+    </member>
+    <member name="P:Telerik.Reporting.CubeDataSource.Parameters">
+      <summary>
+            Gets a collection with <see cref="T:Telerik.Reporting.CubeDataSourceParameter" /> objects.
+            </summary>
+      <remarks>
+            The <b>Parameters</b> collection is used to pass named parameters when
+            executing a parameteized MDX select statement against the OLAP cube.
+            </remarks>
+    </member>
+    <member name="P:Telerik.Reporting.CubeDataSource.Mappings">
+      <summary>
+            Gets a collection with <see cref="T:Telerik.Reporting.DataFieldMapping" /> objects.
+            </summary>
+      <remarks>
+            The <b>Mappings</b> collection is used to map the names of the data source
+            fields to the actual fields returned when executing the MDX select statement.
+            </remarks>
+    </member>
     <member name="T:Telerik.Reporting.DataSourceParameter">
       <summary>
-            Represents a parameter in a <see cref="T:Telerik.Reporting.DataSource" />.
+            Represents a parameter in a <see cref="T:Telerik.Reporting.DataSource" /> component.
             </summary>
+    </member>
+    <member name="M:Telerik.Reporting.DataSourceParameter.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Reporting.DataSourceParameter" /> class.
+            </summary>
+    </member>
+    <member name="M:Telerik.Reporting.DataSourceParameter.#ctor(System.String)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Reporting.DataSourceParameter" /> class.
+            </summary>
+      <param name="name">
+            Specifies the name of the parameter.
+            </param>
+    </member>
+    <member name="M:Telerik.Reporting.DataSourceParameter.#ctor(System.String,System.Object)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Reporting.DataSourceParameter" /> class.
+            </summary>
+      <param name="name">
+            Specifies the name of the parameter.
+            </param>
+      <param name="value">
+            Specifies the value of the parameter.
+            </param>
     </member>
     <member name="P:Telerik.Reporting.DataSourceParameter.Name">
       <summary>
-            Gets or sets the name of the <b>DataSourceParameter</b></summary>
+            Gets or sets the name of the parameter.
+            </summary>
     </member>
     <member name="P:Telerik.Reporting.DataSourceParameter.Value">
       <summary>
-            Gets or sets the value of the <b>DataSourceParameter</b></summary>
+            Gets or sets the value of the parameter.
+            </summary>
+    </member>
+    <member name="T:Telerik.Reporting.CubeDataSourceParameter">
+      <summary>
+            Represents a parameter in a <see cref="T:Telerik.Reporting.CubeDataSource" /> component.
+            </summary>
+    </member>
+    <member name="M:Telerik.Reporting.CubeDataSourceParameter.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Reporting.CubeDataSourceParameter" /> class.
+            </summary>
+    </member>
+    <member name="M:Telerik.Reporting.CubeDataSourceParameter.#ctor(System.String)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Reporting.CubeDataSourceParameter" /> class.
+            </summary>
+      <param name="name">
+            Specifies the name of the parameter.
+            </param>
+    </member>
+    <member name="M:Telerik.Reporting.CubeDataSourceParameter.#ctor(System.String,System.Object)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Reporting.CubeDataSourceParameter" /> class.
+            </summary>
+      <param name="name">
+            Specifies the name of the parameter.
+            </param>
+      <param name="value">
+            Specifies the value of the parameter.
+            </param>
+    </member>
+    <member name="T:Telerik.Reporting.CubeDataSourceParameterCollection">
+      <summary>
+            Represents a collection of <see cref="T:Telerik.Reporting.CubeDataSourceParameter" /> objects.
+            </summary>
+    </member>
+    <member name="M:Telerik.Reporting.CubeDataSourceParameterCollection.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Reporting.CubeDataSourceParameterCollection" /> class.
+            </summary>
+    </member>
+    <member name="M:Telerik.Reporting.CubeDataSourceParameterCollection.#ctor(Telerik.Reporting.CubeDataSourceParameter[])">
+      <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Reporting.CubeDataSourceParameterCollection" /> class.
+            </summary>
+      <param name="parameters">
+            Specifies a range of parameters to add to the collection.
+            </param>
+    </member>
+    <member name="M:Telerik.Reporting.CubeDataSourceParameterCollection.#ctor(Telerik.Reporting.CubeDataSourceParameterCollection)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Reporting.CubeDataSourceParameterCollection" /> class.
+            </summary>
+      <param name="parameters">
+            Specifies a range of parameters to add to the collection.
+            </param>
+    </member>
+    <member name="M:Telerik.Reporting.CubeDataSourceParameterCollection.Contains(System.String)">
+      <summary>
+            Determines if the collection contains a parameter with the specified name.
+            </summary>
+      <param name="name">
+            Specifies the name of a parameter from the collection.
+            </param>
+      <returns>
+        <b>True</b> if a parameter with the specified name exists, <b>False</b> otherwise.
+            </returns>
+    </member>
+    <member name="M:Telerik.Reporting.CubeDataSourceParameterCollection.Add(System.String)">
+      <summary>
+            Adds a new parameter with the specified name to the collection.
+            </summary>
+      <param name="name">
+            Specifies the name of the new parameter to add to the collection.
+            </param>
+    </member>
+    <member name="M:Telerik.Reporting.CubeDataSourceParameterCollection.Add(System.String,System.Object)">
+      <summary>
+            Adds a new parameter with the specified name and value to the collection.
+            </summary>
+      <param name="name">
+            Specifies the name of the new parameter to add to the collection.
+            </param>
+      <param name="value">
+            Specifies the value of the new parameter to add to the collection.
+            </param>
+    </member>
+    <member name="M:Telerik.Reporting.CubeDataSourceParameterCollection.AddRange(Telerik.Reporting.CubeDataSourceParameter[])">
+      <summary>
+            Adds a range of parameters to the collection.
+            </summary>
+      <param name="parameters">
+            Specifies a range of parameters to add to the collection.
+            </param>
+    </member>
+    <member name="M:Telerik.Reporting.CubeDataSourceParameterCollection.AddRange(Telerik.Reporting.CubeDataSourceParameterCollection)">
+      <summary>
+            Adds a range of parameters to the collection.
+            </summary>
+      <param name="parameters">
+            Specifies a range of parameters to add to the collection.
+            </param>
+    </member>
+    <member name="M:Telerik.Reporting.CubeDataSourceParameterCollection.ToArray">
+      <summary>
+            Converts the collection to an array of parameters.
+            </summary>
+      <returns>
+            Array of parameters contained in the collection.
+            </returns>
+    </member>
+    <member name="P:Telerik.Reporting.CubeDataSourceParameterCollection.Item(System.String)">
+      <summary>
+            Gets the parameter with the specified name from the collection.
+            </summary>
+      <param name="name">
+            Specifies the name of a parameter from the collection.
+            </param>
+      <returns>
+            The parameter with the specified name from the collection.
+            </returns>
+    </member>
+    <member name="T:Telerik.Reporting.DataFieldMapping">
+      <summary>
+            Represents a mapping between a field from a data source and its
+            corresponding short alias used for data binding in expressions.
+            </summary>
+    </member>
+    <member name="M:Telerik.Reporting.DataFieldMapping.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Reporting.DataFieldMapping" /> class.
+            </summary>
+    </member>
+    <member name="M:Telerik.Reporting.DataFieldMapping.#ctor(System.String,System.String)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Reporting.DataFieldMapping" /> class.
+            </summary>
+      <param name="name">
+            Specifies the name of the field for the mapping.
+            </param>
+      <param name="alias">
+            Specifies the alias of the field for the mapping.
+            </param>
+    </member>
+    <member name="P:Telerik.Reporting.DataFieldMapping.Name">
+      <summary>
+            Gets or sets the name of the field from the mapping.
+            </summary>
+    </member>
+    <member name="P:Telerik.Reporting.DataFieldMapping.Alias">
+      <summary>
+            Gets or sets the alias of the field from the mapping.
+            </summary>
+    </member>
+    <member name="T:Telerik.Reporting.DataFieldMappingCollection">
+      <summary>
+            Represents a collection of <see cref="T:Telerik.Reporting.DataFieldMapping" /> objects.
+            </summary>
+      <remarks>
+            Represents a collection of mappings for the fields of a data source and
+            their corresponding short aliases used for data binding in expressions.
+            </remarks>
+    </member>
+    <member name="M:Telerik.Reporting.DataFieldMappingCollection.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Reporting.DataFieldMappingCollection" /> class.
+            </summary>
+    </member>
+    <member name="M:Telerik.Reporting.DataFieldMappingCollection.#ctor(Telerik.Reporting.DataFieldMapping[])">
+      <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Reporting.DataFieldMappingCollection" /> class.
+            </summary>
+      <param name="mappings">
+            Specifies a range of mappings to add to the collection.
+            </param>
+    </member>
+    <member name="M:Telerik.Reporting.DataFieldMappingCollection.#ctor(Telerik.Reporting.DataFieldMappingCollection)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Reporting.DataFieldMappingCollection" /> class.
+            </summary>
+      <param name="mappings">
+            Specifies a range of mappings to add to the collection.
+            </param>
+    </member>
+    <member name="M:Telerik.Reporting.DataFieldMappingCollection.Contains(System.String)">
+      <summary>
+            Determines if the collection contains a mapping for the specified field.
+            </summary>
+      <param name="name">
+            Specifies the name of a field from the collection.
+            </param>
+      <returns>
+        <b>True</b> if a mapping for the specified field exists, <b>False</b> otherwise.
+            </returns>
+    </member>
+    <member name="M:Telerik.Reporting.DataFieldMappingCollection.Add(System.String,System.String)">
+      <summary>
+            Adds a new mapping for the specified field to the collection.
+            </summary>
+      <param name="name">
+            Specifies the name of the field for the new mapping.
+            </param>
+      <param name="alias">
+            Specifies the alias of the field for the new mapping.
+            </param>
+    </member>
+    <member name="M:Telerik.Reporting.DataFieldMappingCollection.AddRange(Telerik.Reporting.DataFieldMapping[])">
+      <summary>
+            Adds a range of mappings to the collection.
+            </summary>
+      <param name="mappings">
+            Specifies a range of mappings to add to the collection.
+            </param>
+    </member>
+    <member name="M:Telerik.Reporting.DataFieldMappingCollection.AddRange(Telerik.Reporting.DataFieldMappingCollection)">
+      <summary>
+            Adds a range of mappings to the collection.
+            </summary>
+      <param name="mappings">
+            Specifies a range of mappings to add to the collection.
+            </param>
+    </member>
+    <member name="M:Telerik.Reporting.DataFieldMappingCollection.ToArray">
+      <summary>
+            Converts the collection to an array of mappings.
+            </summary>
+      <returns>
+            Array of mappings contained in the collection.
+            </returns>
+    </member>
+    <member name="P:Telerik.Reporting.DataFieldMappingCollection.Item(System.String)">
+      <summary>
+            Gets the mapping of the specified field from the collection.
+            </summary>
+      <param name="name">
+            Specifies the name of a field from the collection.
+            </param>
+      <returns>
+            The mapping of the specified field from the collection.
+            </returns>
+    </member>
+    <member name="T:Telerik.Reporting.DataSourceParameterCollection">
+      <summary>
+            Represents a collection of <see cref="T:Telerik.Reporting.DataSourceParameter" /> objects.
+            </summary>
+    </member>
+    <member name="M:Telerik.Reporting.DataSourceParameterCollection.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Reporting.DataSourceParameterCollection" /> class.
+            </summary>
+    </member>
+    <member name="M:Telerik.Reporting.DataSourceParameterCollection.#ctor(Telerik.Reporting.DataSourceParameter[])">
+      <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Reporting.DataSourceParameterCollection" /> class.
+            </summary>
+      <param name="parameters">
+            Specifies a range of parameters to add to the collection.
+            </param>
+    </member>
+    <member name="M:Telerik.Reporting.DataSourceParameterCollection.#ctor(Telerik.Reporting.DataSourceParameterCollection)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Reporting.DataSourceParameterCollection" /> class.
+            </summary>
+      <param name="parameters">
+            Specifies a range of parameters to add to the collection.
+            </param>
+    </member>
+    <member name="M:Telerik.Reporting.DataSourceParameterCollection.Contains(System.String)">
+      <summary>
+            Determines if the collection contains a parameter with the specified name.
+            </summary>
+      <param name="name">
+            Specifies the name of a parameter from the collection.
+            </param>
+      <returns>
+        <b>True</b> if a parameter with the specified name exists, <b>False</b> otherwise.
+            </returns>
+    </member>
+    <member name="M:Telerik.Reporting.DataSourceParameterCollection.Add(System.String)">
+      <summary>
+            Adds a new parameter with the specified name to the collection.
+            </summary>
+      <param name="name">
+            Specifies the name of the new parameter to add to the collection.
+            </param>
+    </member>
+    <member name="M:Telerik.Reporting.DataSourceParameterCollection.Add(System.String,System.Object)">
+      <summary>
+            Adds a new parameter with the specified name and value to the collection.
+            </summary>
+      <param name="name">
+            Specifies the name of the new parameter to add to the collection.
+            </param>
+      <param name="value">
+            Specifies the value of the new parameter to add to the collection.
+            </param>
+    </member>
+    <member name="M:Telerik.Reporting.DataSourceParameterCollection.AddRange(Telerik.Reporting.DataSourceParameter[])">
+      <summary>
+            Adds a range of parameters to the collection.
+            </summary>
+      <param name="parameters">
+            Specifies a range of parameters to add to the collection.
+            </param>
+    </member>
+    <member name="M:Telerik.Reporting.DataSourceParameterCollection.AddRange(Telerik.Reporting.DataSourceParameterCollection)">
+      <summary>
+            Adds a range of parameters to the collection.
+            </summary>
+      <param name="parameters">
+            Specifies a range of parameters to add to the collection.
+            </param>
+    </member>
+    <member name="M:Telerik.Reporting.DataSourceParameterCollection.ToArray">
+      <summary>
+            Converts the collection to an array of parameters.
+            </summary>
+      <returns>
+            Array of parameters contained in the collection.
+            </returns>
+    </member>
+    <member name="P:Telerik.Reporting.DataSourceParameterCollection.Item(System.String)">
+      <summary>
+            Gets the parameter with the specified name from the collection.
+            </summary>
+      <param name="name">
+            Specifies the name of a parameter from the collection.
+            </param>
+      <returns>
+            The parameter with the specified name from the collection.
+            </returns>
     </member>
     <member name="T:Telerik.Reporting.ReportSectionBase">
       <summary>
@@ -6027,7 +6490,7 @@
             <B>false</B>. 
             </param>
     </member>
-    <member name="P:Telerik.Reporting.Group.Grouping">
+    <member name="P:Telerik.Reporting.Group.Groupings">
       <summary>
             Gets a 
             <see cref="T:Telerik.Reporting.Data.GroupingCollection" />
@@ -6045,7 +6508,7 @@
             data field is represented by a group expression in the collection.
             </remarks>
     </member>
-    <member name="P:Telerik.Reporting.Group.Sorting">
+    <member name="P:Telerik.Reporting.Group.Sortings">
       <summary>
             Gets a 
             <see cref="T:Telerik.Reporting.Data.SortingCollection" /> 
@@ -6152,6 +6615,15 @@
             A string / expression value specifying the document map text.
             </value>
     </member>
+    <member name="P:Telerik.Reporting.Group.Visible">
+      <summary>
+            Gets or sets a value indicating whether the group is displayed. 
+            </summary>
+      <value>
+        <B>true</B> if the group is displayed; otherwise,
+            <B>false</B>. The default is <B>true</B>.
+            </value>
+    </member>
     <member name="P:Telerik.Reporting.Group.Name">
       <summary>
             Gets or sets the name of the report group. 
@@ -6160,7 +6632,7 @@
             The name of the report group. 
             </value>
       <remarks>
-            The <B>Name</B> property can be used at run time to set the scope of aggregage functions.
+            The <B>Name</B> property can be used at run time to set the scope of aggregate functions.
             </remarks>
     </member>
     <member name="T:Telerik.Reporting.GroupSection">
@@ -6319,7 +6791,7 @@
     </member>
     <member name="P:Telerik.Reporting.IReportDocument.Reports">
       <summary>
-            Gets the reports contained in the doucment.
+            Gets the reports contained in the document.
             </summary>
     </member>
     <member name="P:Telerik.Reporting.IReportDocument.DocumentName">
@@ -6442,6 +6914,26 @@
             that opens an Url.</para>
       </remarks>
     </member>
+    <member name="M:Telerik.Reporting.NavigateToUrlAction.#ctor">
+      <summary>
+            Creates a new instance of NavigateToUrlAction class
+            </summary>
+    </member>
+    <member name="T:Telerik.Reporting.UrlTarget">
+      <summary>
+            Represents NavigateToUrlAction target types. 
+            </summary>
+    </member>
+    <member name="F:Telerik.Reporting.UrlTarget.NewWindow">
+      <summary>
+            Open in new window
+            </summary>
+    </member>
+    <member name="F:Telerik.Reporting.UrlTarget.SameWindow">
+      <summary>
+            Open in the same window
+            </summary>
+    </member>
     <member name="T:Telerik.Reporting.ObjectDataSource">
       <summary>
             Represents a business object to data items.
@@ -6505,17 +6997,156 @@
     </member>
     <member name="T:Telerik.Reporting.ObjectDataSourceParameter">
       <summary>
-            Represents a parameter in an <see cref="T:Telerik.Reporting.ObjectDataSource" />.
+            Represents a parameter in an <see cref="T:Telerik.Reporting.ObjectDataSource" /> component.
             </summary>
+    </member>
+    <member name="M:Telerik.Reporting.ObjectDataSourceParameter.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Reporting.ObjectDataSourceParameter" /> class.
+            </summary>
+    </member>
+    <member name="M:Telerik.Reporting.ObjectDataSourceParameter.#ctor(System.String)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Reporting.ObjectDataSourceParameter" /> class.
+            </summary>
+      <param name="name">
+            Specifies the name of the parameter.
+            </param>
+    </member>
+    <member name="M:Telerik.Reporting.ObjectDataSourceParameter.#ctor(System.String,System.Type)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Reporting.ObjectDataSourceParameter" /> class.
+            </summary>
+      <param name="name">
+            Specifies the name of the parameter.
+            </param>
+      <param name="dataType">
+            Specifies the data type of the parameter.
+            </param>
+    </member>
+    <member name="M:Telerik.Reporting.ObjectDataSourceParameter.#ctor(System.String,System.Type,System.Object)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Reporting.ObjectDataSourceParameter" /> class.
+            </summary>
+      <param name="name">
+            Specifies the name of the parameter.
+            </param>
+      <param name="dataType">
+            Specifies the data type of the parameter.
+            </param>
+      <param name="value">
+            Specifies the value of the parameter.
+            </param>
     </member>
     <member name="P:Telerik.Reporting.ObjectDataSourceParameter.DataType">
       <summary>
-            Gets or sets the data type of the <b>ObjectDataSourceParameter</b></summary>
+            Gets or sets the data type of the parameter.
+            </summary>
     </member>
     <member name="T:Telerik.Reporting.ObjectDataSourceParameterCollection">
       <summary>
-            Represents a collection of <see cref="T:Telerik.Reporting.ObjectDataSourceParameter" />s.
+            Represents a collection of <see cref="T:Telerik.Reporting.ObjectDataSourceParameter" /> objects.
             </summary>
+    </member>
+    <member name="M:Telerik.Reporting.ObjectDataSourceParameterCollection.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Reporting.ObjectDataSourceParameterCollection" /> class.
+            </summary>
+    </member>
+    <member name="M:Telerik.Reporting.ObjectDataSourceParameterCollection.#ctor(Telerik.Reporting.ObjectDataSourceParameter[])">
+      <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Reporting.ObjectDataSourceParameterCollection" /> class.
+            </summary>
+      <param name="parameters">
+            Specifies a range of parameters to add to the collection.
+            </param>
+    </member>
+    <member name="M:Telerik.Reporting.ObjectDataSourceParameterCollection.#ctor(Telerik.Reporting.ObjectDataSourceParameterCollection)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Reporting.ObjectDataSourceParameterCollection" /> class.
+            </summary>
+      <param name="parameters">
+            Specifies a range of parameters to add to the collection.
+            </param>
+    </member>
+    <member name="M:Telerik.Reporting.ObjectDataSourceParameterCollection.Contains(System.String)">
+      <summary>
+            Determines if the collection contains a parameter with the specified name.
+            </summary>
+      <param name="name">
+            Specifies the name of a parameter from the collection.
+            </param>
+      <returns>
+        <b>True</b> if a parameter with the specified name exists, <b>False</b> otherwise.
+            </returns>
+    </member>
+    <member name="M:Telerik.Reporting.ObjectDataSourceParameterCollection.Add(System.String)">
+      <summary>
+            Adds a new parameter with the specified name to the collection.
+            </summary>
+      <param name="name">
+            Specifies the name of the new parameter to add to the collection.
+            </param>
+    </member>
+    <member name="M:Telerik.Reporting.ObjectDataSourceParameterCollection.Add(System.String,System.Type)">
+      <summary>
+            Adds a new parameter with the specified name and data type to the collection.
+            </summary>
+      <param name="name">
+            Specifies the name of the new parameter to add to the collection.
+            </param>
+      <param name="dataType">
+            Specifies the data type of the new parameter to add to the collection.
+            </param>
+    </member>
+    <member name="M:Telerik.Reporting.ObjectDataSourceParameterCollection.Add(System.String,System.Type,System.Object)">
+      <summary>
+            Adds a new parameter with the specified name, data type and value to the collection.
+            </summary>
+      <param name="name">
+            Specifies the name of the new parameter to add to the collection.
+            </param>
+      <param name="dataType">
+            Specifies the data type of the new parameter to add to the collection.
+            </param>
+      <param name="value">
+            Specifies the value of the new parameter to add to the collection.
+            </param>
+    </member>
+    <member name="M:Telerik.Reporting.ObjectDataSourceParameterCollection.AddRange(Telerik.Reporting.ObjectDataSourceParameter[])">
+      <summary>
+            Adds a range of parameters to the collection.
+            </summary>
+      <param name="parameters">
+            Specifies a range of parameters to add to the collection.
+            </param>
+    </member>
+    <member name="M:Telerik.Reporting.ObjectDataSourceParameterCollection.AddRange(Telerik.Reporting.ObjectDataSourceParameterCollection)">
+      <summary>
+            Adds a range of parameters to the collection.
+            </summary>
+      <param name="parameters">
+            Specifies a range of parameters to add to the collection.
+            </param>
+    </member>
+    <member name="M:Telerik.Reporting.ObjectDataSourceParameterCollection.ToArray">
+      <summary>
+            Converts the collection to an array of parameters.
+            </summary>
+      <returns>
+            Array of parameters contained in the collection.
+            </returns>
+    </member>
+    <member name="P:Telerik.Reporting.ObjectDataSourceParameterCollection.Item(System.String)">
+      <summary>
+            Gets the parameter with the specified name from the collection.
+            </summary>
+      <param name="name">
+            Specifies the name of a parameter from the collection.
+            </param>
+      <returns>
+            The parameter with the specified name from the collection.
+            </returns>
     </member>
     <member name="T:Telerik.Reporting.ObjectValueConverter">
       <summary>
@@ -7042,7 +7673,7 @@
             after the data is retrieved from the data source.
             </remarks>
     </member>
-    <member name="P:Telerik.Reporting.Report.Sorting">
+    <member name="P:Telerik.Reporting.Report.Sortings">
       <summary>
             Gets a 
             <see cref="T:Telerik.Reporting.Data.SortingCollection" /> 
@@ -7219,7 +7850,7 @@
             Gets or sets the data type of the parameter.
             </summary>
       <remarks>
-            Determines the type of the values that are acceptable. 
+            Determines the type of the values. Acceptable values for each type are listed in <see cref="T:Telerik.Reporting.ReportParameterType" />.
             The default parameter type is <see cref="F:Telerik.Reporting.ReportParameterType.String" />.
             </remarks>
     </member>
@@ -7227,14 +7858,25 @@
       <summary>
             Gets or sets the value of the parameter. Can be an Expression that 
             evaluates to an object, value of the allowed types, 
-            or <see cref="T:System.Collections.IEnumerable" /> containing values of the allowed types.
+            or <see cref="!:IEnumerable" /> containing values of the allowed types.
             </summary>
     </member>
-    <member name="P:Telerik.Reporting.ReportParameter.Mergable">
+    <member name="P:Telerik.Reporting.ReportParameter.Mergeable">
       <summary>
             Gets or sets a value indicating whether this parameter should be 
             merged with identical parameters from other reports when this report 
             is part of a <see cref="T:Telerik.Reporting.ReportBook" />.
+            </summary>
+      <remarks>
+            Controls parameter merging in <see cref="T:Telerik.Reporting.ReportBook" />. 
+            The default value of the <b>Mergeable</b> property is <b>true</b>. 
+            Set the <b>Mergeable</b> property to <b>false</b> if you want to prevent a parameter 
+            from being merged with its equivalent ones.
+            </remarks>
+    </member>
+    <member name="P:Telerik.Reporting.ReportParameter.UI">
+      <summary>
+            Gets or sets the UI settings that determine if and how parameter editor to be displayed in the viewer.
             </summary>
     </member>
     <member name="P:Telerik.Reporting.ReportParameter.Text">
@@ -7242,6 +7884,8 @@
             Gets or sets the text for the parameter's automatic UI displayed in the report viewer.
             </summary>
       <remarks>
+            The Text property specifies the text for the parameter to be displayed 
+            in the report viewer as prompt to the end user. 
             If value for the property is not provided the <see cref="P:Telerik.Reporting.ReportParameter.Name" /> 
             of the parameter is used.
             </remarks>
@@ -7252,8 +7896,11 @@
             to be generated for the parameter.
             </summary>
       <remarks>
-            If this property is set to <b>false</b>, the parameter must be populated programmatically  
-            or at design time.
+            Specifies whether the parameter will have UI in the parameters area.
+            When at least one report parameter has the <b>Visible</b> property turned on, 
+            a parameter area is shown as part of the report viewer. 
+            If this property is set to <b>false</b>, the parameter must be populated 
+            programmatically or at design time.
             </remarks>
     </member>
     <member name="P:Telerik.Reporting.ReportParameter.MultiValue">
@@ -7262,8 +7909,9 @@
             </summary>
       <remarks>
             If the value is set to <b>true</b> as a valid value of the parameter is accepted
-            an <see cref="T:System.Collections.IEnumerable" /> of values 
+            an <see cref="!:IEnumerable" /> of values 
             of the specified <see cref="P:Telerik.Reporting.ReportParameter.Type" /> of the parameter.
+            Parameters with <b>MultiValue</b> turned on are mainly used with the <b>IN</b> logical operator.
             </remarks>
     </member>
     <member name="P:Telerik.Reporting.ReportParameter.AllowNull">
@@ -7287,6 +7935,22 @@
       <summary>
             Gets an object that defines a set of valid values the parameter can accept from.
             </summary>
+      <remarks>
+            The available values, or valid values, are a set of predefined values 
+            which are acceptable as value of the parameter. 
+            Each available value may have label that will be displayed if the parameter is visible.
+            </remarks>
+    </member>
+    <member name="P:Telerik.Reporting.ReportParameter.AutoRefresh">
+      <summary>
+            Determines whether to trigger the report preview after changing the value for a parameter.
+            Applies only for visible parameters.
+            </summary>
+      <remarks>
+            If this property is set to <b>true</b>, the report viewer will trigger
+            the report preview automatically when the parameter value is changed. 
+            The parameter should be visible in order to auto preview the report.
+            </remarks>
     </member>
     <member name="T:Telerik.Reporting.ReportCollection">
       <summary>
@@ -7345,26 +8009,47 @@
     </member>
     <member name="T:Telerik.Reporting.ReportParameterAvailableValues">
       <summary>
-            Represents the ReportParameterUISettings bindable AvailableValues
-            </summary>
+            Represents the available values for a <see cref="T:Telerik.Reporting.ReportParameter" /></summary>
+      <remarks>
+            The available values, or valid values, are a set of predefined values 
+            which are acceptable as value of the parameter. 
+            Each available value may have label that will be displayed if the parameter is visible.
+            </remarks>
     </member>
     <member name="P:Telerik.Reporting.ReportParameterAvailableValues.DisplayMember">
       <summary>
             Gets or sets a string that specifies the property of the data source from which to draw the value labels.
             </summary>
+      <remarks>
+            Specifies a column name, expression, or embedded expression based on the 
+            <see cref="P:Telerik.Reporting.ReportParameterAvailableValues.DataSource" /> schema. 
+            It is used as label in the value/label pair. 
+            If omitted the ValueMember will be used as 
+            <see cref="P:Telerik.Reporting.ReportParameterAvailableValues.DisplayMember" /> as well.
+            Optional.
+            </remarks>
     </member>
     <member name="P:Telerik.Reporting.ReportParameterAvailableValues.ValueMember">
       <summary>
-            Gets or sets a string that specifies the property of the data source from which to draw the value.
+            Gets or sets a string that specifies the field of the data source from which to draw the values.
             </summary>
+      <remarks>
+            Specifies a column name, expression, or embedded expression based on the 
+            <see cref="P:Telerik.Reporting.ReportParameterAvailableValues.DataSource" /> schema. 
+            It is used as value in the value / label pair.
+            </remarks>
     </member>
     <member name="P:Telerik.Reporting.ReportParameterAvailableValues.DataSource">
       <summary>
-            Gets or sets the data source.
+            Gets or sets the data source used for retrieving the value / label pairs 
+            of the available values.
             </summary>
       <remarks>
-            For backwards compatibility reasons Telerik Reporting supports binding directly to IEnumberable/IListSource objects (incl. arrays, collections, DataSet, DataTable, 
-            DataView, and DbDataAdapter). Instead consider using the ObjectDataSource component that can handle these types of data sources.
+            For backwards compatibility reasons Telerik Reporting supports binding directly to 
+            IEnumberable/IListSource objects (incl. arrays, collections, DataSet, DataTable, 
+            DataView, and DbDataAdapter). 
+            Instead consider using the <see cref="T:Telerik.Reporting.ObjectDataSource" /> 
+            component that can handle these types of data sources.
             </remarks>
     </member>
     <member name="P:Telerik.Reporting.ReportParameterAvailableValues.DataMember">
@@ -7377,7 +8062,7 @@
             Gets a FilterCollection that defines the filter expression(s).
             </summary>
     </member>
-    <member name="P:Telerik.Reporting.ReportParameterAvailableValues.Sorting">
+    <member name="P:Telerik.Reporting.ReportParameterAvailableValues.Sortings">
       <summary>
             Gets a SortingCollection that defines the sort column(s), and their type and order.
             </summary>
@@ -7478,12 +8163,12 @@
     <member name="F:Telerik.Reporting.ReportParameterType.Integer">
       <summary>
             Values of type <see cref="T:System.Int16" />, <see cref="T:System.Int32" />,
-            or <see cref="T:System.Int64" /> are accepted.
+            or <see cref="T:System.Int64" /> are accepted. Internally the values are converted to <see cref="T:System.Int64" />.
             </summary>
     </member>
     <member name="F:Telerik.Reporting.ReportParameterType.Float">
       <summary>
-            Values of type <see cref="T:System.Single" /> or <see cref="T:System.Double" /> are accepted.
+            Values of type <see cref="T:System.Single" /> or <see cref="T:System.Double" /> are accepted. Internally the values are converted to <see cref="T:System.Double" />.
             </summary>
     </member>
     <member name="F:Telerik.Reporting.ReportParameterType.String">
@@ -7596,73 +8281,246 @@
       <summary>
             Initializes a new instance of the <see cref="T:Telerik.Reporting.SqlDataSource" /> class.
             </summary>
+      <param name="connectionString">
+            Specifies the connection string used to connect to data.
+            </param>
+      <param name="selectCommand">
+            Specifies the SQL select statement or stored procedure to execute.
+            </param>
     </member>
     <member name="M:Telerik.Reporting.SqlDataSource.#ctor(System.String,System.String,System.String)">
       <summary>
             Initializes a new instance of the <see cref="T:Telerik.Reporting.SqlDataSource" /> class.
             </summary>
+      <param name="providerName">
+            Specifies the managed provider name used to connect to data.
+            </param>
+      <param name="connectionString">
+            Specifies the connection string used to connect to data.
+            </param>
+      <param name="selectCommand">
+            Specifies the SQL select statement or stored procedure to execute.
+            </param>
     </member>
     <member name="M:Telerik.Reporting.SqlDataSource.#ctor(System.String,System.String,System.String,Telerik.Reporting.SqlDataSourceCommandType)">
       <summary>
             Initializes a new instance of the <see cref="T:Telerik.Reporting.SqlDataSource" /> class.
             </summary>
+      <param name="providerName">
+            Specifies the managed provider name used to connect to data.
+            </param>
+      <param name="connectionString">
+            Specifies the connection string used to connect to data.
+            </param>
+      <param name="selectCommand">
+            Specifies the SQL select statement or stored procedure to execute.
+            </param>
+      <param name="selectCommandType">
+            Specifies how the select command string to be interpreted.
+            </param>
     </member>
     <member name="P:Telerik.Reporting.SqlDataSource.ConnectionString">
       <summary>
-            Gets or sets the string used to open the data source.
+            Gets or sets the connection string used to connect to data.
             </summary>
       <remarks>
-            The <B>ConnectionString</B> property contains a valid connection string or a name of 
-            a <see cref="T:System.Configuration.ConnectionStringSettings" /> in the application's configuration file.
+            The <B>ConnectionString</B> property contains either a valid connection
+            string or the name of a <see cref="T:System.Configuration.ConnectionStringSettings" /> in the
+            application configuration file.
             </remarks>
     </member>
     <member name="P:Telerik.Reporting.SqlDataSource.ProviderName">
       <summary>
-            Gets or sets the name of the .NET Framework data provider.
+            Gets or sets the managed provider name used to connect to data.
             </summary>
       <remarks>
-            If no <b>ProviderName</b> is specified, the default value is <b>System.Data.SqlClient</b>.
+            If the <b>ProviderName</b> property is set to null (Nothing in Visual Basic)
+            or an empty string, the default provider is <b>System.Data.SqlClient</b>.
             </remarks>
     </member>
     <member name="P:Telerik.Reporting.SqlDataSource.SelectCommand">
       <summary>
-            Gets or sets the Transact-SQL statement or stored procedure to execute at the data source.
+            Gets or sets the SQL select statement or stored procedure to execute.
             </summary>
     </member>
     <member name="P:Telerik.Reporting.SqlDataSource.SelectCommandType">
       <summary>
-            Gets or sets a value indicating how the <b>SelectCommand</b> property is to be interpreted.
+            Gets or sets a value indicating how the select command to be interpreted.
             </summary>
       <remarks>
-            One of the <see cref="T:Telerik.Reporting.SqlDataSourceCommandType" /> values. The default is Text.
+            One of the <see cref="T:Telerik.Reporting.SqlDataSourceCommandType" /> enumeration values.
+            The default value of the <b>SelectCommandType</b> property is <b>Text</b>.
             </remarks>
     </member>
     <member name="P:Telerik.Reporting.SqlDataSource.Parameters">
       <summary>
-            Gets a collection with data source <see cref="T:Telerik.Reporting.Parameter" />s.
+            Gets a collection with data source parameters.
             </summary>
     </member>
     <member name="P:Telerik.Reporting.SqlDataSource.CommandTimeout">
       <summary>
             Gets or sets the wait time in seconds before terminating the attempt to retrieve data.
             </summary>
-      <remarks>The provided value should be valid for the used data provider (Sql, Oracle, etc.).</remarks>
-      <value>The time in seconds to wait for the command to execute.
-            The default value is 30 seconds.</value>
+      <remarks>
+            The provided value should be valid for the currently used data provider.
+            </remarks>
+      <value>
+            The time in seconds to wait before terminating the attempt to retrieve data.
+            The default value of the <b>CommandTimeout</b> property is 30 seconds.
+            </value>
     </member>
     <member name="T:Telerik.Reporting.SqlDataSourceParameter">
       <summary>
-            Represents a parameter in a <see cref="T:Telerik.Reporting.SqlDataSource" />.
+            Represents a parameter in a <see cref="T:Telerik.Reporting.SqlDataSource" /> component.
             </summary>
+    </member>
+    <member name="M:Telerik.Reporting.SqlDataSourceParameter.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Reporting.SqlDataSourceParameter" /> class.
+            </summary>
+    </member>
+    <member name="M:Telerik.Reporting.SqlDataSourceParameter.#ctor(System.String)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Reporting.SqlDataSourceParameter" /> class.
+            </summary>
+      <param name="name">
+            Specifies the name of the parameter.
+            </param>
+    </member>
+    <member name="M:Telerik.Reporting.SqlDataSourceParameter.#ctor(System.String,System.Data.DbType)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Reporting.SqlDataSourceParameter" /> class.
+            </summary>
+      <param name="name">
+            Specifies the name of the parameter.
+            </param>
+      <param name="dataType">
+            Specifies the data type of the parameter.
+            </param>
+    </member>
+    <member name="M:Telerik.Reporting.SqlDataSourceParameter.#ctor(System.String,System.Data.DbType,System.Object)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Reporting.SqlDataSourceParameter" /> class.
+            </summary>
+      <param name="name">
+            Specifies the name of the parameter.
+            </param>
+      <param name="dataType">
+            Specifies the data type of the parameter.
+            </param>
+      <param name="value">
+            Specifies the value of the parameter.
+            </param>
     </member>
     <member name="P:Telerik.Reporting.SqlDataSourceParameter.DbType">
       <summary>
-            Gets or sets the data type of the <b>SqlDataSourceParameter</b></summary>
+            Gets or sets the data type of the parameter.
+            </summary>
     </member>
     <member name="T:Telerik.Reporting.SqlDataSourceParameterCollection">
       <summary>
-            Represents a collection of <see cref="T:Telerik.Reporting.SqlDataSourceParameter" />s.
+            Represents a collection of <see cref="T:Telerik.Reporting.SqlDataSourceParameter" /> objects.
             </summary>
+    </member>
+    <member name="M:Telerik.Reporting.SqlDataSourceParameterCollection.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Reporting.SqlDataSourceParameterCollection" /> class.
+            </summary>
+    </member>
+    <member name="M:Telerik.Reporting.SqlDataSourceParameterCollection.#ctor(Telerik.Reporting.SqlDataSourceParameter[])">
+      <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Reporting.SqlDataSourceParameterCollection" /> class.
+            </summary>
+      <param name="parameters">
+            Specifies a range of parameters to add to the collection.
+            </param>
+    </member>
+    <member name="M:Telerik.Reporting.SqlDataSourceParameterCollection.#ctor(Telerik.Reporting.SqlDataSourceParameterCollection)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Reporting.SqlDataSourceParameterCollection" /> class.
+            </summary>
+      <param name="parameters">
+            Specifies a range of parameters to add to the collection.
+            </param>
+    </member>
+    <member name="M:Telerik.Reporting.SqlDataSourceParameterCollection.Contains(System.String)">
+      <summary>
+            Determines if the collection contains a parameter with the specified name.
+            </summary>
+      <param name="name">
+            Specifies the name of a parameter from the collection.
+            </param>
+      <returns>
+        <b>True</b> if a parameter with the specified name exists, <b>False</b> otherwise.
+            </returns>
+    </member>
+    <member name="M:Telerik.Reporting.SqlDataSourceParameterCollection.Add(System.String)">
+      <summary>
+            Adds a new parameter with the specified name to the collection.
+            </summary>
+      <param name="name">
+            Specifies the name of the new parameter to add to the collection.
+            </param>
+    </member>
+    <member name="M:Telerik.Reporting.SqlDataSourceParameterCollection.Add(System.String,System.Data.DbType)">
+      <summary>
+            Adds a new parameter with the specified name and data type to the collection.
+            </summary>
+      <param name="name">
+            Specifies the name of the new parameter to add to the collection.
+            </param>
+      <param name="dataType">
+            Specifies the data type of the new parameter to add to the collection.
+            </param>
+    </member>
+    <member name="M:Telerik.Reporting.SqlDataSourceParameterCollection.Add(System.String,System.Data.DbType,System.Object)">
+      <summary>
+            Adds a new parameter with the specified name, data type and value to the collection.
+            </summary>
+      <param name="name">
+            Specifies the name of the new parameter to add to the collection.
+            </param>
+      <param name="dataType">
+            Specifies the data type of the new parameter to add to the collection.
+            </param>
+      <param name="value">
+            Specifies the value of the new parameter to add to the collection.
+            </param>
+    </member>
+    <member name="M:Telerik.Reporting.SqlDataSourceParameterCollection.AddRange(Telerik.Reporting.SqlDataSourceParameter[])">
+      <summary>
+            Adds a range of parameters to the collection.
+            </summary>
+      <param name="parameters">
+            Specifies a range of parameters to add to the collection.
+            </param>
+    </member>
+    <member name="M:Telerik.Reporting.SqlDataSourceParameterCollection.AddRange(Telerik.Reporting.SqlDataSourceParameterCollection)">
+      <summary>
+            Adds a range of parameters to the collection.
+            </summary>
+      <param name="parameters">
+            Specifies a range of parameters to add to the collection.
+            </param>
+    </member>
+    <member name="M:Telerik.Reporting.SqlDataSourceParameterCollection.ToArray">
+      <summary>
+            Converts the collection to an array of parameters.
+            </summary>
+      <returns>
+            Array of parameters contained in the collection.
+            </returns>
+    </member>
+    <member name="P:Telerik.Reporting.SqlDataSourceParameterCollection.Item(System.String)">
+      <summary>
+            Gets the parameter with the specified name from the collection.
+            </summary>
+      <param name="name">
+            Specifies the name of a parameter from the collection.
+            </param>
+      <returns>
+            The parameter with the specified name from the collection.
+            </returns>
     </member>
     <member name="T:Telerik.Reporting.SR">
       <summary>
@@ -7800,7 +8658,7 @@
             after the data is retrieved from the data source.
             </remarks>
     </member>
-    <member name="P:Telerik.Reporting.Table.Sorting">
+    <member name="P:Telerik.Reporting.Table.Sortings">
       <summary>
             Gets a 
             <see cref="T:Telerik.Reporting.Data.SortingCollection" /> 
@@ -7902,7 +8760,7 @@
             Gets the collection of the columns for the Table's Body.
             </summary>
       <remarks>
-            Use this collection to difine the columns for the TableBody. 
+            Use this collection to define the columns for the TableBody. 
             If specified, the number of the columns should be equal to 
             the number of the leaf groups in the Table.ColumnGroups hierarchy.
             </remarks>
@@ -7912,7 +8770,7 @@
             Gets the collection of the rows for the Table's Body
             </summary>
             /// <remarks>
-            Use this collection to difine the rows for the TableBody.
+            Use this collection to define the rows for the TableBody.
             If specified, the number of the rows should be equal to the
             number of the leaf groups in the Table.RowGroups hierarchy.
             </remarks></member>
@@ -7975,7 +8833,7 @@
             The count of the TableLayout.Rows this group takes.
             </summary>
     </member>
-    <member name="P:Telerik.Reporting.TableGroup.Grouping">
+    <member name="P:Telerik.Reporting.TableGroup.Groupings">
       <summary>
             Gets a 
             <see cref="T:Telerik.Reporting.Data.GroupCollection" /> 
@@ -8010,7 +8868,7 @@
             after the data is retrieved from the data source.
             </remarks>
     </member>
-    <member name="P:Telerik.Reporting.TableGroup.Sorting">
+    <member name="P:Telerik.Reporting.TableGroup.Sortings">
       <summary>
             Gets a 
             <see cref="T:Telerik.Reporting.Data.SortingCollection" /> 
@@ -8078,6 +8936,15 @@
             A string / expression value specifying the document map text.
             </value>
     </member>
+    <member name="P:Telerik.Reporting.TableGroup.Visible">
+      <summary>
+            Gets or sets a value indicating whether the table group is displayed. 
+            </summary>
+      <value>
+        <B>true</B> if the table group is displayed; otherwise,
+            <B>false</B>. The default is <B>true</B>.
+            </value>
+    </member>
     <member name="T:Telerik.Reporting.TextBox">
       <summary>
             Represents a text box report item. 
@@ -8104,6 +8971,86 @@
             to calculate the value of the current TextBox;
             otherwise - literal string.
             </value>
+    </member>
+    <member name="T:Telerik.Reporting.ToggleVisivilityTargetCollection">
+      <summary>
+            Represents a collection of <see cref="T:Telerik.Reporting.IToggleVisibilityTarget" /> objects. 
+            </summary>
+    </member>
+    <member name="M:Telerik.Reporting.ToggleVisivilityTargetCollection.#ctor(Telerik.Reporting.IToggleVisibilityTarget[])">
+      <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Reporting.ToggleVisivilityTargetCollection" /> class 
+            from the specified <see cref="T:Telerik.Reporting.IToggleVisibilityTarget" /> array. 
+            </summary>
+      <param name="targets">An array of <see cref="T:Telerik.Reporting.IToggleVisibilityTarget" /> objects 
+            to add to the list.</param>
+    </member>
+    <member name="M:Telerik.Reporting.ToggleVisivilityTargetCollection.AddRange(Telerik.Reporting.IToggleVisibilityTarget[])">
+      <summary>
+            Adds multiple <see cref="T:Telerik.Reporting.IToggleVisibilityTarget" /> objects to the collection.
+            </summary>
+      <param name="targets">An array of <see cref="T:Telerik.Reporting.IToggleVisibilityTarget" /> objects 
+            to add to the list.</param>
+    </member>
+    <member name="T:Telerik.Reporting.ToggleVisibilityAction">
+      <summary>
+            Represents an interactive action that toggles the visibility of one or more items / groups.
+            </summary>
+      <remarks>
+        <para>Use this action to specify an interactive action on a report item that 
+            toggles the visibility of one or more items / groups (drilldown).</para>
+        <para>When this action is set on an item, the item is rendered with an expand / collapse
+            mark in all report viewers. Clicking on that mark triggers the action.</para>
+      </remarks>
+    </member>
+    <member name="M:Telerik.Reporting.ToggleVisibilityAction.#ctor">
+      <summary>
+            Creates a new instance of the <see cref="T:Telerik.Reporting.ToggleVisibilityAction" /> class.
+            </summary>
+    </member>
+    <member name="M:Telerik.Reporting.ToggleVisibilityAction.#ctor(Telerik.Reporting.IToggleVisibilityTarget,System.Boolean)">
+      <summary>
+            Creates a new instance of the <see cref="T:Telerik.Reporting.ToggleVisibilityAction" /> class
+            with the specified toggle visibility target and initial toggle mark state.
+            </summary>
+      <param name="target">The <see cref="P:Telerik.Reporting.ReportItemBase.Name" /> 
+            / <see cref="P:Telerik.Reporting.TableGroup.Name" /> / <see cref="P:Telerik.Reporting.Group.Name" /> 
+            of the toggle visibility target.</param>
+      <param name="displayExpandedMark">The initial toggle visibility mark of the item.</param>
+    </member>
+    <member name="M:Telerik.Reporting.ToggleVisibilityAction.#ctor(Telerik.Reporting.IToggleVisibilityTarget[],System.Boolean)">
+      <summary>
+            Creates a new instance of the <see cref="T:Telerik.Reporting.ToggleVisibilityAction" /> class
+            with specified toggle visibility targets and initial toggle mark state.
+            </summary>
+      <param name="targets">An enumerable of <see cref="P:Telerik.Reporting.ReportItemBase.Name" /> 
+            / <see cref="P:Telerik.Reporting.TableGroup.Name" /> / <see cref="P:Telerik.Reporting.Group.Name" /> 
+            of the toggle visibility targets.</param>
+      <param name="displayExpandedMark">The initial toggle visibility mark of the item.</param>
+    </member>
+    <member name="P:Telerik.Reporting.ToggleVisibilityAction.Targets">
+      <summary>
+            Gets the list of toggle targets which visibility will be toggled
+            when the action is triggered.
+            </summary>
+      <remarks>
+        <para>Use this property to add / remove toggle targets of the action. 
+            To add an item / report group / table group as toggle target you need to add / remove
+            the value of the <see cref="P:Telerik.Reporting.ReportItemBase.Name" /> / <see cref="P:Telerik.Reporting.TableGroup.Name" /> 
+            / <see cref="P:Telerik.Reporting.Group.Name" /> of the target respectively. 
+            The used names must be unique in the report scope.</para>
+        <para>The items in this list do not accept expressions.</para>
+      </remarks>
+    </member>
+    <member name="P:Telerik.Reporting.ToggleVisibilityAction.DisplayExpandedMark">
+      <summary>
+            Determines if the item exposing the action will be rendered initially with 
+            expanded or with collapsed mark.
+            </summary>
+      <remarks>
+            A <b>true</b> value will determine an expanded mark to be rendered (minus sign).
+            A <b>false</b> value will determine an collapsed mark to be rendered (plus sign).
+            </remarks>
     </member>
     <member name="M:Telerik.Reporting.Utils.MimeTypeFromImageFormat(System.Drawing.Imaging.ImageFormat)">
       <summary>
@@ -30711,11 +31658,6 @@
             access only using the ExtendedValues property
             </summary>
     </member>
-    <member name="T:Telerik.Reporting.Processing.Data.IConfigurationManager">
-      <summary>
-            For testing purposes
-            </summary>
-    </member>
     <member name="T:Telerik.Reporting.Processing.Data.MultidimensionalQuery">
       <summary>
             Represents a multidimentional query
@@ -30750,6 +31692,11 @@
     <member name="P:Telerik.Reporting.Processing.Data.ResultSet.Axes">
       <summary>
             axis0, axis1, axisN
+            </summary>
+    </member>
+    <member name="T:Telerik.Reporting.Processing.Data.CellDataMemberContainer">
+      <summary>
+            Caches CellDataMembers (Body data)
             </summary>
     </member>
     <member name="P:Telerik.Reporting.Processing.Config.ExtensionsSection.All">
@@ -31098,8 +32045,13 @@
     </member>
     <member name="P:Telerik.Reporting.Processing.HtmlProcessingElement.IsEndElement">
       <summary>
-            Determines if the element is the first element 
+            Determines if the element is the last element 
             produced from the layout of the html node
+            </summary>
+    </member>
+    <member name="P:Telerik.Reporting.ImageRendering.ActionInfo.ZOrder">
+      <summary>
+            Z-order of the Action. Determines which of two overlapping actions is hit.
             </summary>
     </member>
     <member name="T:Telerik.Reporting.Processing.IRenderStream">
@@ -31204,6 +32156,12 @@
             Determines if the parameter should be displayed in the report viewer.
             </summary>
     </member>
+    <member name="P:Telerik.Reporting.Processing.Parameter.AutoRefresh">
+      <summary>
+            Determines whether the report viewer should auto-update the report
+            when the parameter value is changed.
+            </summary>
+    </member>
     <member name="P:Telerik.Reporting.Processing.Parameter.ChildParameters">
       <summary>
             Gets or sets the list of the parameters that depends on the current parameter.
@@ -31263,6 +32221,11 @@
     <member name="T:Telerik.Reporting.Processing.PictureBox">
       <summary>
       </summary>
+    </member>
+    <member name="T:Telerik.Reporting.Processing.ProcessingInstanceIdentifier">
+      <summary>
+            Identifies a processing instance inside DataItem
+            </summary>
     </member>
     <member name="T:Telerik.Reporting.Processing.ReportProcessingException">
       <summary>
@@ -31869,6 +32832,12 @@
             Start/stop an external timer without any traces
             </summary>
     </member>
+    <member name="M:Telerik.Reporting.Processing.UniqueDataItemPathsResolver.EnsureUniqueNames(Telerik.Reporting.IReportDocument)">
+      <summary>
+            Fills determined unique names each Group/TableGroup without name.
+            </summary>
+      <param name="reportDocument">The target report</param>
+    </member>
     <member name="T:Telerik.Reporting.Interfaces.Attributes.ExtensionAttribute">
       <summary>
             The base attribute.
@@ -32245,82 +33214,6 @@
       <summary>
       </summary>
     </member>
-    <member name="M:Telerik.Reporting.ImageRendering.RenderingElement.Offset(Telerik.Reporting.Processing.RoundedFloat,Telerik.Reporting.Processing.RoundedFloat)">
-      <summary>
-            Move the item down and right with the given offsets
-            </summary>
-    </member>
-    <member name="M:Telerik.Reporting.ImageRendering.RenderingElement.Expand(Telerik.Reporting.Processing.RoundedFloat,Telerik.Reporting.Processing.RoundedFloat)">
-      <summary>
-            Enlarge the item with the given size 
-            </summary>
-    </member>
-    <member name="M:Telerik.Reporting.ImageRendering.RenderingElement.AdjustHorizontalPosition">
-      <summary>
-            Adjust the item's left position.
-            If any of the dependent items are grown and overlaps the current item,
-            move it right preserving the smallest horizontal distance 
-            between this item and the dependent items.
-            </summary>
-    </member>
-    <member name="M:Telerik.Reporting.ImageRendering.RenderingElement.AdjustVerticalPosition">
-      <summary>
-            Adjust the item's top position.
-            If any of the dependent items are grown and overlaps the current item,
-            move it down preserving the smallest vertical distance 
-            between this item and the dependent items.
-            </summary>
-    </member>
-    <member name="M:Telerik.Reporting.ImageRendering.RenderingElement.NewPage(Telerik.Reporting.ImageRendering.Orientation,Telerik.Reporting.Processing.RoundedFloat,Telerik.Reporting.Processing.RoundedFloat,Telerik.Reporting.Processing.RoundedFloat)">
-      <summary>
-            Prepare for calculating the new page
-            </summary>
-      <param name="orientation">
-      </param>
-    </member>
-    <member name="M:Telerik.Reporting.ImageRendering.RenderingElement.StartsFromCurrentPage(Telerik.Reporting.ImageRendering.Orientation)">
-      <summary>
-            Determines whether the item starts from current page
-            and continue on the next
-            </summary>
-    </member>
-    <member name="M:Telerik.Reporting.ImageRendering.RenderingElement.HitsCurrentPage(Telerik.Reporting.ImageRendering.Orientation)">
-      <summary>
-            Defines whether to calculate the child items.
-            </summary>
-    </member>
-    <member name="M:Telerik.Reporting.ImageRendering.RenderingElement.CalculateChildElements(Telerik.Reporting.ImageRendering.Orientation,Telerik.Reporting.Processing.RoundedFloat@)">
-      <summary>
-            Calculate the child elements in the parant coordinate space
-            </summary>
-      <param name="orientation">
-      </param>
-      <param name="maxDistance">
-      </param>
-    </member>
-    <member name="M:Telerik.Reporting.ImageRendering.RenderingElement.ClipToPage(Telerik.Reporting.Processing.RectangleRF)">
-      <param name="rect">in absolute coordinates</param>
-      <returns>
-            The intersection between the rect and the page's rect;
-            If rect is empty, returns the page rect.
-            </returns>
-    </member>
-    <member name="M:Telerik.Reporting.ImageRendering.RenderingElement.RenderBorder">
-      <summary>
-            Draw the borders around the clipped bounds
-            with the allowed edges (pseudo clip)
-            </summary>
-    </member>
-    <member name="P:Telerik.Reporting.ImageRendering.RenderingElement.CurrentPageTop">
-      <summary>
-            Current page Top + reserved top space for this item
-            </summary>
-    </member>
-    <member name="P:Telerik.Reporting.ImageRendering.RenderingElement.CurrentPageBottom">
-      <summary>
-            Current page Bottom - reserved bottom space for this item
-            </summary>
-    </member>
     <member name="M:Telerik.Reporting.ImageRendering.BitonalImage.Create(System.Drawing.Bitmap)">
       <summary>
             Creates 1bpp bitmap from a given bitmap.
@@ -32335,9 +33228,6 @@
       <param name="image">Image to draw</param>
       <param name="destRectMm">in Millimeters</param>
       <param name="srcRectPx">in Pixels</param>
-    </member>
-    <member name="M:Telerik.Reporting.ImageRendering.CanvasBase.DrawRectangleOnPage(System.Drawing.Pen,System.Drawing.RectangleF)">
-      <param name="rect">In Absolute coordinates</param>
     </member>
     <member name="T:Telerik.Reporting.ImageRendering.CanvasState">
       <summary>
@@ -32369,52 +33259,227 @@
       <returns>
       </returns>
     </member>
-    <member name="P:Telerik.Reporting.ImageRendering.CheckBox.Angle">
-      <summary>
-            Returns the text rotation angle in degrees.
-            </summary>
-    </member>
-    <member name="P:Telerik.Reporting.ImageRendering.IComposition.BitsGraphics">
-      <summary>
-            Graphics for the string measurements
-            </summary>
-    </member>
-    <member name="P:Telerik.Reporting.ImageRendering.IComposition.CurrentVertPosition">
-      <summary>
-            Used by the group footers with print on every page;
-            !!! Relative to the current top !!!
-            </summary>
-    </member>
-    <member name="T:Telerik.Reporting.ImageRendering.CompositionBase">
-      <summary>
-      </summary>
-    </member>
-    <member name="M:Telerik.Reporting.ImageRendering.CompositionBase.End">
+    <member name="M:Telerik.Reporting.ImageRendering.DocumentBase.EndDocument">
       <summary>
             Called when the rendering of the entire report document is completed.
             Ends the composition and disposes all composition-wide resources
             </summary>
     </member>
-    <member name="M:Telerik.Reporting.ImageRendering.CompositionBase.Reset">
+    <member name="M:Telerik.Reporting.ImageRendering.DocumentBase.SendPhysicalPagesInternal">
       <summary>
-            Called when the rendering should be reset and then start from
-            the beginning. Usualy Reset occurs after the initial paging
-            and before the real rendering.
+            Called when the rendering of the current page is completed and is ready
+            for sending to the client.
             </summary>
     </member>
-    <member name="M:Telerik.Reporting.ImageRendering.CompositionBase.RegionToPhysicalPage(System.Drawing.Region)">
-      <param name="rgn">in absolute coordinates</param>
+    <member name="P:Telerik.Reporting.ImageRendering.DocumentBase.BitsGraphics">
+      <summary>
+            Graphics for the string measurements
+            </summary>
     </member>
-    <member name="M:Telerik.Reporting.ImageRendering.CompositionBase.RectangleToPhysicalPage(System.Drawing.RectangleF)">
+    <member name="T:Telerik.Reporting.ImageRendering.DocumentGdi">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Telerik.Reporting.ImageRendering.DocumentGdi.AddPage">
+      <summary>
+            Called when new page should be prepared for rendering.
+            </summary>
+    </member>
+    <member name="M:Telerik.Reporting.ImageRendering.DocumentGdi.SendPhysicalPagesInternal">
+      <summary>
+            Called when the rendering of the current page is completed and is ready
+            for sending to the client.
+            </summary>
+    </member>
+    <member name="M:Telerik.Reporting.ImageRendering.DocumentGdi.EndDocument">
+      <summary>
+            Called when the rendering of the entire report document is completed.
+            Ends the composition and disposes all composition-wide resources
+            </summary>
+    </member>
+    <member name="T:Telerik.Reporting.ImageRendering.DocumentPdf">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Telerik.Reporting.ImageRendering.DocumentPdf.AddPage">
+      <summary>
+            Called when new page should be prepared for rendering.
+            </summary>
+    </member>
+    <member name="M:Telerik.Reporting.ImageRendering.DocumentPdf.EndDocument">
+      <summary>
+            Called when the rendering of the entire report document is completed.
+            Ends the composition and disposes all document-wide resources.
+            </summary>
+    </member>
+    <member name="T:Telerik.Reporting.ImageRendering.ShapeRenderer">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Telerik.Reporting.Paging.RenderingElement.Offset(Telerik.Reporting.Processing.RoundedFloat,Telerik.Reporting.Processing.RoundedFloat)">
+      <summary>
+            Move the item down and right with the given offsets
+            </summary>
+    </member>
+    <member name="M:Telerik.Reporting.Paging.RenderingElement.Expand(Telerik.Reporting.Processing.RoundedFloat,Telerik.Reporting.Processing.RoundedFloat)">
+      <summary>
+            Enlarge the item with the given size 
+            </summary>
+    </member>
+    <member name="M:Telerik.Reporting.Paging.RenderingElement.AdjustHorizontalPosition">
+      <summary>
+            Adjust the item's left position.
+            If any of the dependent items are grown and overlaps the current item,
+            move it right preserving the smallest horizontal distance 
+            between this item and the dependent items.
+            </summary>
+    </member>
+    <member name="M:Telerik.Reporting.Paging.RenderingElement.AdjustVerticalPosition">
+      <summary>
+            Adjust the item's top position.
+            If any of the dependent items are grown and overlaps the current item,
+            move it down preserving the smallest vertical distance 
+            between this item and the dependent items.
+            </summary>
+    </member>
+    <member name="M:Telerik.Reporting.Paging.RenderingElement.NewPage(Telerik.Reporting.Paging.Orientation,Telerik.Reporting.Processing.RoundedFloat,Telerik.Reporting.Processing.RoundedFloat,Telerik.Reporting.Processing.RoundedFloat)">
+      <summary>
+            Prepare for calculating the new page
+            </summary>
+      <param name="orientation">
+      </param>
+    </member>
+    <member name="M:Telerik.Reporting.Paging.RenderingElement.StartsFromCurrentPage(Telerik.Reporting.Paging.Orientation)">
+      <summary>
+            Determines whether the item starts from current page
+            and continue on the next
+            </summary>
+    </member>
+    <member name="M:Telerik.Reporting.Paging.RenderingElement.HitsCurrentPage(Telerik.Reporting.Paging.Orientation)">
+      <summary>
+            Defines whether to calculate the child items.
+            </summary>
+    </member>
+    <member name="M:Telerik.Reporting.Paging.RenderingElement.CalculateChildElements(Telerik.Reporting.Paging.Orientation,Telerik.Reporting.Processing.RoundedFloat@)">
+      <summary>
+            Calculate the child elements in the parent coordinate space
+            </summary>
+      <param name="orientation">
+      </param>
+      <param name="maxDistance">
+      </param>
+    </member>
+    <member name="M:Telerik.Reporting.Paging.RenderingElement.ClipToPage(Telerik.Reporting.Processing.RectangleRF)">
       <param name="rect">in absolute coordinates</param>
+      <returns>
+            The intersection between the rect and the page's rect;
+            If rect is empty, returns the page rect.
+            </returns>
     </member>
-    <member name="M:Telerik.Reporting.ImageRendering.CompositionBase.PointToPhysicalPage(System.Drawing.PointF)">
-      <param name="pt">in absolute coordinates</param>
+    <member name="P:Telerik.Reporting.Paging.RenderingElement.CurrentPageTop">
+      <summary>
+            Current page Top + reserved top space for this item
+            </summary>
     </member>
-    <member name="M:Telerik.Reporting.ImageRendering.CompositionBase.PointsToPhysicalPage(System.Drawing.PointF[])">
-      <param name="points">in absolute coordinates</param>
+    <member name="P:Telerik.Reporting.Paging.RenderingElement.CurrentPageBottom">
+      <summary>
+            Current page Bottom - reserved bottom space for this item
+            </summary>
     </member>
-    <member name="M:Telerik.Reporting.ImageRendering.CompositionBase.SendPhysicalPages(System.Boolean)">
+    <member name="P:Telerik.Reporting.Paging.CheckBox.Angle">
+      <summary>
+            Returns the text rotation angle in degrees.
+            </summary>
+    </member>
+    <member name="T:Telerik.Reporting.Paging.ReportSection">
+      <summary>
+            Report Header/Footer sections
+            Detail section
+            Group Header/Footer sections 
+            </summary>
+    </member>
+    <member name="F:Telerik.Reporting.Paging.Group.fixedHeaderVertOffset">
+      <summary>
+            Keeps the offsetY for the position of the fixed header on the current page
+            </summary>
+    </member>
+    <member name="F:Telerik.Reporting.Paging.Group.fixedFooterVertOffset">
+      <summary>
+            Keeps the offsetY for the position of the fixed footer on the current page
+            </summary>
+    </member>
+    <member name="P:Telerik.Reporting.Paging.Group.HasFooterOnCurrentPage">
+      <summary>
+            When the footer repeats on every page - reserve space for it on every page
+            </summary>
+    </member>
+    <member name="T:Telerik.Reporting.Paging.HtmlLine">
+      <summary>
+            Implements KeepTogether = true 
+            A line always must stay together. 
+            </summary>
+    </member>
+    <member name="P:Telerik.Reporting.Paging.PageSettings.PageNumber">
+      <summary>
+            Number of the page in the output document (including pages from previous reports if ReportBook).
+            </summary>
+    </member>
+    <member name="P:Telerik.Reporting.Paging.ElementPageInfo.ElementBounds">
+      <summary>
+            In page coordinates.
+            </summary>
+    </member>
+    <member name="P:Telerik.Reporting.Paging.ElementPageInfo.ElementClip">
+      <summary>
+            In page coordinates.
+            </summary>
+    </member>
+    <member name="P:Telerik.Reporting.Paging.ElementPageInfo.ClientBounds">
+      <summary>
+            In page coordinates.
+            </summary>
+    </member>
+    <member name="P:Telerik.Reporting.Paging.ElementPageInfo.ClientClip">
+      <summary>
+            In page coordinates.
+            </summary>
+    </member>
+    <member name="P:Telerik.Reporting.Paging.ElementPageInfo.BorderClip">
+      <summary>
+            In page coordinates.
+            </summary>
+    </member>
+    <member name="P:Telerik.Reporting.Paging.ElementPageInfo.AllowedBorders">
+      <summary>
+            Borders to render on the current page
+            </summary>
+    </member>
+    <member name="P:Telerik.Reporting.Paging.ITableCellDimensionAdapter.LineSpan">
+      <summary>
+            The count of lines this cell spans on
+            </summary>
+    </member>
+    <member name="P:Telerik.Reporting.Paging.ITableCellDimensionAdapter.CellSpan">
+      <summary>
+            The count of cells on each occupied line this cell spans on
+            </summary>
+    </member>
+    <member name="P:Telerik.Reporting.Paging.IComposition.BitsGraphics">
+      <summary>
+            Graphics for the string measurements
+            </summary>
+    </member>
+    <member name="P:Telerik.Reporting.Paging.IComposition.CurrentVertPosition">
+      <summary>
+            Used by the group footers with print on every page;
+            !!! Relative to the current top !!!
+            </summary>
+    </member>
+    <member name="T:Telerik.Reporting.Paging.PageComposition">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Telerik.Reporting.Paging.PageComposition.SendPhysicalPages(System.Boolean)">
       <summary>
             Called when the rendering of the current page is completed and is ready
             for sending to the client.
@@ -32422,133 +33487,30 @@
       <param name="force"> If true send the page anyway; 
             otherwise only when there is no more free space left on the page</param>
     </member>
-    <member name="M:Telerik.Reporting.ImageRendering.CompositionBase.SendPhysicalPages">
-      <summary>
-            Called when the rendering of the current page is completed and is ready
-            for sending to the client.
-            </summary>
-    </member>
-    <member name="P:Telerik.Reporting.ImageRendering.CompositionBase.BitsGraphics">
+    <member name="P:Telerik.Reporting.Paging.PageComposition.BitsGraphics">
       <summary>
             Graphics for the string measurements
             </summary>
     </member>
-    <member name="P:Telerik.Reporting.ImageRendering.CompositionBase.CurrentVertPosition">
+    <member name="P:Telerik.Reporting.Paging.PageComposition.CurrentVertPosition">
       <summary>
             Used by the group footers with print on every page;
             !!! Relative to the current top !!!
             </summary>
     </member>
-    <member name="T:Telerik.Reporting.ImageRendering.CompositionGdi">
-      <summary>
-      </summary>
-    </member>
-    <member name="M:Telerik.Reporting.ImageRendering.CompositionGdi.Reset">
-      <summary>
-            Called when the rendering should be reset and then start from
-            the beginning. Usualy Reset occurs after the initial paging
-            and before the real rendering.
-            </summary>
-    </member>
-    <member name="M:Telerik.Reporting.ImageRendering.CompositionGdi.NewPhysicalPage">
-      <summary>
-            Called when new page should be prepared for rendering.
-            </summary>
-    </member>
-    <member name="M:Telerik.Reporting.ImageRendering.CompositionGdi.SendPhysicalPages">
-      <summary>
-            Called when the rendering of the current page is completed and is ready
-            for sending to the client.
-            </summary>
-    </member>
-    <member name="M:Telerik.Reporting.ImageRendering.CompositionGdi.End">
-      <summary>
-            Called when the rendering of the entire report document is completed.
-            Ends the composition and disposes all composition-wide resources
-            </summary>
-    </member>
-    <member name="T:Telerik.Reporting.ImageRendering.CompositionPdf">
-      <summary>
-      </summary>
-    </member>
-    <member name="M:Telerik.Reporting.ImageRendering.CompositionPdf.Reset">
-      <summary>
-            Called when the rendering should be reset and then start from
-            the beginning. Usualy Reset occurs after the initial paging
-            and before the real rendering.
-            </summary>
-    </member>
-    <member name="M:Telerik.Reporting.ImageRendering.CompositionPdf.NewPhysicalPage">
-      <summary>
-            Called when new page should be prepared for rendering.
-            </summary>
-    </member>
-    <member name="M:Telerik.Reporting.ImageRendering.CompositionPdf.End">
-      <summary>
-            Called when the rendering of the entire report document is completed.
-            Ends the composition and disposes all composition-wide resources.
-            </summary>
-    </member>
-    <member name="T:Telerik.Reporting.ImageRendering.ReportSection">
-      <summary>
-            Report Header/Footer sections
-            Detail section
-            Group Header/Footer sections 
-            </summary>
-    </member>
-    <member name="F:Telerik.Reporting.ImageRendering.Group.fixedHeaderVertOffset">
-      <summary>
-            Keeps the offsetY for the position of the fixed header on the current page
-            </summary>
-    </member>
-    <member name="F:Telerik.Reporting.ImageRendering.Group.fixedFooterVertOffset">
-      <summary>
-            Keeps the offsetY for the position of the fixed footer on the current page
-            </summary>
-    </member>
-    <member name="P:Telerik.Reporting.ImageRendering.Group.HasFooterOnCurrentPage">
-      <summary>
-            When the footer repeats on every page - reserve space for it on every page
-            </summary>
-    </member>
-    <member name="T:Telerik.Reporting.ImageRendering.HtmlLine">
-      <summary>
-            Implements KeepTogether = true 
-            A line always must stay together. 
-            </summary>
-    </member>
-    <member name="P:Telerik.Reporting.ImageRendering.ActionInfo.ZOrder">
-      <summary>
-            Z-order of the Action. Determines which of two overlapping actions is hit.
-            </summary>
-    </member>
-    <member name="P:Telerik.Reporting.ImageRendering.ITableCellDimensionAdapter.LineSpan">
-      <summary>
-            The count of lines this cell spans on
-            </summary>
-    </member>
-    <member name="P:Telerik.Reporting.ImageRendering.ITableCellDimensionAdapter.CellSpan">
-      <summary>
-            The count of cells on each occupied line this cell spans on
-            </summary>
-    </member>
-    <member name="F:Telerik.Reporting.ImageRendering.VerticalState.MoveToTopOfNextPage">
+    <member name="F:Telerik.Reporting.Paging.VerticalState.MoveToTopOfNextPage">
       <summary>
             Indicates that the item should be position on the top
             of the next page (RenderingElement.VerticalStateOffset - to offset
             from the top)
             </summary>
     </member>
-    <member name="T:Telerik.Reporting.ImageRendering.ShapeRenderer">
-      <summary>
-      </summary>
-    </member>
-    <member name="M:Telerik.Reporting.ImageRendering.TableDimension.KeepWithFirstBodyCell">
+    <member name="M:Telerik.Reporting.Paging.TableDimension.KeepWithFirstBodyCell">
       <summary>
             Try keeping together the header lines + the 1st body line
             </summary>
     </member>
-    <member name="M:Telerik.Reporting.ImageRendering.TableDimension.CalculateReservedEndSpace(System.Int32,Telerik.Reporting.Processing.RoundedFloat,Telerik.Reporting.Processing.RoundedFloat,Telerik.Reporting.Processing.RoundedFloat,Telerik.Reporting.Processing.RoundedFloat@)">
+    <member name="M:Telerik.Reporting.Paging.TableDimension.CalculateReservedEndSpace(System.Int32,Telerik.Reporting.Processing.RoundedFloat,Telerik.Reporting.Processing.RoundedFloat,Telerik.Reporting.Processing.RoundedFloat,Telerik.Reporting.Processing.RoundedFloat@)">
       <summary>
             Calculates the minimum reserved end space 
             to ensure correct calculates of cell items (KeepTogether/CalculatePage)
@@ -32558,48 +33520,26 @@
             (including lines bigger than 1 page) that fit on current page
             </returns>
     </member>
-    <member name="M:Telerik.Reporting.ImageRendering.TextBox.LayoutText(System.String,Telerik.Reporting.Drawing.VerticalAlign)">
+    <member name="M:Telerik.Reporting.Paging.TextBox.LayoutText(System.String,Telerik.Reporting.Drawing.VerticalAlign)">
       <summary>
             Just aligns the text inside the client rectangle without
             any measurements
             </summary>
     </member>
-    <member name="M:Telerik.Reporting.ImageRendering.TextBox.MeasureText(System.String,System.Drawing.StringFormat,System.Drawing.Font)">
+    <member name="M:Telerik.Reporting.Paging.TextBox.MeasureText(System.String,System.Drawing.StringFormat,System.Drawing.Font)">
       <summary>
             Measures the text bounds inside the ITextContainer.ClientRectangle
             so that further paging / rendering can be applied on the returned bounds.
             </summary>
     </member>
-    <member name="P:Telerik.Reporting.ImageRendering.TextBox.Angle">
+    <member name="P:Telerik.Reporting.Paging.TextBox.Angle">
       <summary>
             Returns the text rotation angle in degrees.
             </summary>
     </member>
-    <member name="P:Telerik.Reporting.ImageRendering.TextBox.Font">
-      <summary>
-            Use only inside Render() implementation
-            </summary>
-    </member>
-    <member name="P:Telerik.Reporting.ImageRendering.TextBox.TextBrush">
-      <summary>
-            Use only inside Render() implementation
-            </summary>
-    </member>
-    <member name="P:Telerik.Reporting.ImageRendering.TextBox.StringFormat">
-      <summary>
-            Use only inside Render() implementation
-            </summary>
-    </member>
-    <member name="T:Telerik.Reporting.ImageRendering.TextLine">
+    <member name="T:Telerik.Reporting.Paging.TextLine">
       <summary>
       </summary>
-    </member>
-    <member name="M:Telerik.Reporting.ImageRendering.TextLine.TextToImage(Telerik.Reporting.Processing.RectangleRF,System.Collections.Generic.IEnumerable{Telerik.Reporting.ImageRendering.TextLine},System.Drawing.Font,System.Drawing.Brush,System.Drawing.StringFormat,System.Double)">
-      <summary>
-            Creates an image from text rotated to the specified angle in degrees.
-            </summary>
-      <param name="stringFormat">The original string format of the report item.</param>
-      <param name="angle">In degrees.</param>
     </member>
     <member name="T:Telerik.Reporting.CsvRendering.ContextSettings">
       <summary>
@@ -34299,6 +35239,141 @@
             Converts the specified page size enumeration to a pair of values in point.
             </summary>
     </member>
+    <member name="T:Telerik.Reporting.Pdf.PdfAnnotation">
+      <summary>
+            Represents the base class of all annotations.
+            </summary>
+    </member>
+    <member name="T:Telerik.Reporting.Pdf.PdfAnnotation.Keys">
+      <summary>
+            Predefined keys of this dictionary.
+            </summary>
+    </member>
+    <member name="M:Telerik.Reporting.Pdf.PdfAnnotation.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Reporting.Pdf.PdfAnnotation" /> class.
+            </summary>
+    </member>
+    <member name="M:Telerik.Reporting.Pdf.PdfAnnotation.#ctor(Telerik.Reporting.Pdf.PdfDocument)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Reporting.Pdf.PdfAnnotation" /> class.
+            </summary>
+    </member>
+    <member name="P:Telerik.Reporting.Pdf.PdfAnnotation.Flags">
+      <summary>
+            Gets or sets the annotation flags of this instance.
+            </summary>
+    </member>
+    <member name="P:Telerik.Reporting.Pdf.PdfAnnotation.Parent">
+      <summary>
+            Gets or sets the PdfAnnotations object that this annotation belongs to.
+            </summary>
+    </member>
+    <member name="P:Telerik.Reporting.Pdf.PdfAnnotation.Rectangle">
+      <summary>
+            Gets or sets the annotation rectangle, defining the location of the annotation
+            on the page in default user space units.
+            </summary>
+    </member>
+    <member name="P:Telerik.Reporting.Pdf.PdfAnnotation.Title">
+      <summary>
+            Gets or sets the text label to be displayed in the title bar of the annotation’s
+            pop-up window when open and active. By convention, this entry identifies
+            the user who added the annotation.
+            </summary>
+    </member>
+    <member name="P:Telerik.Reporting.Pdf.PdfAnnotation.Subject">
+      <summary>
+            Gets or sets text representing a short description of the subject being
+            addressed by the annotation.
+            </summary>
+    </member>
+    <member name="P:Telerik.Reporting.Pdf.PdfAnnotation.Contents">
+      <summary>
+            Gets or sets the text to be displayed for the annotation or, if this type of
+            annotation does not display text, an alternate description of the annotation’s
+            contents in human-readable form.
+            </summary>
+    </member>
+    <member name="T:Telerik.Reporting.Pdf.PdfAnnotationFlags">
+      <summary>
+            Specifies the annotation flags.
+            </summary>
+    </member>
+    <member name="F:Telerik.Reporting.Pdf.PdfAnnotationFlags.Invisible">
+      <summary>
+            If set, do not display the annotation if it does not belong to one of the standard
+            annotation types and no annotation handler is available. If clear, display such an
+            unknown annotation using an appearance stream specified by its appearance dictionary,
+            if any.
+            </summary>
+    </member>
+    <member name="F:Telerik.Reporting.Pdf.PdfAnnotationFlags.Hidden">
+      <summary>
+            (PDF 1.2) If set, do not display or print the annotation or allow it to interact
+            with the user, regardless of its annotation type or whether an annotation
+            handler is available. In cases where screen space is limited, the ability to hide
+            and show annotations selectively can be used in combination with appearance
+            streams to display auxiliary pop-up information similar in function to online
+            help systems.
+            </summary>
+    </member>
+    <member name="F:Telerik.Reporting.Pdf.PdfAnnotationFlags.Print">
+      <summary>
+            (PDF 1.2) If set, print the annotation when the page is printed. If clear, never
+            print the annotation, regardless of whether it is displayed on the screen. This
+            can be useful, for example, for annotations representing interactive pushbuttons,
+            which would serve no meaningful purpose on the printed page.
+            </summary>
+    </member>
+    <member name="F:Telerik.Reporting.Pdf.PdfAnnotationFlags.NoZoom">
+      <summary>
+            (PDF 1.3) If set, do not scale the annotation’s appearance to match the magnification
+            of the page. The location of the annotation on the page (defined by the
+            upper-left corner of its annotation rectangle) remains fixed, regardless of the
+            page magnification. See below for further discussion.
+            </summary>
+    </member>
+    <member name="F:Telerik.Reporting.Pdf.PdfAnnotationFlags.NoRotate">
+      <summary>
+            (PDF 1.3) If set, do not rotate the annotation’s appearance to match the rotation
+            of the page. The upper-left corner of the annotation rectangle remains in a fixed
+            location on the page, regardless of the page rotation. See below for further discussion.
+            </summary>
+    </member>
+    <member name="F:Telerik.Reporting.Pdf.PdfAnnotationFlags.NoView">
+      <summary>
+            (PDF 1.3) If set, do not display the annotation on the screen or allow it to
+            interact with the user. The annotation may be printed (depending on the setting
+            of the Print flag) but should be considered hidden for purposes of on-screen
+            display and user interaction.
+            </summary>
+    </member>
+    <member name="F:Telerik.Reporting.Pdf.PdfAnnotationFlags.ReadOnly">
+      <summary>
+            (PDF 1.3) If set, do not allow the annotation to interact with the user. The
+            annotation may be displayed or printed (depending on the settings of the
+            NoView and Print flags) but should not respond to mouse clicks or change its
+            appearance in response to mouse motions.
+            Note: This flag is ignored for widget annotations; its function is subsumed by
+            the ReadOnly flag of the associated form field.
+            </summary>
+    </member>
+    <member name="F:Telerik.Reporting.Pdf.PdfAnnotationFlags.Locked">
+      <summary>
+            (PDF 1.4) If set, do not allow the annotation to be deleted or its properties
+            (including position and size) to be modified by the user. However, this flag does
+            not restrict changes to the annotation’s contents, such as the value of a form
+            field.
+            </summary>
+    </member>
+    <member name="F:Telerik.Reporting.Pdf.PdfAnnotationFlags.ToggleNoView">
+      <summary>
+            (PDF 1.5) If set, invert the interpretation of the NoView flag for certain events.
+            A typical use is to have an annotation that appears only when a mouse cursor is
+            held over it.
+            </summary>
+    </member>
     <member name="T:Telerik.Reporting.Pdf.PdfArray">
       <summary>
             Summary description for PdfArray.
@@ -34335,6 +35410,32 @@
     <member name="P:Telerik.Reporting.Pdf.PdfArray.Elements">
       <summary>
             Gets the collection containing the elements of this object.
+            </summary>
+    </member>
+    <member name="T:Telerik.Reporting.Pdf.PdfAnnotations">
+      <summary>
+            Represents the annotations array of a page.
+            </summary>
+    </member>
+    <member name="M:Telerik.Reporting.Pdf.PdfAnnotations.Add(Telerik.Reporting.Pdf.PdfAnnotation)">
+      <summary>
+            Adds the specified annotation.
+            </summary>
+      <param name="annotation">The annotation.</param>
+    </member>
+    <member name="P:Telerik.Reporting.Pdf.PdfAnnotations.Count">
+      <summary>
+            Gets the number of annotations in this collection.
+            </summary>
+    </member>
+    <member name="P:Telerik.Reporting.Pdf.PdfAnnotations.Item(System.Int32)">
+      <summary>
+            Gets the <see cref="!:PdfSharp.Pdf.Annotations.PdfAnnotation" /> at the specified index.
+            </summary>
+    </member>
+    <member name="P:Telerik.Reporting.Pdf.PdfAnnotations.Page">
+      <summary>
+            Gets the page the annotations belongs to.
             </summary>
     </member>
     <member name="T:Telerik.Reporting.Pdf.PdfBoolean">
@@ -35088,6 +36189,36 @@
             Writes the integer as string.
             </summary>
     </member>
+    <member name="T:Telerik.Reporting.Pdf.PdfLinkAnnotation">
+      <summary>
+            Represents a link annotation.
+            </summary>
+    </member>
+    <member name="T:Telerik.Reporting.Pdf.PdfLinkAnnotation.Keys">
+      <summary>
+            Predefined keys of this dictionary.
+            </summary>
+    </member>
+    <member name="P:Telerik.Reporting.Pdf.PdfLinkAnnotation.Keys.Meta">
+      <summary>
+            Gets the KeysMeta for these keys.
+            </summary>
+    </member>
+    <member name="M:Telerik.Reporting.Pdf.PdfLinkAnnotation.#ctor(Telerik.Reporting.Pdf.PdfRectangle)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Reporting.Pdf.PdfLinkAnnotation" /> class.
+            </summary>
+    </member>
+    <member name="M:Telerik.Reporting.Pdf.PdfLinkAnnotation.#ctor(Telerik.Reporting.Pdf.PdfDocument,Telerik.Reporting.Pdf.PdfRectangle)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Reporting.Pdf.PdfLinkAnnotation" /> class.
+            </summary>
+    </member>
+    <member name="P:Telerik.Reporting.Pdf.PdfLinkAnnotation.Meta">
+      <summary>
+            Gets the KeysMeta of this dictionary type.
+            </summary>
+    </member>
     <member name="T:Telerik.Reporting.Pdf.PdfLiteral">
       <summary>
             Represents text that is written 'as it is' into the PDF stream.
@@ -35399,6 +36530,27 @@
             Gets the resource name of the specified gdiImage within this page.
             </summary>
     </member>
+    <member name="M:Telerik.Reporting.Pdf.PdfPageDictionary.AddDocumentLink(Telerik.Reporting.Pdf.PdfRectangle,Telerik.Reporting.Pdf.PdfPageDictionary,System.Single,System.Single)">
+      <summary>
+            Adds an intra document link.
+            </summary>
+      <param name="rect">The rect.</param>
+      <param name="destinationPage">The destination page.</param>
+    </member>
+    <member name="M:Telerik.Reporting.Pdf.PdfPageDictionary.AddWebLink(Telerik.Reporting.Pdf.PdfRectangle,System.String)">
+      <summary>
+            Adds a link to the Web.
+            </summary>
+      <param name="rect">The rect.</param>
+      <param name="url">The URL.</param>
+    </member>
+    <member name="M:Telerik.Reporting.Pdf.PdfPageDictionary.AddFileLink(Telerik.Reporting.Pdf.PdfRectangle,System.String)">
+      <summary>
+            Adds a link to a file.
+            </summary>
+      <param name="rect">The rect.</param>
+      <param name="fileName">Name of the file.</param>
+    </member>
     <member name="P:Telerik.Reporting.Pdf.PdfPageDictionary.Width">
       <summary>
             Gets or sets the width of the page. If orientation is Landscape, this function applies to
@@ -35437,6 +36589,11 @@
     <member name="P:Telerik.Reporting.Pdf.PdfPageDictionary.Contents">
       <summary>
             Gets the array of content streams of the page.
+            </summary>
+    </member>
+    <member name="P:Telerik.Reporting.Pdf.PdfPageDictionary.Annotations">
+      <summary>
+            Gets the annotations array of this page.
             </summary>
     </member>
     <member name="P:Telerik.Reporting.Pdf.PdfPageDictionary.Meta">
@@ -35793,6 +36950,29 @@
       <summary>
             Gets the KeysMeta of this dictionary type.
             </summary>
+    </member>
+    <member name="T:Telerik.Reporting.Pdf.PdfTransparencyDictionary">
+      <summary>
+            Represents a PDF transparency group XObject dictionary.
+            </summary>
+    </member>
+    <member name="T:Telerik.Reporting.Pdf.PdfTransparencyDictionary.Keys">
+      <summary>
+            Predefined keys for this dictionary.
+            </summary>
+    </member>
+    <member name="M:Telerik.Reporting.Pdf.PdfTransparencyDictionary.#ctor">
+      <summary>
+            Initializes a new instance of PdfTransparencyDictionary with default transparency values.
+            </summary>
+    </member>
+    <member name="M:Telerik.Reporting.Pdf.PdfTransparencyDictionary.#ctor(Telerik.Reporting.Pdf.PdfDocument)">
+      <summary>
+            Initializes a new instance of PdfTransparencyDictionary with default transparency values.
+            </summary>
+      <param name="document">
+            Specifies the owner PdfDocument for this PdfTransparencyDictionary instance.
+            </param>
     </member>
     <member name="T:Telerik.Reporting.Pdf.PdfViewerPreferencesDictionary.Keys">
       <summary>
@@ -38721,56 +39901,14 @@
             RtfTextBox
             </summary>
     </member>
-    <member name="M:Telerik.Reporting.RtfRendering.Barcode.CreateMetafile(System.Drawing.SizeF)">
-      <param name="size">in mm</param>
-    </member>
-    <member name="M:Telerik.Reporting.RtfRendering.Barcode.CreateBitmap(System.Drawing.SizeF)">
-      <param name="size">in mm</param>
-    </member>
-    <member name="T:Telerik.Reporting.RtfRendering.CanvasRtf">
+    <member name="T:Telerik.Reporting.RtfRendering.DocumentRtf">
       <summary>
-            CanvasRtf
-            </summary>
-    </member>
-    <member name="T:Telerik.Reporting.RtfRendering.Chart">
-      <summary>
-            Rtf Chart Rendering Item
-            </summary>
-    </member>
-    <member name="T:Telerik.Reporting.RtfRendering.CheckBox">
-      <summary>
-            Rtf CheckBox Rendering Item
-            </summary>
-    </member>
-    <member name="T:Telerik.Reporting.RtfRendering.CompositionRtf">
-      <summary>
-            CompositionRtf
-            </summary>
-    </member>
-    <member name="M:Telerik.Reporting.RtfRendering.CompositionRtf.NewPhysicalPage">
-      <summary>
-            Called when new page should be prepared for rendering.
-            </summary>
-    </member>
-    <member name="M:Telerik.Reporting.RtfRendering.CompositionRtf.End">
-      <summary>
-            Called when the rendering of the entire report document is completed.
-            Ends the composition and disposes all composition-wide reitems.
-            </summary>
-    </member>
-    <member name="T:Telerik.Reporting.RtfRendering.HtmlTextBox">
-      <summary>
-            Rtf HtmlTextBox Rendering Item
+            DocumentRtf
             </summary>
     </member>
     <member name="M:Telerik.Reporting.RtfRendering.HtmlUtils.GetFontSizeFromMargin(System.Single)">
       <param name="margin">The needed margin in Mm</param>
       <returns>Proper font size in points</returns>
-    </member>
-    <member name="T:Telerik.Reporting.RtfRendering.PictureBox">
-      <summary>
-            Rtf PictureBox Rendering Item
-            </summary>
     </member>
     <member name="T:Telerik.Reporting.RtfRendering.RtfFrameReport">
       <summary>
@@ -38781,25 +39919,6 @@
       <summary>
             The dispatcher RTF rendering extension.
             </summary>
-    </member>
-    <member name="T:Telerik.Reporting.RtfRendering.INoBackground">
-      <summary>
-            Tells the canvas to skip the background color.
-            </summary>
-    </member>
-    <member name="T:Telerik.Reporting.RtfRendering.Shape">
-      <summary>
-            Rtf Shape Rendering Item
-            </summary>
-    </member>
-    <member name="T:Telerik.Reporting.RtfRendering.TextBox">
-      <summary>
-            Rtf TextBox Rendering Item
-            </summary>
-    </member>
-    <member name="T:Telerik.Reporting.RtfRendering.RenderingTable">
-      <summary>
-      </summary>
     </member>
     <member name="M:Telerik.Reporting.HtmlEngine.ILineManager.GetContainingBlock">
       <summary>
@@ -38997,9 +40116,19 @@
             Baseline according to client rectangle
             </summary>
     </member>
+    <member name="F:Telerik.Reporting.HtmlEngine.ListItemLayoutEngine.ListItemMarkerRightMargin">
+      <summary>
+            The distance in pixels between the list item marker ant the list item content
+            </summary>
+    </member>
     <member name="T:Telerik.Reporting.HtmlEngine.TextLayoutElement">
       <summary>
             Summary description for HTMLRenderItem.
+            </summary>
+    </member>
+    <member name="F:Telerik.Reporting.HtmlEngine.ListLayoutEngine.ListLeftPadding">
+      <summary>
+            The left padding/indent of html lists which is used to draw list item markers
             </summary>
     </member>
     <member name="T:Telerik.Reporting.HtmlEngine.Measurements">

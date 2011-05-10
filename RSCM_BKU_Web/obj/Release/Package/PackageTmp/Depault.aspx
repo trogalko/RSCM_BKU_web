@@ -13,6 +13,7 @@
     <div>    
         <telerik:RadScriptManager ID="RadScriptManager1" Runat="server">
         </telerik:RadScriptManager>
+
         <telerik:RadMenu ID="RadMenu1" Runat="server" Skin="Office2007" Width="100%">
             <Items>
                 <telerik:RadMenuItem runat="server" Text="MASTER">

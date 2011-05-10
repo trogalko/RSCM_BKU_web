@@ -41,9 +41,14 @@ D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\Telerik.R
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\Telerik.Reporting.xml
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\Telerik.ReportViewer.WebForms.pdb
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\Telerik.ReportViewer.WebForms.xml
-D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\Telerik.Web.UI.xml
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\Newtonsoft.Json.xml
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\obj\Release\ResolveAssemblyReference.cache
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\obj\Release\RSCM_BKU_Web.dll
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\obj\Release\RSCM_BKU_Web.pdb
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\obj\Release\RSCM_BKU_Web.dll.licenses
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\DevExpress.Web.v10.2.dll
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\Telerik.Web.Design.dll
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\Telerik.WinControls.dll
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\Telerik.WinControls.GridView.dll
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\Telerik.WinControls.xml
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\Telerik.WinControls.GridView.xml

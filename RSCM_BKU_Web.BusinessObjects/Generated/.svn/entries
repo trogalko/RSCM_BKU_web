@@ -26,6 +26,40 @@ trogalko
 
 de6af85a-c0b5-ae4d-9e3a-650578dbb939
 
+Officer.cs
+file
+9
+
+
+
+2011-04-27T08:35:12.963937Z
+67b3a226c757c429af8ef1ae85bf95d0
+2011-04-27T10:13:38.407904Z
+9
+trogalko
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+16298
+
 Kas.cs
 file
 
@@ -266,14 +300,14 @@ trogalko
 
 Trans.cs
 file
+9
 
 
 
-
-2011-04-20T03:44:50.454983Z
-4ad9e5a9d03857d9ba5bf265510e7e2c
-2011-04-20T03:21:13.881686Z
-3
+2011-04-27T04:42:23.785049Z
+7f144709d140559dddf148aa249f3e56
+2011-04-27T10:13:38.407904Z
+9
 trogalko
 
 
@@ -296,7 +330,7 @@ trogalko
 
 
 
-38118
+38102
 
 DebitKredit.cs
 file
@@ -468,6 +502,40 @@ trogalko
 
 30650
 
+TransaksiBKU.cs
+file
+9
+
+
+
+2011-04-27T05:01:16.711530Z
+74a57d2fcad8714a0968cd6964f4d673
+2011-04-27T10:13:38.407904Z
+9
+trogalko
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+28250
+
 MutasiKas.cs
 file
 
@@ -501,40 +569,6 @@ trogalko
 
 
 27169
-
-TransaksiBKU.cs
-file
-
-
-
-
-2011-04-20T03:44:50.576358Z
-de5a27b047934196ca7f55fe9818a4f9
-2011-04-20T03:21:13.881686Z
-3
-trogalko
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-26843
 
 AuditTrail.cs
 file

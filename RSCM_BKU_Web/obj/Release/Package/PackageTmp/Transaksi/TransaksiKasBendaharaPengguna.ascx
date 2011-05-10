@@ -7,6 +7,13 @@
         var combo = $find("<%= cmbTransCODE.ClientID%>");
         document.getElementById("<%= HiddenField1.ClientID%>").value = combo.get_value();
     }
+
+    function OnClientLoadHandler(sender) {
+        var combo;
+        combo = sender;
+        var hidden = $find("<%= HiddenField1.ClientID%>");
+        document.getElementById("<%= HiddenField1.ClientID%>").value = combo.get_value();
+    }
 </script>
 <style type="text/css">
     .style1
@@ -117,7 +124,8 @@
                 TabIndex="2"
                 SelectedValue='<%# DataBinder.Eval( Container, "DataItem.KA_CODE") %>' 
                 onkeypress="return CkKeyPress(event);" 
-                onclientselectedindexchanged="OnClientSelectedIndexChanged">
+                onclientselectedindexchanged="OnClientSelectedIndexChanged" 
+                onclientload="OnClientLoadHandler">
                 <ExpandAnimation Type="InQuint" />
             </telerik:RadComboBox>
         

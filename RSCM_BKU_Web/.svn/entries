@@ -26,6 +26,13 @@ has-props
 
 de6af85a-c0b5-ae4d-9e3a-650578dbb939
 
+RibbonHeader.Master.designer.cs
+file
+0
+
+
+add
+
 Header.Master.designer.cs
 file
 
@@ -93,6 +100,13 @@ trogalko
 
 
 260
+
+MasterBKU.Master
+file
+0
+
+
+add
 
 Master
 dir
@@ -412,6 +426,13 @@ trogalko
 
 1438
 
+RibbonHeader.Master
+file
+0
+
+
+add
+
 Web.config
 file
 
@@ -448,14 +469,14 @@ trogalko
 
 Header.Master
 file
+9
 
 
 
-
-2011-04-20T03:44:45.982160Z
-cb3356de14b391d80ee9daa7030747bb
-2011-04-20T03:06:34.233209Z
-2
+2011-04-27T02:20:09.771914Z
+3fbaeb03b24077e910241f452a7fc145
+2011-04-27T10:13:38.407904Z
+9
 trogalko
 
 
@@ -478,7 +499,14 @@ trogalko
 
 
 
-5666
+5654
+
+RibbonHeader.Master.cs
+file
+0
+
+
+add
 
 Header.Master.cs
 file
@@ -585,6 +613,13 @@ trogalko
 
 339
 
+MasterBKU.Master.designer.cs
+file
+0
+
+
+add
+
 Global.asax
 file
 
@@ -619,39 +654,12 @@ trogalko
 
 96
 
-background.jpg
+MasterBKU.Master.cs
 file
+0
 
 
-
-
-2011-04-20T03:44:46.164724Z
-ee9a851021c779fd7d0c9f149c5d3de8
-2011-04-20T03:06:34.233209Z
-2
-trogalko
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-10424
+add
 
 Default.aspx
 file
@@ -687,6 +695,40 @@ trogalko
 
 2845
 
+background.jpg
+file
+
+
+
+
+2011-04-20T03:44:46.164724Z
+ee9a851021c779fd7d0c9f149c5d3de8
+2011-04-20T03:06:34.233209Z
+2
+trogalko
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10424
+
 Transaksi
 dir
 
@@ -695,14 +737,14 @@ dir
 
 RSCM_BKU_Web.csproj
 file
-8
+9
 
 
 
-2011-04-25T04:02:18.593519Z
-6008e52c07e853e2b5ddbda7fbfe1a67
-2011-04-26T04:42:21.406750Z
-8
+2011-04-27T02:17:57.920730Z
+17d2685937fdd1e7aed2385718bf1bb3
+2011-04-27T10:13:38.407904Z
+9
 trogalko
 
 
@@ -725,7 +767,7 @@ trogalko
 
 
 
-24329
+24344
 
 gradient.gif
 file
@@ -831,6 +873,13 @@ has-props
 
 
 34158
+
+Images
+dir
+
+
+
+add
 
 RSCM_BKU_Web.Publish.xml
 file

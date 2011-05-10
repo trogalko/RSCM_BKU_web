@@ -59,10 +59,10 @@ namespace RSCM_BKU_Web.Transaksi
                 {
                     //Trans.Amount = Convert.ToDecimal((userControl.FindControl("txtAMOUNT") as RadTextBox).Text.ToUpper());
                     Trans.KaCode = (userControl.FindControl("HiddenField1") as HiddenField).Value;
-                    Trans.CekBgNumber = (userControl.FindControl("txtCek") as RadTextBox).Text.ToUpper();
+                    Trans.CekBgNumber = (userControl.FindControl("txtCek") as RadTextBox).Text;
                     Trans.DebitAmount = Convert.ToDecimal((userControl.FindControl("txtDebitAmount") as RadNumericTextBox).Value);
                     Trans.CreditAmount = Convert.ToDecimal((userControl.FindControl("txtCreditAmount") as RadNumericTextBox).Value);
-                    Trans.Descript = (userControl.FindControl("txtDESC") as RadTextBox).Text.ToUpper();
+                    Trans.Descript = (userControl.FindControl("txtDESC") as RadTextBox).Text;
                     Trans.TransDate = (DateTime)(userControl.FindControl("dtpTransDate") as RadDatePicker).DbSelectedDate;
                     //Trans.KasId = (userControl.FindControl("cmbKasID") as RadComboBox).SelectedValue.ToUpper();                   
                     Trans.UserUpdate = "toro";
@@ -180,11 +180,11 @@ namespace RSCM_BKU_Web.Transaksi
                 //Trans.KaCode = (userControl.FindControl("cmbTransCODE") as RadComboBox).SelectedItem.Value;
                 Trans.KaCode = (userControl.FindControl("HiddenField1") as HiddenField).Value;
                 Trans.TransNumber = autonumber.ToUpper();
-                Trans.CekBgNumber = (userControl.FindControl("txtCek") as RadTextBox).Text.ToUpper();
+                Trans.CekBgNumber = (userControl.FindControl("txtCek") as RadTextBox).Text;
                 //Trans.Amount = Convert.ToDecimal((userControl.FindControl("txtDebitAmount") as RadNumericTextBox).Value - (userControl.FindControl("txtCreditAmount") as RadNumericTextBox).Value);
                 Trans.DebitAmount = Convert.ToDecimal((userControl.FindControl("txtDebitAmount") as RadNumericTextBox).Value);
                 Trans.CreditAmount = Convert.ToDecimal((userControl.FindControl("txtCreditAmount") as RadNumericTextBox).Value);
-                Trans.Descript = (userControl.FindControl("txtDESC") as RadTextBox).Text.ToUpper();
+                Trans.Descript = (userControl.FindControl("txtDESC") as RadTextBox).Text;
                 Trans.KasId = (userControl.FindControl("cmbKasID") as RadComboBox).SelectedValue.ToUpper();
                 Trans.TransDate = (DateTime)(userControl.FindControl("dtpTransDate") as RadDatePicker).DbSelectedDate;
                 Trans.UserInsert = "toro";

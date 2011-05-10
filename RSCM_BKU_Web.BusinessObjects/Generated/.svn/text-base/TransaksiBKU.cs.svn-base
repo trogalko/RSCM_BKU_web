@@ -7,7 +7,7 @@
 ===============================================================================
 EntitySpaces Version : 2009.2.1214.0
 EntitySpaces Driver  : SQL
-Date Generated       : 15/03/2011 3:33:43
+Date Generated       : 27/04/2011 12:00:53
 ===============================================================================
 */
 
@@ -153,7 +153,8 @@ namespace RSCM_BKU_Web.BusinessObjects
 						case "CreditAmount": this.str.CreditAmount = (string)value; break;							
 						case "IsClosed": this.str.IsClosed = (string)value; break;							
 						case "Isverified": this.str.Isverified = (string)value; break;							
-						case "IsActive": this.str.IsActive = (string)value; break;
+						case "IsActive": this.str.IsActive = (string)value; break;							
+						case "CekBgNumber": this.str.CekBgNumber = (string)value; break;
 					}
 				}
 				else
@@ -389,6 +390,22 @@ namespace RSCM_BKU_Web.BusinessObjects
 			}
 		}
 		
+		/// <summary>
+		/// Maps to transaksiBKU.CEK_BG_NUMBER
+		/// </summary>
+		virtual public System.String CekBgNumber
+		{
+			get
+			{
+				return base.GetSystemString(TransaksiBKUMetadata.ColumnNames.CekBgNumber);
+			}
+			
+			set
+			{
+				base.SetSystemString(TransaksiBKUMetadata.ColumnNames.CekBgNumber, value);
+			}
+		}
+		
 		#endregion	
 
 		#region String Properties
@@ -581,6 +598,21 @@ namespace RSCM_BKU_Web.BusinessObjects
 					else entity.IsActive = Convert.ToBoolean(value);
 				}
 			}
+				
+			public System.String CekBgNumber
+			{
+				get
+				{
+					System.String data = entity.CekBgNumber;
+					return (data == null) ? String.Empty : Convert.ToString(data);
+				}
+
+				set
+				{
+					if (value == null || value.Length == 0) entity.CekBgNumber = null;
+					else entity.CekBgNumber = Convert.ToString(value);
+				}
+			}
 			
 
 			private esTransaksiBKU entity;
@@ -711,6 +743,14 @@ namespace RSCM_BKU_Web.BusinessObjects
 			get
 			{
 				return new esQueryItem(this, TransaksiBKUMetadata.ColumnNames.IsActive, esSystemType.Boolean);
+			}
+		} 
+		
+		public esQueryItem CekBgNumber
+		{
+			get
+			{
+				return new esQueryItem(this, TransaksiBKUMetadata.ColumnNames.CekBgNumber, esSystemType.String);
 			}
 		} 
 		
@@ -1000,6 +1040,12 @@ namespace RSCM_BKU_Web.BusinessObjects
 			c.PropertyName = TransaksiBKUMetadata.PropertyNames.IsActive;
 			_columns.Add(c);
 				
+			c = new esColumnMetadata(TransaksiBKUMetadata.ColumnNames.CekBgNumber, 11, typeof(System.String), esSystemType.String);
+			c.PropertyName = TransaksiBKUMetadata.PropertyNames.CekBgNumber;
+			c.CharacterMaxLength = 15;
+			c.IsNullable = true;
+			_columns.Add(c);
+				
 		}
 		#endregion	
 	
@@ -1037,6 +1083,7 @@ namespace RSCM_BKU_Web.BusinessObjects
 			 public const string IsClosed = "IS_CLOSED";
 			 public const string Isverified = "ISVERIFIED";
 			 public const string IsActive = "IS_ACTIVE";
+			 public const string CekBgNumber = "CEK_BG_NUMBER";
 		}
 		#endregion	
 		
@@ -1054,6 +1101,7 @@ namespace RSCM_BKU_Web.BusinessObjects
 			 public const string IsClosed = "IsClosed";
 			 public const string Isverified = "Isverified";
 			 public const string IsActive = "IsActive";
+			 public const string CekBgNumber = "CekBgNumber";
 		}
 		#endregion	
 
@@ -1108,7 +1156,8 @@ namespace RSCM_BKU_Web.BusinessObjects
 				meta.AddTypeMap("CreditAmount", new esTypeMap("numeric", "System.Decimal"));
 				meta.AddTypeMap("IsClosed", new esTypeMap("bit", "System.Boolean"));
 				meta.AddTypeMap("Isverified", new esTypeMap("bit", "System.Boolean"));
-				meta.AddTypeMap("IsActive", new esTypeMap("bit", "System.Boolean"));			
+				meta.AddTypeMap("IsActive", new esTypeMap("bit", "System.Boolean"));
+				meta.AddTypeMap("CekBgNumber", new esTypeMap("nvarchar", "System.String"));			
 				
 				
 				

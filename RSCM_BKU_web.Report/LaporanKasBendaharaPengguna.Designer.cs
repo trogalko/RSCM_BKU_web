@@ -304,14 +304,14 @@ namespace RSCM_BKU_web.Report
             this.PageSettings.Margins.Right = new Telerik.Reporting.Drawing.Unit(2.5D, Telerik.Reporting.Drawing.UnitType.Cm);
             this.PageSettings.Margins.Top = new Telerik.Reporting.Drawing.Unit(2.5399999618530273D, Telerik.Reporting.Drawing.UnitType.Cm);
             this.PageSettings.PaperKind = System.Drawing.Printing.PaperKind.A4;
-            reportParameter1.Mergable = false;
+            reportParameter1.Mergeable = false;
             reportParameter1.Name = "userName";
             reportParameter1.Text = "User Name";
-            reportParameter2.Mergable = false;
+            reportParameter2.Mergeable = false;
             reportParameter2.Name = "StartDate";
             reportParameter2.Text = "Start Transaction Date";
             reportParameter2.Type = Telerik.Reporting.ReportParameterType.DateTime;
-            reportParameter3.Mergable = false;
+            reportParameter3.Mergeable = false;
             reportParameter3.Name = "EndDate";
             reportParameter3.Text = "End Transaction Date";
             reportParameter3.Type = Telerik.Reporting.ReportParameterType.DateTime;

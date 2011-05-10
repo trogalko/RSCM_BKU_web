@@ -35,18 +35,7 @@
                     ForeColor="White" Text="Buku Kas Umum - RSCM Kencana"></asp:Label>    
             </td>  
         </tr>
-        <!--
-        <tr>
-            <td class="style1" bgcolor="#0066FF">
-                <asp:Label ID="Label4" runat="server" 
-                    Font-Bold="True" 
-                    Font-Names="Times New Roman"              
-                    Font-Size="XX-Large"              
-                    ForeColor="White" Text="RSCM Kencana">
-                </asp:Label> 
-            </td> 
-        </tr>
-        -->
+        
         <tr>
             <td bgcolor="#0066FF">
                 <asp:Image ID="Image1" runat="server" ImageUrl="~/Logo_RSCM.png" 
@@ -96,12 +85,16 @@
                 <telerik:RadMenuItem runat="server" Text="REPORTS">
                     <Items>
                         <telerik:RadMenuItem runat="server" 
-                            NavigateUrl="~/Report/LaporanKasBank/LaporanKasBankViewer.aspx" 
+                            NavigateUrl="~/Report/ReportViewerKasBank.aspx" 
                             Text="Laporan Kas dan Bank">
                         </telerik:RadMenuItem>
                         <telerik:RadMenuItem runat="server" 
                             NavigateUrl="~/Report/ReportViewerBKU.aspx" 
                             Text="Laporan BKU">
+                        </telerik:RadMenuItem>
+                        <telerik:RadMenuItem runat="server" 
+                            NavigateUrl="~/Report/ReportViewerPerMA.aspx" 
+                            Text="Laporan Per Kelompok Anggaran">
                         </telerik:RadMenuItem>
                     </Items>
                 </telerik:RadMenuItem>

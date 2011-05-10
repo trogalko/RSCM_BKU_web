@@ -124,7 +124,7 @@
             Summary description for ParametersAreaToobarGroup.
             </summary>
     </member>
-    <member name="M:Telerik.ReportViewer.WebForms.ParametersPage.CraeteParameterModels(System.Collections.Generic.List{Telerik.Reporting.Processing.Parameter})">
+    <member name="M:Telerik.ReportViewer.WebForms.ParametersPage.CreateParameterModels(System.Collections.Generic.List{Telerik.Reporting.Processing.Parameter})">
       <summary>
             Gets or sets a list of report parameters.
             </summary>
@@ -579,6 +579,11 @@
     <member name="P:Telerik.ReportViewer.Common.ParameterModel.Multivalue">
       <summary>
             Gets the <see cref="P:Telerik.Reporting.Processing.Parameter.Multivalue" />.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.Common.ParameterModel.AutoRefresh">
+      <summary>
+            Gets the <see cref="P:Telerik.Reporting.Processing.Parameter.AutoRefresh" />.
             </summary>
     </member>
     <member name="P:Telerik.ReportViewer.Common.ParameterModel.SelectedSingleValue">

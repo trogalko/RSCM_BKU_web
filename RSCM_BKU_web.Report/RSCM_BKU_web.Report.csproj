@@ -31,6 +31,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntitySpaces.Core">
+      <HintPath>C:\Program Files\EntitySpaces 2009\Runtimes\.NET 3.5\EntitySpaces.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.DynamicQuery">
+      <HintPath>C:\Program Files\EntitySpaces 2009\Runtimes\.NET 3.5\EntitySpaces.DynamicQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.Interfaces">
+      <HintPath>C:\Program Files\EntitySpaces 2009\Runtimes\.NET 3.5\EntitySpaces.Interfaces.dll</HintPath>
+    </Reference>
     <Reference Include="Stimulsoft.Base, Version=2011.1.910.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Program Files\Stimulsoft Reports.Ultimate 2010.1\Bin\Stimulsoft.Base.dll</HintPath>
@@ -48,21 +57,18 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="Telerik.Reporting, Version=4.1.10.921, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" />
+    <Reference Include="Telerik.Reporting, Version=5.0.11.328, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="KasBank.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="KasBank.Designer.cs">
-      <DependentUpon>KasBank.cs</DependentUpon>
-    </Compile>
     <Compile Include="LaporanBKU.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -87,12 +93,15 @@
     <Compile Include="LaporanKasBendaharaPengguna.Designer.cs">
       <DependentUpon>LaporanKasBendaharaPengguna.cs</DependentUpon>
     </Compile>
+    <Compile Include="LaporanPerKelompokAnggaran.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LaporanPerKelompokAnggaran.Designer.cs">
+      <DependentUpon>LaporanPerKelompokAnggaran.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="KasBank.resx">
-      <DependentUpon>KasBank.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="LaporanBKU.resx">
       <DependentUpon>LaporanBKU.cs</DependentUpon>
     </EmbeddedResource>
@@ -105,6 +114,15 @@
     <EmbeddedResource Include="LaporanKasBendaharaPengguna.resx">
       <DependentUpon>LaporanKasBendaharaPengguna.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LaporanPerKelompokAnggaran.resx">
+      <DependentUpon>LaporanPerKelompokAnggaran.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RSCM_BKU_Web.BusinessObjects\RSCM_BKU_Web.BusinessObjects.csproj">
+      <Project>{E2341FCA-D3BE-4CB7-AA38-1646CDEC942E}</Project>
+      <Name>RSCM_BKU_Web.BusinessObjects</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

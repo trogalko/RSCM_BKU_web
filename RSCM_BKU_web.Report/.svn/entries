@@ -26,6 +26,13 @@ has-props
 
 de6af85a-c0b5-ae4d-9e3a-650578dbb939
 
+LaporanPerKelompokAnggaran.resx
+file
+0
+
+
+add
+
 LaporanKasBendaharaPengguna.resx
 file
 
@@ -99,7 +106,7 @@ file
 
 
 
-
+delete
 2011-04-20T03:44:50.746885Z
 4065dd76734bcc4c49780d6b7f408740
 2011-04-20T03:21:41.509640Z
@@ -133,9 +140,9 @@ file
 
 
 
-
+replace
 2011-04-20T03:44:50.759925Z
-e58d397b2b7be74868e01f2f5207407d
+
 2011-04-20T03:21:41.509640Z
 5
 trogalko
@@ -167,9 +174,9 @@ file
 
 
 
-
+replace
 2011-04-20T03:44:50.768953Z
-ced1ccf79021c50b1013240315abf194
+
 2011-04-20T03:21:41.509640Z
 5
 trogalko
@@ -201,14 +208,14 @@ dir
 
 LaporanBKU.Designer.cs
 file
+9
 
 
 
-
-2011-04-20T03:44:50.807071Z
-749257564b1988948e20ba2a31114d04
-2011-04-20T03:21:41.509640Z
-5
+2011-04-27T09:34:11.986315Z
+72c5cc2adb85fc13a0b7b01ede478fbd
+2011-04-27T10:13:38.407904Z
+9
 trogalko
 
 
@@ -231,18 +238,18 @@ trogalko
 
 
 
-28803
+53814
 
 LaporanBKU.cs
 file
+9
 
 
 
-
-2011-04-20T03:44:50.819108Z
-1cbed73b3deb4ef206e5a3389857fef8
-2011-04-20T03:21:41.509640Z
-5
+2011-04-27T09:34:12.021241Z
+3cb9c31794c9d670cf9cf2e47e27cecd
+2011-04-27T10:13:38.407904Z
+9
 trogalko
 
 
@@ -265,7 +272,14 @@ trogalko
 
 
 
-997
+1009
+
+LaporanPerKelompokAnggaran.Designer.cs
+file
+0
+
+
+add
 
 LaporanKasBendaharaPengguna.mrt
 file
@@ -306,9 +320,9 @@ file
 
 
 
-
+replace
 2011-04-20T03:44:50.829139Z
-4065dd76734bcc4c49780d6b7f408740
+
 2011-04-20T03:21:41.509640Z
 5
 trogalko
@@ -334,6 +348,13 @@ trogalko
 
 
 5996
+
+LaporanPerKelompokAnggaran.cs
+file
+0
+
+
+add
 
 LaporanKasBendaharaPengguna.Designer.cs
 file
@@ -510,7 +531,7 @@ file
 
 
 
-
+delete
 2011-04-20T03:44:51.040793Z
 b697f2712dc2461db6e5b4c5e72cf6e7
 2011-04-20T03:21:41.509640Z
@@ -544,7 +565,7 @@ file
 
 
 
-
+delete
 2011-04-20T03:44:51.064867Z
 b8490f575fb4df72f9d4242ddaca3e42
 2011-04-20T03:21:41.509640Z
@@ -575,14 +596,14 @@ trogalko
 
 LaporanBKU.resx
 file
+9
 
 
 
-
-2011-04-20T03:44:51.073895Z
-4065dd76734bcc4c49780d6b7f408740
-2011-04-20T03:21:41.509640Z
-5
+2011-04-27T09:34:11.835632Z
+f41f69510af615a6366e1cd4063346ed
+2011-04-27T10:13:38.407904Z
+9
 trogalko
 
 
@@ -605,5 +626,5 @@ trogalko
 
 
 
-5996
+6204
 
