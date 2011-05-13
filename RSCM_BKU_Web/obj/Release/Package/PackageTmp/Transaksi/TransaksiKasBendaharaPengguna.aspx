@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Header.Master" AutoEventWireup="true" CodeBehind="TransaksiKasBendaharaPengguna.aspx.cs" Inherits="RSCM_BKU_Web.Transaksi.TransaksiKas" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/RibbonHeader.Master" AutoEventWireup="true" CodeBehind="TransaksiKasBendaharaPengguna.aspx.cs" Inherits="RSCM_BKU_Web.Transaksi.TransaksiKas" %>
 <%@ Register assembly="Telerik.Web.UI" namespace="Telerik.Web.UI" tagprefix="telerik" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <script type="text/javascript">

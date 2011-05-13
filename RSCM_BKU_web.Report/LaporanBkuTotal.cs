@@ -8,11 +8,11 @@ namespace RSCM_BKU_web.Report
     using Telerik.Reporting.Drawing;
 
     /// <summary>
-    /// Summary description for LaporanBkuKasUmumPerKelompokAnggaran.
+    /// Summary description for LaporanBkuTotal.
     /// </summary>
-    public partial class LaporanBkuKasUmumPerKelompokAnggaran : Telerik.Reporting.Report
+    public partial class LaporanBkuTotal : Telerik.Reporting.Report
     {
-        public LaporanBkuKasUmumPerKelompokAnggaran()
+        public LaporanBkuTotal()
         {
             //
             // Required for telerik Reporting designer support
@@ -22,7 +22,6 @@ namespace RSCM_BKU_web.Report
             //
             // TODO: Add any constructor code after InitializeComponent call
             //
-            txtHeaderTanggal.Value = "Tanggal :  " + (this.ReportParameters[0]).ToString() + " s/d " + this.ReportParameters[1].ToString();
         }
     }
 }

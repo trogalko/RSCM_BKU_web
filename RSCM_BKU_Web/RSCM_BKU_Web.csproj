@@ -52,6 +52,7 @@
     <PublishDatabases>false</PublishDatabases>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.Data.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Web.v10.2">
       <HintPath>C:\Windows\assembly\GAC_MSIL\DevExpress.Web.v10.2\10.2.5.0__b88d1754d700e49a\DevExpress.Web.v10.2.dll</HintPath>
       <Private>True</Private>

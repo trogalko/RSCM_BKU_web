@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Header.Master" AutoEventWireup="true" CodeBehind="MasterRencanaAnggaranBelanja.aspx.cs" Inherits="RSCM_BKU_Web.Master.MasterRencanaAnggaranBelanja2" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/RibbonHeader.Master" AutoEventWireup="true" CodeBehind="MasterRencanaAnggaranBelanja.aspx.cs" Inherits="RSCM_BKU_Web.Master.MasterRencanaAnggaranBelanja2" %>
 <%@ Register assembly="Telerik.Web.UI" namespace="Telerik.Web.UI" tagprefix="telerik" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>

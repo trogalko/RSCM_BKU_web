@@ -72,7 +72,7 @@ file
 
 
 
-
+delete
 2011-04-20T03:44:50.733844Z
 f41f69510af615a6366e1cd4063346ed
 2011-04-20T03:21:41.509640Z
@@ -100,40 +100,6 @@ trogalko
 
 
 6204
-
-KasBank.resx
-file
-
-
-
-delete
-2011-04-20T03:44:50.746885Z
-4065dd76734bcc4c49780d6b7f408740
-2011-04-20T03:21:41.509640Z
-5
-trogalko
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-5996
 
 LaporanKasBank.Designer.cs
 file
@@ -168,6 +134,40 @@ trogalko
 
 
 28739
+
+KasBank.resx
+file
+
+
+
+delete
+2011-04-20T03:44:50.746885Z
+4065dd76734bcc4c49780d6b7f408740
+2011-04-20T03:21:41.509640Z
+5
+trogalko
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5996
 
 LaporanKasBank.cs
 file
@@ -274,12 +274,53 @@ trogalko
 
 1009
 
-LaporanPerKelompokAnggaran.Designer.cs
+LaporanBkuTotal.Designer.cs
 file
 0
 
 
 add
+
+LaporanBkuTotal.cs
+file
+0
+
+
+add
+
+LaporanKasBank.resx
+file
+
+
+
+replace
+2011-04-20T03:44:50.829139Z
+
+2011-04-20T03:21:41.509640Z
+5
+trogalko
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5996
 
 LaporanKasBendaharaPengguna.mrt
 file
@@ -315,39 +356,12 @@ trogalko
 
 15656
 
-LaporanKasBank.resx
+LaporanPerKelompokAnggaran.Designer.cs
 file
+0
 
 
-
-replace
-2011-04-20T03:44:50.829139Z
-
-2011-04-20T03:21:41.509640Z
-5
-trogalko
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-5996
+add
 
 LaporanPerKelompokAnggaran.cs
 file
@@ -463,7 +477,7 @@ file
 
 
 
-
+delete
 2011-04-20T03:44:51.032768Z
 1f89bfeeef100c8287c786455c20647f
 2011-04-20T03:21:41.509640Z
@@ -497,7 +511,7 @@ file
 
 
 
-
+delete
 2011-04-20T03:44:51.053833Z
 3a707de574a44ef0174eaec67c51a102
 2011-04-20T03:21:41.509640Z

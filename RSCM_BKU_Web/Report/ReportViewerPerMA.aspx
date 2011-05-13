@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Header.Master" AutoEventWireup="true" CodeBehind="ReportViewerPerMA.aspx.cs" Inherits="RSCM_BKU_Web.Report.ReportViewerPerMA" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/RibbonHeader.Master" AutoEventWireup="true" CodeBehind="ReportViewerPerMA.aspx.cs" Inherits="RSCM_BKU_Web.Report.ReportViewerPerMA" %>
 
 <%@ Register Assembly="Telerik.ReportViewer.WebForms, Version=5.0.11.328, Culture=neutral, PublicKeyToken=a9d7983dfcc261be"
     Namespace="Telerik.ReportViewer.WebForms" TagPrefix="telerik" %>

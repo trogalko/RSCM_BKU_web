@@ -75,11 +75,11 @@
     <Compile Include="LaporanBKU.Designer.cs">
       <DependentUpon>LaporanBKU.cs</DependentUpon>
     </Compile>
-    <Compile Include="LaporanBkuKasUmumPerKelompokAnggaran.cs">
+    <Compile Include="LaporanBkuTotal.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="LaporanBkuKasUmumPerKelompokAnggaran.Designer.cs">
-      <DependentUpon>LaporanBkuKasUmumPerKelompokAnggaran.cs</DependentUpon>
+    <Compile Include="LaporanBkuTotal.Designer.cs">
+      <DependentUpon>LaporanBkuTotal.cs</DependentUpon>
     </Compile>
     <Compile Include="LaporanKasBank.cs">
       <SubType>Component</SubType>
@@ -104,9 +104,6 @@
   <ItemGroup>
     <EmbeddedResource Include="LaporanBKU.resx">
       <DependentUpon>LaporanBKU.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LaporanBkuKasUmumPerKelompokAnggaran.resx">
-      <DependentUpon>LaporanBkuKasUmumPerKelompokAnggaran.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LaporanKasBank.resx">
       <DependentUpon>LaporanKasBank.cs</DependentUpon>

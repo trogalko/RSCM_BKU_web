@@ -13,7 +13,6 @@ D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\De
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\Stimulsoft.Report.WebFx.xml
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Debug\ResolveAssemblyReference.cache
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Debug\RSCM_BKU_web.Report.LaporanBKU.resources
-D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Debug\RSCM_BKU_web.Report.LaporanBkuKasUmumPerKelompokAnggaran.resources
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Debug\RSCM_BKU_web.Report.LaporanKasBank.resources
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Debug\RSCM_BKU_web.Report.LaporanKasBendaharaPengguna.resources
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Debug\RSCM_BKU_web.Report.LaporanPerKelompokAnggaran.resources
