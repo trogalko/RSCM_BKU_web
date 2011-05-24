@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace RSCM_BKU_Web.Transaksi
+namespace RSCM_BKU_Web.Report
 {
 
 
-    public partial class TransaksiKas1
+    public partial class ReportViewerGroupedByMA
     {
     }
 }

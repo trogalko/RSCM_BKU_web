@@ -26,21 +26,57 @@ namespace RSCM_BKU_Web.Login
         {
             if (txtUserId.Text == "adduserkusno")
             {
-                AppUser addUserKusno = new AppUser();
-                addUserKusno.UserID = "dj";
-                addUserKusno.UserName = "Dwi Jayanti";
-                addUserKusno.Password = AEScipher.Encrypt("dj", "abc");
-                addUserKusno.LastUpdateByUserID = "toro";
-                addUserKusno.LastUpdateDateTime = DateTime.Now;
-                addUserKusno.Save();
+                //AppUser addUserKusno = new AppUser();
+                //addUserKusno.UserID = "dj";
+                //addUserKusno.UserName = "Dwi Jayanti";
+                //addUserKusno.Password = AEScipher.Encrypt("dj", "abc");
+                //addUserKusno.LastUpdateByUserID = "toro";
+                //addUserKusno.LastUpdateDateTime = DateTime.Now;
+                //addUserKusno.Save();
 
-                AppUser addUserKusnos = new AppUser();
-                addUserKusnos.UserID = "erni";
-                addUserKusnos.UserName = "Erni";
-                addUserKusnos.Password = AEScipher.Encrypt("erni", "abc");
-                addUserKusnos.LastUpdateByUserID = "toro";
-                addUserKusnos.LastUpdateDateTime = DateTime.Now;
-                addUserKusnos.Save();
+                //AppUser addUserKusnos = new AppUser();
+                //addUserKusnos.UserID = "erni";
+                //addUserKusnos.UserName = "Erni";
+                //addUserKusnos.Password = AEScipher.Encrypt("erni", "abc");
+                //addUserKusnos.LastUpdateByUserID = "toro";
+                //addUserKusnos.LastUpdateDateTime = DateTime.Now;
+                //addUserKusnos.Save();
+                TransCollection TransColl = new TransCollection();                
+                TransQuery transQ = new TransQuery();
+                transQ.SelectAll();
+                //transQ.OrderBy("TRANS_DATE");
+                TransColl.Load(transQ);
+                int number = 0;
+                foreach (Trans t in TransColl)
+                {
+                    if (((DateTime)t.TransDate).Month.ToString().Trim() == "5" || ((DateTime)t.TransDate).Month.ToString().Trim() == "05")
+                    {
+                        Trans trans = new Trans();
+                        if (trans.LoadByPrimaryKey((long)t.BkuId))
+                        {
+                            number += 1;
+                            switch (number.ToString().Trim().Length)
+                            {
+                                case 0:
+                                    
+                                    break;
+                                case 1:
+                                    trans.TransNumber = "201105-000" + number.ToString().Trim();
+                                    break;
+                                case 2:
+                                    trans.TransNumber = "201105-00" + number.ToString().Trim();
+                                    break;
+                                case 3:
+                                    trans.TransNumber = "201105-0" + number.ToString().Trim();
+                                    break;
+                                case 4:
+                                    trans.TransNumber = "201105-" + number.ToString().Trim();
+                                    break;
+                            }
+                            trans.Save();
+                        }
+                    }
+                }
             }
             AppUser AppUser = new AppUser();           
             if (AppUser.LoadByPrimaryKey(txtUserId.Text.Trim()))

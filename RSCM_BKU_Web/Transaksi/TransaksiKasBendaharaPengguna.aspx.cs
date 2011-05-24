@@ -115,7 +115,7 @@ namespace RSCM_BKU_Web.Transaksi
                          where kA.IS_DETAIL == true &&
                          kA.IS_ACTIVE == true &&
                          kA.KA_LEVEL == "3"
-                         orderby t.BKU_ID
+                         orderby t.TRANS_NUMBER
                          select new { t.BKU_ID, t.TRANS_NUMBER, t.TRANS_DATE, t.CEK_BG_NUMBER, t.DEBIT_AMOUNT, t.CREDIT_AMOUNT, t.KA_CODE, kA.KA_NAME, t.DESCRIPT, KAS_NAME = kas.KA_NAME, t.ISVERIFIED, t.IS_CLOSED };
             RadGrid1.DataSource = TransQ;
         }

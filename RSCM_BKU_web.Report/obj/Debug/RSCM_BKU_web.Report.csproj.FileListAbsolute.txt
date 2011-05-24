@@ -7,10 +7,13 @@ D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\De
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\Stimulsoft.Base.dll
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\Stimulsoft.Report.dll
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\Stimulsoft.Report.WebFx.dll
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\Telerik.Reporting.dll
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\RSCM_BKU_Web.BusinessObjects.pdb
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\Stimulsoft.Base.xml
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\Stimulsoft.Report.xml
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\Stimulsoft.Report.WebFx.xml
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\Telerik.Reporting.pdb
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\Telerik.Reporting.xml
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Debug\ResolveAssemblyReference.cache
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Debug\RSCM_BKU_web.Report.LaporanBKU.resources
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Debug\RSCM_BKU_web.Report.LaporanKasBank.resources
@@ -20,6 +23,3 @@ D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\De
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Debug\GenerateResource-ResGen.write.1.tlog
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Debug\RSCM_BKU_web.Report.dll
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Debug\RSCM_BKU_web.Report.pdb
-D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\Telerik.Reporting.dll
-D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\Telerik.Reporting.pdb
-D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\Telerik.Reporting.xml

@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace RSCM_BKU_Web.Transaksi
+namespace RSCM_BKU_Web.Report
 {
-    public partial class TransaksiKas1 : System.Web.UI.Page
+    public partial class ReportViewerGroupedByMA : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

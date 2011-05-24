@@ -170,6 +170,8 @@
     <Content Include="gradient.gif" />
     <Content Include="gradientreverse.gif" />
     <Content Include="Header.ascx" />
+    <Content Include="Images\Background1.jpg" />
+    <Content Include="Images\Background2.jpg" />
     <Content Include="Images\laporan-BKU.png" />
     <Content Include="Images\masterGroup.jpg" />
     <Content Include="Images\masterGroup.png" />
@@ -201,13 +203,13 @@
     <Content Include="Report\LaporanKasBank\ReportBookKasBank.aspx" />
     <Content Include="Report\LaporanPerKelompokAnggaran\ReportViewer.aspx" />
     <Content Include="Report\ReportViewerBKU.aspx" />
+    <Content Include="Report\ReportViewerGroupedByMA.aspx" />
     <Content Include="Report\ReportViewerKasBank.aspx" />
     <Content Include="Report\ReportViewerPerMA.aspx" />
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
     <Content Include="Transaksi\TransaksiKas.aspx" />
-    <Content Include="Transaksi\TransaksiKasAdd.aspx" />
     <Content Include="Transaksi\TransaksiKasBendaharaPengguna.aspx" />
     <Content Include="Transaksi\TransaksiKasBendaharaPengguna.ascx" />
     <Content Include="Transaksi\TransaksiKasBendaharaPenggunaBak.aspx" />
@@ -428,6 +430,13 @@
     <Compile Include="Report\ReportViewerBKU.aspx.designer.cs">
       <DependentUpon>ReportViewerBKU.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Report\ReportViewerGroupedByMA.aspx.cs">
+      <DependentUpon>ReportViewerGroupedByMA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\ReportViewerGroupedByMA.aspx.designer.cs">
+      <DependentUpon>ReportViewerGroupedByMA.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Report\ReportViewerKasBank.aspx.cs">
       <DependentUpon>ReportViewerKasBank.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -455,13 +464,6 @@
     </Compile>
     <Compile Include="Transaksi\TransaksiKas.aspx.designer.cs">
       <DependentUpon>TransaksiKas.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Transaksi\TransaksiKasAdd.aspx.cs">
-      <DependentUpon>TransaksiKasAdd.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Transaksi\TransaksiKasAdd.aspx.designer.cs">
-      <DependentUpon>TransaksiKasAdd.aspx</DependentUpon>
     </Compile>
     <Compile Include="Transaksi\TransaksiKasBendaharaPengguna.aspx.cs">
       <DependentUpon>TransaksiKasBendaharaPengguna.aspx</DependentUpon>

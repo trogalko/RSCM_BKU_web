@@ -1,5 +1,6 @@
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\RSCM_BKU_Web.dll
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\RSCM_BKU_Web.pdb
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\DevExpress.Web.v10.2.dll
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\EntitySpaces.Core.dll
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\EntitySpaces.DynamicQuery.dll
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\EntitySpaces.Interfaces.dll
@@ -20,7 +21,10 @@ D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\Stimulsof
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\Stimulsoft.Report.WebFx.dll
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\Telerik.Reporting.dll
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\Telerik.ReportViewer.WebForms.dll
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\Telerik.Web.Design.dll
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\Telerik.Web.UI.dll
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\Telerik.WinControls.dll
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\Telerik.WinControls.GridView.dll
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\EntitySpaces.SqlServerCeProvider.dll
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\EntitySpaces.OracleClientProvider.dll
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\EntitySpaces.MSAccessProvider.dll
@@ -38,6 +42,8 @@ D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\Stimulsof
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\Stimulsoft.Report.xml
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\Stimulsoft.Report.Web.xml
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\Stimulsoft.Report.WebFx.xml
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\Telerik.WinControls.xml
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\Telerik.WinControls.GridView.xml
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\Telerik.Reporting.pdb
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\Telerik.Reporting.xml
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\Telerik.ReportViewer.WebForms.pdb
@@ -46,9 +52,3 @@ D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\obj\Debug\Res
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\obj\Debug\RSCM_BKU_Web.dll.licenses
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\obj\Debug\RSCM_BKU_Web.dll
 D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\obj\Debug\RSCM_BKU_Web.pdb
-D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\DevExpress.Web.v10.2.dll
-D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\Telerik.Web.Design.dll
-D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\Telerik.WinControls.dll
-D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\Telerik.WinControls.GridView.dll
-D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\Telerik.WinControls.xml
-D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web\bin\Telerik.WinControls.GridView.xml

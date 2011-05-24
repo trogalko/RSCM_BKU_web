@@ -8,9 +8,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <teleriks:RadFormDecorator ID="RadFormDecorator1" runat="server" 
-            Skin="Office2007" />
-    <ext:ResourceManager ID="ResourceManager1" runat="server"></ext:ResourceManager>
-    
+            Skin="Office2007" />    
         <br />
         <ext:Panel ID="Panel1" runat="server" Title="Title" AnchorHorizontal="100%" Height="110" AnchorVertical="110">
             <Items>

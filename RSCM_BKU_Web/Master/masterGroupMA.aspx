@@ -34,24 +34,26 @@
                 <CommandItemSettings AddNewRecordText="Add New Group MA" />
 
                 <Columns>
-                    <telerik:GridEditCommandColumn HeaderStyle-Width="10%">                       
+                    <telerik:GridEditCommandColumn HeaderStyle-Width="30px">                       
                     </telerik:GridEditCommandColumn>
                     <telerik:GridBoundColumn DataField="GtId" 
+                        ItemStyle-Width="30px" 
                         HeaderText="Group MA ID" 
                         ReadOnly="True" 
                         SortExpression="GtId" 
                         UniqueName="GtId"
                         ItemStyle-Wrap="false" 
-                        HeaderStyle-Width="10%">
+                        HeaderStyle-Width="30px">
                     </telerik:GridBoundColumn>
 
                     <telerik:GridBoundColumn DataField="GtCode" 
+                        ItemStyle-Width="40px"                         
                         HeaderText="Group MA Code" 
                         ReadOnly="True" 
                         SortExpression="GtCode" 
                         UniqueName="GtCode"
                         ItemStyle-Wrap="false" 
-                        HeaderStyle-Width="10%">
+                        HeaderStyle-Width="40px">
                     </telerik:GridBoundColumn>
                 </Columns>
 
