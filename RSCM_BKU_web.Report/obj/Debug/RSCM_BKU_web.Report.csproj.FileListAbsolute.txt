@@ -1,0 +1,68 @@
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\RSCM_BKU_web.Report.dll
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\RSCM_BKU_web.Report.pdb
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\EntitySpaces.Core.dll
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\EntitySpaces.DynamicQuery.dll
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\EntitySpaces.Interfaces.dll
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\RSCM_BKU_Web.BusinessObjects.dll
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\Stimulsoft.Base.dll
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\Stimulsoft.Report.dll
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\Stimulsoft.Report.WebFx.dll
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\Telerik.Reporting.dll
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\RSCM_BKU_Web.BusinessObjects.pdb
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\Stimulsoft.Base.xml
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\Stimulsoft.Report.xml
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\Stimulsoft.Report.WebFx.xml
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\Telerik.Reporting.pdb
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\Telerik.Reporting.xml
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Debug\RSCM_BKU_web.Report.LaporanBKU.resources
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Debug\RSCM_BKU_web.Report.LaporanKasBank.resources
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Debug\RSCM_BKU_web.Report.LaporanKasBendaharaPengguna.resources
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Debug\RSCM_BKU_web.Report.LaporanPerKelompokAnggaran.resources
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Debug\RSCM_BKU_web.Report.dll
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Debug\RSCM_BKU_web.Report.pdb
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\RSCM_BKU_Web.Linq.dll
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\RSCM_BKU_Web.Linq.pdb
+H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\RSCM_BKU_web.Report.dll
+H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\RSCM_BKU_web.Report.pdb
+H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\EntitySpaces.Core.dll
+H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\EntitySpaces.DynamicQuery.dll
+H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\EntitySpaces.Interfaces.dll
+H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\EntitySpaces.Loader.dll
+H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\EntitySpaces.LoaderMT.dll
+H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\EntitySpaces.SqlClientProvider.dll
+H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\RSCM_BKU_Web.BusinessObjects.dll
+H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\RSCM_BKU_Web.Linq.dll
+H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\Stimulsoft.Base.dll
+H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\Stimulsoft.Report.dll
+H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\Stimulsoft.Report.WebFx.dll
+H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\Telerik.Reporting.dll
+H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\EntitySpaces.SqlServerCeProvider.dll
+H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\EntitySpaces.OracleClientProvider.dll
+H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\EntitySpaces.MSAccessProvider.dll
+H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\EntitySpaces.MySqlClientProvider.dll
+H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\EntitySpaces.VistaDBProvider.dll
+H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\EntitySpaces.NpgsqlProvider.dll
+H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\EntitySpaces.Npgsql2Provider.dll
+H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\EntitySpaces.SybaseSqlAnywhereProvider.dll
+H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\RSCM_BKU_Web.BusinessObjects.pdb
+H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\RSCM_BKU_Web.Linq.pdb
+H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\Stimulsoft.Base.xml
+H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\Stimulsoft.Report.xml
+H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\Stimulsoft.Report.WebFx.xml
+H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\Telerik.Reporting.pdb
+H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Debug\Telerik.Reporting.xml
+H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Debug\ResolveAssemblyReference.cache
+H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Debug\RSCM_BKU_web.Report.LaporanBKU.resources
+H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Debug\RSCM_BKU_web.Report.LaporanKasBank.resources
+H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Debug\RSCM_BKU_web.Report.LaporanKasBendaharaPengguna.resources
+H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Debug\RSCM_BKU_web.Report.LaporanPerKelompokAnggaran.resources
+H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Debug\RSCM_BKU_web.Report.LaporanRBA.resources
+H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Debug\RSCM_BKU_web.Report.LaporanTransBKUPerMA.resources
+H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Debug\RSCM_BKU_web.Report.Properties.Resources.resources
+H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Debug\GenerateResource-ResGen.read.1.tlog
+H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Debug\GenerateResource-ResGen.write.1.tlog
+H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Debug\RSCM_BKU_web.Report.dll
+H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Debug\RSCM_BKU_web.Report.pdb

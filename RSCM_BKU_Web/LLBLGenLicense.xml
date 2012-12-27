@@ -1,0 +1,25 @@
+﻿<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+  <SignedInfo>
+    <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+    <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+    <Reference URI="#LLBLGenProLicense">
+      <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <DigestValue>53Jyo1f9gDwYCdQ8kEu8okCqDrw=
+      </DigestValue>
+    </Reference>
+  </SignedInfo>
+  <SignatureValue>OoP0m9UI/hRe3UmD4kBe6By3K9ZuetNMklrlYixXCS2/UUgjlesGeHFxeql5UePE7+LP+pkJrBG9Z9pYexuDdlwhFJSIVkV3KRAVtwZxUv3sWAj8e1F7fUSw8uoRrOQts3VxdBx+sPNNWT/yvf6ZhwBYq35BnuZ2Cz7vaiLb9ts=
+  </SignatureValue>
+  <Object Id="LLBLGenProLicense">
+    <LLBLGenProLicense xmlns="">
+      <LicenseeInfo>
+        <Licensee>trogalko</Licensee>
+        <Company>mit</Company>
+        <Country>Indonesia</Country>
+        <LicenseNr>1</LicenseNr>
+      </LicenseeInfo>
+      <LicenseType>0</LicenseType>
+      <LicenseCreationTime>634460327381650825</LicenseCreationTime>
+      <ExpirationDate><Month>8</Month><Day>11</Day><Year>2011</Year></ExpirationDate>
+    </LLBLGenProLicense></Object>
+</Signature>

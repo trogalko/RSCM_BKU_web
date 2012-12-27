@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="_UpgradeWizard_Files\UpgradeWizardLog.xslt"?>
+<log>
+  <event action="Analyze" type="Success" name="Assembly References" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\RSCM_BKU_Web.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\App.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\App.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\App.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\App.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\App.config" />
+  <event action="Analyze" type="Success" name="App.config" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\App.config" />
+  <event action="Analyze" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\ControlPanel\ChangePassword.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\ControlPanel\ChangePassword.aspx" />
+  <event action="Analyze" type="Success" name="ChangePassword.aspx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\ControlPanel\ChangePassword.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\ControlPanel\MasterProgram.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\ControlPanel\MasterProgram.aspx" />
+  <event action="Analyze" type="Success" name="MasterProgram.aspx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\ControlPanel\MasterProgram.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\ControlPanel\UserAccess.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\ControlPanel\UserAccess.aspx" />
+  <event action="Analyze" type="Success" name="UserAccess.aspx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\ControlPanel\UserAccess.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\ControlPanel\UserAccessAddEdit.ascx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\ControlPanel\UserAccessAddEdit.ascx" />
+  <event action="Analyze" type="Success" name="UserAccessAddEdit.ascx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\ControlPanel\UserAccessAddEdit.ascx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Default.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Default.aspx" />
+  <event action="Analyze" type="Success" name="Default.aspx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Default.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Depault.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Depault.aspx" />
+  <event action="Analyze" type="Success" name="Depault.aspx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Depault.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Header.ascx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Header.ascx" />
+  <event action="Analyze" type="Success" name="Header.ascx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Header.ascx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Header.Master" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Header.Master" />
+  <event action="Analyze" type="Success" name="Header.Master" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Header.Master" />
+  <event action="Analyze" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Login\Login.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Login\Login.aspx" />
+  <event action="Analyze" type="Success" name="Login.aspx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Login\Login.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Master\masterGroupMA.ascx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Master\masterGroupMA.ascx" />
+  <event action="Analyze" type="Success" name="masterGroupMA.ascx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Master\masterGroupMA.ascx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Master\MasterGroupMA.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Master\MasterGroupMA.aspx" />
+  <event action="Analyze" type="Success" name="MasterGroupMA.aspx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Master\MasterGroupMA.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Master\masterGroupMAbak.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Master\masterGroupMAbak.aspx" />
+  <event action="Analyze" type="Success" name="masterGroupMAbak.aspx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Master\masterGroupMAbak.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Master\MasterKas.ascx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Master\MasterKas.ascx" />
+  <event action="Analyze" type="Success" name="MasterKas.ascx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Master\MasterKas.ascx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Master\MasterKas.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Master\MasterKas.aspx" />
+  <event action="Analyze" type="Success" name="MasterKas.aspx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Master\MasterKas.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Master\MasterKasBak.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Master\MasterKasBak.aspx" />
+  <event action="Analyze" type="Success" name="MasterKasBak.aspx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Master\MasterKasBak.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Master\MasterKelompokAnggaran.ascx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Master\MasterKelompokAnggaran.ascx" />
+  <event action="Analyze" type="Success" name="MasterKelompokAnggaran.ascx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Master\MasterKelompokAnggaran.ascx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Master\MasterKelompokAnggaran.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Master\MasterKelompokAnggaran.aspx" />
+  <event action="Analyze" type="Success" name="MasterKelompokAnggaran.aspx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Master\MasterKelompokAnggaran.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Master\MasterKelompokAnggaranBak.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Master\MasterKelompokAnggaranBak.aspx" />
+  <event action="Analyze" type="Success" name="MasterKelompokAnggaranBak.aspx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Master\MasterKelompokAnggaranBak.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Master\MasterRencanaAnggaranBelanja.ascx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Master\MasterRencanaAnggaranBelanja.ascx" />
+  <event action="Analyze" type="Success" name="MasterRencanaAnggaranBelanja.ascx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Master\MasterRencanaAnggaranBelanja.ascx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Master\MasterRencanaAnggaranBelanja.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Master\MasterRencanaAnggaranBelanja.aspx" />
+  <event action="Analyze" type="Success" name="MasterRencanaAnggaranBelanja.aspx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Master\MasterRencanaAnggaranBelanja.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Master\MasterRencanaAnggaranBelanjaBak.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Master\MasterRencanaAnggaranBelanjaBak.aspx" />
+  <event action="Analyze" type="Success" name="MasterRencanaAnggaranBelanjaBak.aspx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Master\MasterRencanaAnggaranBelanjaBak.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\MasterBKU.Master" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\MasterBKU.Master" />
+  <event action="Analyze" type="Success" name="MasterBKU.Master" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\MasterBKU.Master" />
+  <event action="Analyze" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\LaporanBku\LaporanBkuViewer.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\LaporanBku\LaporanBkuViewer.aspx" />
+  <event action="Analyze" type="Success" name="LaporanBkuViewer.aspx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\LaporanBku\LaporanBkuViewer.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\LaporanBku\LaporanBkuViewerBak.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\LaporanBku\LaporanBkuViewerBak.aspx" />
+  <event action="Analyze" type="Success" name="LaporanBkuViewerBak.aspx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\LaporanBku\LaporanBkuViewerBak.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\LaporanKasBank\LaporanKasBankViewer.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\LaporanKasBank\LaporanKasBankViewer.aspx" />
+  <event action="Analyze" type="Success" name="LaporanKasBankViewer.aspx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\LaporanKasBank\LaporanKasBankViewer.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\LaporanKasBank\LaporanKasBankViewerBak.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\LaporanKasBank\LaporanKasBankViewerBak.aspx" />
+  <event action="Analyze" type="Success" name="LaporanKasBankViewerBak.aspx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\LaporanKasBank\LaporanKasBankViewerBak.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\LaporanKasBank\ReportBookKasBank.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\LaporanKasBank\ReportBookKasBank.aspx" />
+  <event action="Analyze" type="Success" name="ReportBookKasBank.aspx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\LaporanKasBank\ReportBookKasBank.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\LaporanPerKelompokAnggaran\ReportViewer.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\LaporanPerKelompokAnggaran\ReportViewer.aspx" />
+  <event action="Analyze" type="Success" name="ReportViewer.aspx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\LaporanPerKelompokAnggaran\ReportViewer.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\ReportViewerBKU.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\ReportViewerBKU.aspx" />
+  <event action="Analyze" type="Success" name="ReportViewerBKU.aspx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\ReportViewerBKU.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\ReportViewerGroupedByMA.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\ReportViewerGroupedByMA.aspx" />
+  <event action="Analyze" type="Success" name="ReportViewerGroupedByMA.aspx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\ReportViewerGroupedByMA.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\ReportViewerGroupedByMApopUp.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\ReportViewerGroupedByMApopUp.aspx" />
+  <event action="Analyze" type="Success" name="ReportViewerGroupedByMApopUp.aspx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\ReportViewerGroupedByMApopUp.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\ReportViewerKasBank.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\ReportViewerKasBank.aspx" />
+  <event action="Analyze" type="Success" name="ReportViewerKasBank.aspx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\ReportViewerKasBank.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\ReportViewerPerMA.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\ReportViewerPerMA.aspx" />
+  <event action="Analyze" type="Success" name="ReportViewerPerMA.aspx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\ReportViewerPerMA.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\RibbonHeader.Master" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\RibbonHeader.Master" />
+  <event action="Analyze" type="Success" name="RibbonHeader.Master" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\RibbonHeader.Master" />
+  <event action="Analyze" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Transaksi\TransaksiKas.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Transaksi\TransaksiKas.aspx" />
+  <event action="Analyze" type="Success" name="TransaksiKas.aspx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Transaksi\TransaksiKas.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Transaksi\TransaksiKasBendaharaPengguna.ascx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Transaksi\TransaksiKasBendaharaPengguna.ascx" />
+  <event action="Analyze" type="Success" name="TransaksiKasBendaharaPengguna.ascx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Transaksi\TransaksiKasBendaharaPengguna.ascx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Transaksi\TransaksiKasBendaharaPengguna.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Transaksi\TransaksiKasBendaharaPengguna.aspx" />
+  <event action="Analyze" type="Success" name="TransaksiKasBendaharaPengguna.aspx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Transaksi\TransaksiKasBendaharaPengguna.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Transaksi\TransaksiKasBendaharaPenggunaBak.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Transaksi\TransaksiKasBendaharaPenggunaBak.aspx" />
+  <event action="Analyze" type="Success" name="TransaksiKasBendaharaPenggunaBak.aspx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Transaksi\TransaksiKasBendaharaPenggunaBak.aspx" />
+  <event action="Analyze" type="Success" name="Assembly References" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Web.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Web.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Web.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Web.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Web.config" />
+  <event action="Analyze" type="Success" name="Web.config" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Web.config" />
+  <event action="Analyze" type="Success" name="Assembly References" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Web.Debug.config" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Assembly References" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Web.Release.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Web.Release.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Web.Release.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Web.Release.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Web.Release.config" />
+  <event action="Analyze" type="Success" name="Web.Release.config" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Web.Release.config" />
+  <event action="Analyze" type="Success" name="RSCM_BKU_Web" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\RSCM_BKU_Web.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web.BusinessObjects\RSCM_BKU_Web.BusinessObjects.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web.BusinessObjects\app.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web.BusinessObjects\app.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web.BusinessObjects\app.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web.BusinessObjects\app.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web.BusinessObjects\app.config" />
+  <event action="Analyze" type="Success" name="app.config" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web.BusinessObjects\app.config" />
+  <event action="Analyze" type="Success" name="RSCM_BKU_Web.BusinessObjects" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web.BusinessObjects\RSCM_BKU_Web.BusinessObjects.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web.Linq\RSCM_BKU_Web.Linq.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web.Linq\app.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web.Linq\app.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web.Linq\app.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web.Linq\app.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web.Linq\app.config" />
+  <event action="Analyze" type="Success" name="app.config" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web.Linq\app.config" />
+  <event action="Analyze" type="Success" name="RSCM_BKU_Web.Linq" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web.Linq\RSCM_BKU_Web.Linq.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\RSCM_BKU_web.Report.csproj" />
+  <event action="Analyze" type="Success" name="LaporanBKU.resx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\LaporanBKU.resx" />
+  <event action="Analyze" type="Success" name="LaporanKasBank.resx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\LaporanKasBank.resx" />
+  <event action="Analyze" type="Success" name="LaporanKasBendaharaPengguna.resx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\LaporanKasBendaharaPengguna.resx" />
+  <event action="Analyze" type="Success" name="LaporanPerKelompokAnggaran.resx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\LaporanPerKelompokAnggaran.resx" />
+  <event action="Analyze" type="Success" name="RSCM_BKU_web.Report" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\RSCM_BKU_web.Report.csproj" />
+  <event action="Analyze" type="Success" name="RSCM_BKU_Web" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web.sln" />
+  <event action="Upgrade" type="Success" name="Assembly References" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\RSCM_BKU_Web.csproj" />
+  <event action="Upgrade" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\LaporanBku\LaporanBkuViewer.aspx" />
+  <event action="Upgrade" type="Success" name="LaporanBkuViewer.aspx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\LaporanBku\LaporanBkuViewer.aspx" />
+  <event action="Upgrade" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\LaporanBku\LaporanBkuViewerBak.aspx" />
+  <event action="Upgrade" type="Success" name="LaporanBkuViewerBak.aspx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\LaporanBku\LaporanBkuViewerBak.aspx" />
+  <event action="Upgrade" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\LaporanKasBank\LaporanKasBankViewer.aspx" />
+  <event action="Upgrade" type="Success" name="LaporanKasBankViewer.aspx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\LaporanKasBank\LaporanKasBankViewer.aspx" />
+  <event action="Upgrade" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\LaporanKasBank\LaporanKasBankViewerBak.aspx" />
+  <event action="Upgrade" type="Success" name="LaporanKasBankViewerBak.aspx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\LaporanKasBank\LaporanKasBankViewerBak.aspx" />
+  <event action="Upgrade" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\LaporanKasBank\ReportBookKasBank.aspx" />
+  <event action="Upgrade" type="Success" name="ReportBookKasBank.aspx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\LaporanKasBank\ReportBookKasBank.aspx" />
+  <event action="Upgrade" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\LaporanPerKelompokAnggaran\ReportViewer.aspx" />
+  <event action="Upgrade" type="Success" name="ReportViewer.aspx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\LaporanPerKelompokAnggaran\ReportViewer.aspx" />
+  <event action="Upgrade" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\ReportViewerBKU.aspx" />
+  <event action="Upgrade" type="Success" name="ReportViewerBKU.aspx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\ReportViewerBKU.aspx" />
+  <event action="Upgrade" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\ReportViewerGroupedByMA.aspx" />
+  <event action="Upgrade" type="Success" name="ReportViewerGroupedByMA.aspx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\ReportViewerGroupedByMA.aspx" />
+  <event action="Upgrade" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\ReportViewerKasBank.aspx" />
+  <event action="Upgrade" type="Success" name="ReportViewerKasBank.aspx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\ReportViewerKasBank.aspx" />
+  <event action="Upgrade" type="Success" name="Register Directives" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\ReportViewerPerMA.aspx" />
+  <event action="Upgrade" type="Success" name="ReportViewerPerMA.aspx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Report\ReportViewerPerMA.aspx" />
+  <event action="Upgrade" type="Success" name="Assembly References" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Web.config" />
+  <event action="Upgrade" type="Success" name="Http Handlers" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Web.config" />
+  <event action="Upgrade" type="Success" name="Handlers (IIS7+)" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Web.config" />
+  <event action="Upgrade" type="Success" name="Web.config" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\Web.config" />
+  <event action="Upgrade" type="Success" name="RSCM_BKU_Web" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web\RSCM_BKU_Web.csproj" />
+  <event action="Upgrade" type="Success" name="Assembly References" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\RSCM_BKU_web.Report.csproj" />
+  <event action="Upgrade" type="Success" name="LaporanBKU.resx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\LaporanBKU.resx" />
+  <event action="Upgrade" type="Success" name="LaporanPerKelompokAnggaran.resx" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\LaporanPerKelompokAnggaran.resx" />
+  <event action="Upgrade" type="Success" name="RSCM_BKU_web.Report" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_web.Report\RSCM_BKU_web.Report.csproj" />
+  <event action="Upgrade" type="Success" name="RSCM_BKU_Web" path="H:\My Documents\Visual Studio 2010\RSCM_BKU_Web\RSCM_BKU_Web.sln" />
+</log>

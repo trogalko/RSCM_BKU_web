@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/RSCM_BKU/!svn/ver/2/trunk/RSCM_BKU_Web
+END
+Web.config
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/RSCM_BKU/!svn/ver/2/trunk/RSCM_BKU_Web/Web.config
+END
+Header.Master
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/RSCM_BKU/!svn/ver/9/trunk/RSCM_BKU_Web/Header.Master
+END
+Header.Master.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/RSCM_BKU/!svn/ver/2/trunk/RSCM_BKU_Web/Header.Master.designer.cs
+END
+Header.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/RSCM_BKU/!svn/ver/2/trunk/RSCM_BKU_Web/Header.ascx
+END
+Header.Master.cs
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/RSCM_BKU/!svn/ver/2/trunk/RSCM_BKU_Web/Header.Master.cs
+END
+Header.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/RSCM_BKU/!svn/ver/2/trunk/RSCM_BKU_Web/Header.ascx.designer.cs
+END
+Header.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/RSCM_BKU/!svn/ver/2/trunk/RSCM_BKU_Web/Header.ascx.cs
+END
+Global.asax
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/RSCM_BKU/!svn/ver/2/trunk/RSCM_BKU_Web/Global.asax
+END
+gradientreverse.gif
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/RSCM_BKU/!svn/ver/2/trunk/RSCM_BKU_Web/gradientreverse.gif
+END
+background.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/RSCM_BKU/!svn/ver/2/trunk/RSCM_BKU_Web/background.jpg
+END
+Default.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/RSCM_BKU/!svn/ver/2/trunk/RSCM_BKU_Web/Default.aspx
+END
+Global.asax.cs
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/RSCM_BKU/!svn/ver/2/trunk/RSCM_BKU_Web/Global.asax.cs
+END
+check.png
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/RSCM_BKU/!svn/ver/2/trunk/RSCM_BKU_Web/check.png
+END
+Web.Release.config
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/RSCM_BKU/!svn/ver/2/trunk/RSCM_BKU_Web/Web.Release.config
+END
+Default.aspx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/RSCM_BKU/!svn/ver/2/trunk/RSCM_BKU_Web/Default.aspx.designer.cs
+END
+RSCM_BKU_Web.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/RSCM_BKU/!svn/ver/9/trunk/RSCM_BKU_Web/RSCM_BKU_Web.csproj
+END
+gradient.gif
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/RSCM_BKU/!svn/ver/2/trunk/RSCM_BKU_Web/gradient.gif
+END
+Default.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/RSCM_BKU/!svn/ver/2/trunk/RSCM_BKU_Web/Default.aspx.cs
+END
+LOGO_RSCM.JPG
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/RSCM_BKU/!svn/ver/2/trunk/RSCM_BKU_Web/LOGO_RSCM.JPG
+END
+Web.Debug.config
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/RSCM_BKU/!svn/ver/2/trunk/RSCM_BKU_Web/Web.Debug.config
+END
+RSCM_BKU_Web.Publish.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/RSCM_BKU/!svn/ver/6/trunk/RSCM_BKU_Web/RSCM_BKU_Web.Publish.xml
+END
+AEScipher.cs
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/RSCM_BKU/!svn/ver/2/trunk/RSCM_BKU_Web/AEScipher.cs
+END
+Logo_RSCM.png
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/RSCM_BKU/!svn/ver/2/trunk/RSCM_BKU_Web/Logo_RSCM.png
+END
+Depault.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/RSCM_BKU/!svn/ver/2/trunk/RSCM_BKU_Web/Depault.aspx
+END
+cancel.png
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/RSCM_BKU/!svn/ver/2/trunk/RSCM_BKU_Web/cancel.png
+END
+bg-bar00.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/RSCM_BKU/!svn/ver/2/trunk/RSCM_BKU_Web/bg-bar00.jpg
+END
+Depault.aspx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/RSCM_BKU/!svn/ver/2/trunk/RSCM_BKU_Web/Depault.aspx.designer.cs
+END
+Depault.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/RSCM_BKU/!svn/ver/2/trunk/RSCM_BKU_Web/Depault.aspx.cs
+END

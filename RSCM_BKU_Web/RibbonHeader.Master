@@ -1,0 +1,115 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="RibbonHeader.master.cs" Inherits="RSCM_BKU_Web.RibbonHeader" %>
+<%@ Register assembly="Ext.Net" namespace="Ext.Net" tagprefix="ext" %>
+<%@ Register assembly="Telerik.Web.UI" namespace="Telerik.Web.UI" tagprefix="telerik" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <telerik:RadScriptManager ID="RadScriptManager1" runat="server">
+    </telerik:RadScriptManager>
+    
+    <ext:ResourceManager runat="server" >
+    </ext:ResourceManager >
+    <div class="ribbon">
+    <telerik:RadRibbonBar ID="RadRibbonBar1" runat="server" Width="100%" Skin="WebBlue" 
+            OnButtonClick="RadRibbonBar1_ButtonClick" >
+        <telerik:RibbonBarTab Text="MASTER">
+            <telerik:RibbonBarGroup Text="GROUP" EnableLauncher="true">
+                <Items>
+                    <telerik:RibbonBarButton runat="server" ID="cmdMasterGroup" Size="Large" Text="GROUP" Width="100%" ImageUrlLarge="~/Images/masterGroup.png"  />
+                </Items>
+            </telerik:RibbonBarGroup>
+
+            <telerik:RibbonBarGroup Text="KAS" EnableLauncher="true">
+                <Items>
+                    <telerik:RibbonBarButton runat="server" ID="cmdMasterKas" Size="Large" Text="KAS" Width="100%" ImageUrlLarge="~/Images/masterKas.png" />
+                </Items>
+            </telerik:RibbonBarGroup>
+
+            <telerik:RibbonBarGroup Text="KEL. ANGGARAN" EnableLauncher="true">
+                <Items>
+                    <telerik:RibbonBarButton runat="server" ID="cmdMasterKelompokAnggaran" Size="Large" Text="KEL. ANGGARAN" Width="100%" ImageUrlLarge="~/Images/masterKelompokAnggarans.png" />
+                </Items>
+            </telerik:RibbonBarGroup>
+
+            <telerik:RibbonBarGroup Text="R.A.B" EnableLauncher="true">
+                <Items>
+                    <telerik:RibbonBarButton runat="server" ID="cmdMasterRAB" Size="Large" Text="R.A.B" Width="100%" ImageUrlLarge="~/Images/masterRAB.png" />
+                </Items>
+            </telerik:RibbonBarGroup>
+        </telerik:RibbonBarTab>
+        <telerik:RibbonBarTab Text="TRANSAKSI" >
+            <telerik:RibbonBarGroup Text="TRANS. KAS" EnableLauncher="true">
+                <Items>
+                    <telerik:RibbonBarButton runat="server" ID="cmdTransaksiKas" Size="Large" Text="TRANS. KAS" Width="100%" ImageUrlLarge="~/Images/transaksi.png" />                    
+                </Items>
+            </telerik:RibbonBarGroup>
+            <telerik:RibbonBarGroup Text="Tarik Data Invoice" EnableLauncher="true">
+                <Items>
+                    <telerik:RibbonBarButton runat="server" ID="cmdTransaksiTarikInvoice" Size="Large" Text="PROC. INVOICE" Width="100%" ImageUrlLarge="~/Images/transaksi.png" />
+                </Items>
+            </telerik:RibbonBarGroup>
+            <telerik:RibbonBarGroup Text="P" EnableLauncher="true">
+                <Items>
+                    <telerik:RibbonBarButton runat="server" ID="cmdTransaksiRearrange" Size="Large" Text="PROC. INVOICE" Width="100%" ImageUrlLarge="~/Images/transaksi.png" />
+                </Items>
+            </telerik:RibbonBarGroup>
+        </telerik:RibbonBarTab>
+        <telerik:RibbonBarTab Text="REPORT" >
+            <telerik:RibbonBarGroup Text="BKU" EnableLauncher="true" >
+                <Items>
+                    <telerik:RibbonBarButton runat="server" ID="cmdLaporanBKU" Size="Large" Text="BKU" Width="100%" ImageUrlLarge="~/Images/laporan-BKU.png" />
+                </Items>
+            </telerik:RibbonBarGroup>
+
+            <telerik:RibbonBarGroup Text="KAS & BANK" EnableLauncher="true" >
+                <Items>
+                    <telerik:RibbonBarButton runat="server" ID="cmdLaporanKasBank" Size="Large" Text="KAS & BANK" Width="100%" ImageUrlLarge="~/Images/laporan-BKU.png" />
+                </Items>
+            </telerik:RibbonBarGroup>
+
+            <telerik:RibbonBarGroup Text="TRANS. Per Kel. Angg" EnableLauncher="true" >
+                <Items>
+                    <telerik:RibbonBarButton runat="server" ID="cmdLaporanPerKelompokAnggaran" Size="Large" Text="Per Kel. Angg" Width="100%" ImageUrlLarge="~/Images/laporan-BKU.png" />
+                </Items>
+            </telerik:RibbonBarGroup>
+
+            <telerik:RibbonBarGroup Text="BKU Group by Kel. Angg" EnableLauncher="true" >
+                <Items>
+                    <telerik:RibbonBarButton runat="server" ID="cmdGroupedMA" Size="Large" Text="Test" Width="100%" ImageUrlLarge="~/Images/laporan-BKU.png" />
+                </Items>
+            </telerik:RibbonBarGroup>
+        </telerik:RibbonBarTab>
+    </telerik:RadRibbonBar>
+
+    <ext:Panel ID="Panel1" runat="server" Height="25" Title="Aplikasi BKU RSCM Kencana" >
+        <TopBar>
+            <ext:Toolbar runat="server">
+                <Items>
+                    <ext:Button runat="server" ID="lnkLogin" Text="Login" Icon="PlayGreen">
+                        <DirectEvents>
+                            <Click OnEvent="logout" />
+                        </DirectEvents>
+                    </ext:Button>
+                    <ext:ToolbarSeparator/>
+                    <ext:ToolbarSeparator/>
+                    <ext:Label runat="server" ID="lblUserName" Text="Welcome" />                        
+                </Items>
+            </ext:Toolbar>
+        </TopBar>        
+    </ext:Panel>
+    
+    </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>    
+    </form>
+</body>
+</html>
